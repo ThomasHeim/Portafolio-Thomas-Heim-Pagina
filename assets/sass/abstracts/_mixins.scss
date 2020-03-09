@@ -1,0 +1,87 @@
+/*Tipografias*/
+
+/*bebas*/
+@mixin bebas-titulo {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $titulo;
+}
+
+@mixin bebas-2xl {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $xx-large;
+}
+
+@mixin bebas-xl {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $x-large;
+}
+
+@mixin bebas-l {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $large;
+}
+
+@mixin bebas-m {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $medium;
+}
+
+@mixin bebas-s {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $small;
+}
+
+@mixin bebas-xs {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $x-small;
+}
+
+@mixin bebas-2xs{
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $xx-small;
+}
+
+/*montserrat*/
+@mixin montserrat-2xl {
+    font-family: $montserrat;
+    font-weight: $font-regular;
+    font-size: $xx-large;
+}
+
+@mixin montserrat-xl {
+    font-family: $montserrat;
+    font-weight: $font-regular;
+    font-size: $x-large;
+}
+
+@mixin montserrat-l {
+    font-family: $montserrat;
+    font-weight: $font-regular;
+    font-size: $large;
+}
+
+@mixin montserrat-m {
+    font-family: $montserrat;
+    font-weight: $font-regular;
+    font-size: $medium;
+}
+
+@mixin montserrat-s {
+    font-family: $montserrat;
+    font-weight: $font-regular;
+    font-size: $small;
+}
+
+@mixin montserrat-xs {
+    font-family: $montserrat;
+    font-weight: $font-regular;
+    font-size: $x-small;
+}   

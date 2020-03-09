@@ -1,7 +1,11 @@
 @charset "UTF-8";
 /*Familias de fuentes*/
+/*Paletas de colores*/
 /*Tamaños de fuente*/
 /*Peso de fuente*/
+/*Tipografias*/
+/*bebas*/
+/*montserrat*/
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -9878,6 +9882,12 @@ h3 {
     border-color: #dee2e6;
   }
 }
+body * {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -10238,6 +10248,91 @@ textarea {
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
+}
+
+.navbar {
+  background-color: #000000 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+}
+
+svg {
+  width: 80px;
+  fill: #ffffff;
+}
+
+nav h2 {
+  color: #343a40;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.nav-item {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.nav-item {
+  margin: auto 0;
+}
+
+.header {
+  background-image: url(../Img/Graduadisimo-campeon-color.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 650px;
+  margin-top: 50px;
+  padding-top: 80px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.header__contenido {
+  margin-top: 25rem;
+}
+.header__contenido-titulo__fondo {
+  background-color: #000000;
+  display: inline-block;
+  padding: 18px 8px 8px 8px;
+  margin-right: 1rem;
+}
+.header__contenido-titulo__texto {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 8rem;
+}
+.header__contenido-subtitulo__texto {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+@media (min-width: 992px) {
+  .header {
+    height: 497px;
+    margin-top: 0px;
+    padding-top: 2px;
+  }
+
+  .header__contenido {
+    margin-top: 9rem;
+  }
+  .header__contenido-titulo__texto {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 8rem;
+  }
+  .header__contenido-subtitulo-texto {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
