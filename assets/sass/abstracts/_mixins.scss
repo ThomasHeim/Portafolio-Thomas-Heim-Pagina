@@ -1,11 +1,6 @@
 /*Tipografias*/
 
 /*bebas*/
-@mixin bebas-titulo {
-    font-family: $bebas;
-    font-weight: $font-regular;
-    font-size: $titulo;
-}
 
 @mixin bebas-2xl {
     font-family: $bebas;
@@ -37,16 +32,10 @@
     font-size: $small;
 }
 
-@mixin bebas-xs {
+@mixin bebas-texto {
     font-family: $bebas;
     font-weight: $font-regular;
-    font-size: $x-small;
-}
-
-@mixin bebas-2xs{
-    font-family: $bebas;
-    font-weight: $font-regular;
-    font-size: $xx-small;
+    font-size: $texto;
 }
 
 /*montserrat*/
@@ -80,8 +69,8 @@
     font-size: $small;
 }
 
-@mixin montserrat-xs {
+@mixin montserrat-texto {
     font-family: $montserrat;
     font-weight: $font-regular;
-    font-size: $x-small;
-}   
+    font-size: $texto;
+}

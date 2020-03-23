@@ -1,0 +1,42 @@
+.navegacion{
+    mix-blend-mode: difference;
+    background-color: white !important;
+    filter: invert(100%);
+    position: fixed;
+    font-family: $bebas;
+
+
+    &__contenido{
+        justify-content: flex-end;
+    }
+    &__logo{
+        mix-blend-mode: difference;
+        width: 5%;
+        height: auto;
+        fill: white;
+    }
+    &__quiensoy{
+        white-space: nowrap;
+    }
+}
+.navegacion__contenido{
+    a{
+        mix-blend-mode: difference;
+        color: white !important;
+    }
+}
+
+.navegacion__contacto{
+    mix-blend-mode: difference;
+    position: fixed;
+    top: 95%;
+    left: 96%;
+    display: flex;
+    flex-direction: column;
+    font-family: $bebas;
+
+    a{
+        color: white;
+    }
+}
+

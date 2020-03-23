@@ -3,7 +3,8 @@
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
 
-@import 'vendors/bootstrap-4.4.1/scss/bootstrap';
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'vendors/jquery-ui';
 
 @import 'base/reset';
@@ -12,6 +13,7 @@
 @import 'layout/navigation';
 @import 'layout/grid';
 @import 'layout/header';
+@import 'layout/main';
 @import 'layout/footer';
 @import 'layout/sidebar';
 @import 'layout/forms';
@@ -26,4 +28,5 @@
 
 @import 'themes/theme';
 @import 'themes/admin';
+@import 'themes/custom-variables';
 

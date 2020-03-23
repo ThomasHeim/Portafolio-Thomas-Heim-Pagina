@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*Familias de fuentes*/
 /*Paletas de colores*/
-/*Tamaños de fuente*/
+/*Tamaños de fuente-movil*/
 /*Peso de fuente*/
 /*Tipografias*/
 /*bebas*/
@@ -10250,89 +10250,56 @@ textarea {
   padding: 0.2em 0;
 }
 
-.navbar {
-  background-color: #000000 !important;
-}
-
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-  color: #ffffff !important;
-}
-
-svg {
-  width: 80px;
-  fill: #ffffff;
-}
-
-nav h2 {
-  color: #343a40;
+.navegacion {
+  mix-blend-mode: difference;
+  background-color: white !important;
+  filter: invert(100%);
+  position: fixed;
   font-family: "Bebas Neue", cursive;
-  font-weight: 400;
-  font-size: 3rem;
+}
+.navegacion__contenido {
+  justify-content: flex-end;
+}
+.navegacion__logo {
+  mix-blend-mode: difference;
+  width: 5%;
+  height: auto;
+  fill: white;
+}
+.navegacion__quiensoy {
+  white-space: nowrap;
 }
 
-.nav-item {
+.navegacion__contenido a {
+  mix-blend-mode: difference;
+  color: white !important;
+}
+
+.navegacion__contacto {
+  mix-blend-mode: difference;
+  position: fixed;
+  top: 95%;
+  left: 96%;
+  display: flex;
+  flex-direction: column;
   font-family: "Bebas Neue", cursive;
-  font-weight: 400;
-  font-size: 1rem;
-  letter-spacing: 1px;
+}
+.navegacion__contacto a {
+  color: white;
 }
 
-.nav-item {
-  margin: auto 0;
+.hero {
+  height: 100vh;
+  background-color: #ffffff;
 }
 
-.header {
-  background-image: url(../Img/Graduadisimo-campeon-color.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  height: 650px;
-  margin-top: 50px;
-  padding-top: 80px;
-  text-align: right;
-  color: #ffffff;
+main {
+  background-color: white;
 }
 
-.header__contenido {
-  margin-top: 25rem;
-}
-.header__contenido-titulo__fondo {
-  background-color: #000000;
-  display: inline-block;
-  padding: 18px 8px 8px 8px;
-  margin-right: 1rem;
-}
-.header__contenido-titulo__texto {
-  font-family: "Bebas Neue", cursive;
-  font-weight: 400;
-  font-size: 8rem;
-}
-.header__contenido-subtitulo__texto {
-  font-family: "Bebas Neue", cursive;
-  font-weight: 400;
-  font-size: 4rem;
-}
-
-@media (min-width: 992px) {
-  .header {
-    height: 497px;
-    margin-top: 0px;
-    padding-top: 2px;
-  }
-
-  .header__contenido {
-    margin-top: 9rem;
-  }
-  .header__contenido-titulo__texto {
-    font-family: "Bebas Neue", cursive;
-    font-weight: 400;
-    font-size: 8rem;
-  }
-  .header__contenido-subtitulo-texto {
-    font-family: "Bebas Neue", cursive;
-    font-weight: 400;
-    font-size: 4rem;
-  }
+.trabajos {
+  height: 100vh;
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
