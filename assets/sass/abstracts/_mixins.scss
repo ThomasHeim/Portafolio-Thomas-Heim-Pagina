@@ -1,3 +1,5 @@
+/*Animaciones*/
+
 /*Tipografias*/
 
 /*bebas*/
@@ -38,7 +40,85 @@
     font-size: $texto;
 }
 
+/*BEBAS - Pantallas Grandes*/
+
+@mixin bebas-lg-2xl {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $lg-xx-large;
+}
+
+@mixin bebas-lg-xl {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $lg-x-large;
+}
+
+@mixin bebas-lg-l {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $lg-large;
+}
+
+@mixin bebas-lg-m {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $lg-medium;
+}
+
+@mixin bebas-lg-s {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $lg-small;
+}
+
+@mixin bebas-lg-texto {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $lg-texto;
+}
+
+/*bebas-MOVIL*/
+
+@mixin bebas-sm-2xl {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $sm-xx-large;
+}
+
+@mixin bebas-sm-xl {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $sm-x-large;
+}
+
+@mixin bebas-sm-l {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $sm-large;
+}
+
+@mixin bebas-sm-m {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $sm-medium;
+}
+
+@mixin bebas-sm-s {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $sm-small;
+}
+
+@mixin bebas-sm-texto {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $sm-texto;
+}
+
+
 /*montserrat*/
+
 @mixin montserrat-2xl {
     font-family: $montserrat;
     font-weight: $font-regular;
@@ -73,4 +153,42 @@
     font-family: $montserrat;
     font-weight: $font-regular;
     font-size: $texto;
+}
+
+
+/*MontSerrat Movil*/
+@mixin montserrat-mv-2xl {
+    font-family: $montserrat;
+    font-weight: $font-regular;
+    font-size: $mv-xx-large;
+}
+
+@mixin montserrat-mv-xl {
+    font-family: $montserrat;
+    font-weight: $font-regular;
+    font-size: $mv-x-large;
+}
+
+@mixin montserrat-mv-l {
+    font-family: $montserrat;
+    font-weight: $font-regular;
+    font-size: $mv-large;
+}
+
+@mixin montserrat-mv-m {
+    font-family: $montserrat;
+    font-weight: $font-regular;
+    font-size: $mv-medium;
+}
+
+@mixin montserrat-mv-s {
+    font-family: $montserrat;
+    font-weight: $font-regular;
+    font-size: $mv-small;
+}
+
+@mixin montserrat-mv-texto {
+    font-family: $montserrat;
+    font-weight: $font-regular;
+    font-size: $mv-texto;
 }

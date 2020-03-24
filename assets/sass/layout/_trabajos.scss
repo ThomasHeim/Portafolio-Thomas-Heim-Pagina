@@ -1,0 +1,42 @@
+main{
+    background-color: white;
+}
+.trabajos{
+    padding-top: 100px;
+    height: 100vh;
+    background-color: black;
+
+    &__boton{
+        @include bebas-sm-xl;
+        margin-left: 12%;
+        margin-bottom:  40px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .trabajos{
+        padding-top: 80px;
+        height: 100vh;
+        background-color: black;
+    
+        &__boton{
+            @include bebas-l;
+            margin-bottom:  40px;
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 1199.98px) {
+    .trabajos{
+        padding-top: 80px;
+        height: 100vh;
+        background-color: black;
+    
+        &__boton{
+            @include bebas-lg-l;
+            margin-bottom:  40px;
+        }
+    }
+}

@@ -1,11 +1,17 @@
 @charset "UTF-8";
 /*Familias de fuentes*/
 /*Paletas de colores*/
-/*Tamaños de fuente-movil*/
+/*Tamaños de fuente*/
+/*Tamaños de fuente pantallas GRANDES*/
+/*Tamaños de fuente-MOVIL*/
 /*Peso de fuente*/
+/*Animaciones*/
 /*Tipografias*/
 /*bebas*/
+/*BEBAS - Pantallas Grandes*/
+/*bebas-MOVIL*/
 /*montserrat*/
+/*MontSerrat Movil*/
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -9904,7 +9910,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 10px;
   font: inherit;
   vertical-align: baseline;
 }
@@ -10250,19 +10256,32 @@ textarea {
   padding: 0.2em 0;
 }
 
+html {
+  font-size: 10px;
+}
+
+#navegacion {
+  z-index: 9999;
+}
+
 .navegacion {
   mix-blend-mode: difference;
   background-color: white !important;
   filter: invert(100%);
   position: fixed;
   font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  width: 100vw;
 }
 .navegacion__contenido {
   justify-content: flex-end;
 }
 .navegacion__logo {
+  width: 100%;
+  max-width: 76px;
+}
+.navegacion__logo-icono {
   mix-blend-mode: difference;
-  width: 5%;
   height: auto;
   fill: white;
 }
@@ -10274,15 +10293,22 @@ textarea {
   mix-blend-mode: difference;
   color: white !important;
 }
+.navegacion__contenido a:hover {
+  text-decoration: underline;
+}
 
 .navegacion__contacto {
+  z-index: 9999;
   mix-blend-mode: difference;
+  width: 100vw;
+  padding-top: 94vh;
+  padding-right: 2%;
   position: fixed;
-  top: 95%;
-  left: 96%;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   font-family: "Bebas Neue", cursive;
+  font-size: 20px;
 }
 .navegacion__contacto a {
   color: white;
@@ -10291,15 +10317,155 @@ textarea {
 .hero {
   height: 100vh;
   background-color: #ffffff;
+  padding-top: 80px;
+  margin: 0 12%;
+}
+.hero__container {
+  max-width: 90%;
+}
+.hero__parrafo-2__container {
+  margin-top: 20px;
+  text-align: right;
+}
+.hero__texto {
+  white-space: nowrap;
+}
+.hero__texto-1 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 6rem;
+}
+.hero__texto-2 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.hero__boton-1 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 4rem;
+  white-space: nowrap;
+}
+.hero__boton-2 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 3rem;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+  .hero__container {
+    max-width: 90%;
+  }
+  .hero__texto-1 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 14.375rem;
+  }
+  .hero__texto-2 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 5rem;
+  }
+  .hero__boton-1 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 9.375rem;
+  }
+  .hero__boton-2 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 7.1875rem;
+    margin: 10px 5px;
+  }
+}
+@media (min-width: 1199.98px) {
+  .hero {
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+  .hero__container {
+    max-width: 90%;
+  }
+  .hero__texto-1 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 21rem;
+  }
+  .hero__texto-2 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 6rem;
+  }
+  .hero__boton-1 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 13rem;
+  }
+  .hero__boton-2 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 9.5rem;
+    margin: 6px 5px;
+  }
+}
 main {
   background-color: white;
 }
 
 .trabajos {
+  padding-top: 100px;
   height: 100vh;
   background-color: black;
+}
+.trabajos__boton {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 5rem;
+  margin-left: 12%;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .trabajos {
+    padding-top: 80px;
+    height: 100vh;
+    background-color: black;
+  }
+  .trabajos__boton {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 9.375rem;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1199.98px) {
+  .trabajos {
+    padding-top: 80px;
+    height: 100vh;
+    background-color: black;
+  }
+  .trabajos__boton {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 13rem;
+    margin-bottom: 40px;
+  }
+}
+.navbar-toggler {
+  border: none !important;
+}
+
+.dropdown-menu {
+  left: -60px;
+  font-size: 2rem;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

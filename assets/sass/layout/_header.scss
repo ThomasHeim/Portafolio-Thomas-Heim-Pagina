@@ -1,4 +1,86 @@
 .hero{
     height: 100vh;
     background-color: #ffffff;
+    padding-top: 80px;
+    margin: 0 12%;
+
+    &__container{
+        max-width: 90%;
+    }
+
+    &__parrafo-2__container{
+        margin-top: 20px;
+        text-align: right;
+    }
+
+    &__texto{
+        white-space: nowrap;
+    }
+    &__texto-1{
+        @include bebas-sm-2xl;
+    }
+    &__texto-2{
+        @include bebas-sm-s;
+    }
+    &__boton-1{
+        @include bebas-sm-l;
+        white-space: nowrap;
+    }
+    &__boton-2{
+        @include bebas-sm-m;
+    }
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .hero{
+        margin: 0 auto;
+        padding-top: 5%;
+
+        &__container{
+            max-width: 90%;
+        }
+
+        &__texto-1{
+            @include bebas-2xl;
+        }
+        &__texto-2{
+            @include bebas-s;
+        }
+        &__boton-1{
+            @include bebas-l;
+        }
+        &__boton-2{
+            @include bebas-m;
+            margin: 10px 5px; 
+        }
+    }
+}
+
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 1199.98px) {
+    .hero{
+        margin: 0 auto;
+        padding-top: 5%;
+
+        &__container{
+            max-width: 90%;
+        }
+
+        &__texto-1{
+            @include bebas-lg-2xl;
+        }
+        &__texto-2{
+            @include bebas-lg-s;
+        }
+        &__boton-1{
+            @include bebas-lg-l;
+        }
+        &__boton-2{
+            @include bebas-lg-m;
+            margin: 6px 5px; 
+        }
+    }
 }

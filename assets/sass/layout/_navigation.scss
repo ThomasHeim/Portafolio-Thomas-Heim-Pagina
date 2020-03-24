@@ -1,17 +1,26 @@
+#navegacion{
+    z-index: 9999
+}
+
 .navegacion{
     mix-blend-mode: difference;
     background-color: white !important;
     filter: invert(100%);
     position: fixed;
     font-family: $bebas;
+    font-size: 2rem;
+    width: 100vw;
 
 
     &__contenido{
         justify-content: flex-end;
     }
     &__logo{
+        width: 100%;
+        max-width: 76px;
+    }
+    &__logo-icono{
         mix-blend-mode: difference;
-        width: 5%;
         height: auto;
         fill: white;
     }
@@ -23,17 +32,24 @@
     a{
         mix-blend-mode: difference;
         color: white !important;
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }
 
 .navegacion__contacto{
+    z-index: 9999;
     mix-blend-mode: difference;
+    width: 100vw;
+    padding-top: 94vh;
+    padding-right: 2%;
     position: fixed;
-    top: 95%;
-    left: 96%;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     font-family: $bebas;
+    font-size: 20px;
 
     a{
         color: white;
