@@ -10421,6 +10421,9 @@ main {
   height: 100vh;
   background-color: black;
 }
+.trabajos__container {
+  max-width: 100%;
+}
 .trabajos__boton {
   font-family: "Bebas Neue", cursive;
   font-weight: 400;

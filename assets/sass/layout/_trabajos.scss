@@ -6,6 +6,10 @@ main{
     height: 100vh;
     background-color: black;
 
+    &__container{
+        max-width: 100%;
+    }
+
     &__boton{
         @include bebas-sm-xl;
         margin-left: 12%;
