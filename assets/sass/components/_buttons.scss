@@ -1,0 +1,15 @@
+.boton__custom{
+    mix-blend-mode: difference;
+    background-color: white;
+    text-align: center;
+    padding: 10px 8px 2px 8px;
+    color: black;
+    line-height: 1;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .boton__custom{
+        padding: 15px 8px 5px 8px;
+    }
+}

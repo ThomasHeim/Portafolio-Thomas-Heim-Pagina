@@ -3,13 +3,14 @@
 }
 
 .navegacion{
+    will-change: opacity;
     mix-blend-mode: difference;
     background-color: white !important;
     filter: invert(100%);
     position: fixed;
     font-family: $bebas;
     font-size: 2rem;
-    width: 100vw;
+    width: 100%;
 
 
     &__contenido{
@@ -39,12 +40,12 @@
 }
 
 .navegacion__contacto{
-    z-index: 9999;
+    z-index: 9998;
     mix-blend-mode: difference;
-    width: 100vw;
-    padding-top: 94vh;
-    padding-right: 2%;
+    width: 100%;
+    padding-right: 1%;
     position: fixed;
+    top: 94vh;
     display: flex;
     flex-direction: column;
     align-items: flex-end;

@@ -10265,13 +10265,14 @@ html {
 }
 
 .navegacion {
+  will-change: opacity;
   mix-blend-mode: difference;
   background-color: white !important;
   filter: invert(100%);
   position: fixed;
   font-family: "Bebas Neue", cursive;
   font-size: 2rem;
-  width: 100vw;
+  width: 100%;
 }
 .navegacion__contenido {
   justify-content: flex-end;
@@ -10298,12 +10299,12 @@ html {
 }
 
 .navegacion__contacto {
-  z-index: 9999;
+  z-index: 9998;
   mix-blend-mode: difference;
-  width: 100vw;
-  padding-top: 94vh;
-  padding-right: 2%;
+  width: 100%;
+  padding-right: 1%;
   position: fixed;
+  top: 94vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -10318,10 +10319,28 @@ html {
   height: 100vh;
   background-color: #ffffff;
   padding-top: 80px;
-  margin: 0 12%;
-}
-.hero__container {
-  max-width: 90%;
+  margin: 0 0%;
+  /*&__texto-1{
+      @include bebas-sm-2xl;
+      font-size: 6.191950464396285vh;
+      color: black;
+  }
+  &__texto-2{
+      @include bebas-sm-s;
+      color: black;
+      font-size: 2.063983488132095vh;
+  }
+  &__boton-1{
+      @include bebas-sm-l;
+      white-space: nowrap;
+      color: black;
+       font-size: 4.12796697626419vh;
+  }
+  &__boton-2{
+      @include bebas-sm-m;
+      color: black;
+      font-size: 3.0959752321981426vh;
+  }*/
 }
 .hero__parrafo-2__container {
   margin-top: 20px;
@@ -10333,59 +10352,59 @@ html {
 .hero__texto-1 {
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
-  font-size: 6rem;
+  font-size: 14.375rem;
+  color: black;
+  font-size: 14.7574819401vh;
 }
 .hero__texto-2 {
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 5rem;
+  color: black;
+  font-size: 5.1599587203vh;
 }
 .hero__boton-1 {
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
-  font-size: 4rem;
-  white-space: nowrap;
+  font-size: 9.375rem;
+  font-size: 9vh;
 }
 .hero__boton-2 {
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 7.1875rem;
+  font-size: 7vh;
+  margin: 5px;
 }
 
 @media (min-width: 768px) {
   .hero {
     margin: 0 auto;
-    padding-top: 5%;
+    /*&__texto-1{
+        @include bebas-2xl;
+        font-size: 14.757481940144478vh;
+    }
+    &__texto-2{
+        @include bebas-s;
+        font-size: 5.159958720330238vh;
+    }
+    &__boton-1{
+        @include bebas-l;
+        font-size: 9.597523219814242vh;
+    }
+    &__boton-2{
+        @include bebas-m;
+        font-size: 7.430340557275541vh;
+        margin: 10px 5px; 
+    }*/
   }
   .hero__container {
     max-width: 90%;
-  }
-  .hero__texto-1 {
-    font-family: "Bebas Neue", cursive;
-    font-weight: 400;
-    font-size: 14.375rem;
-  }
-  .hero__texto-2 {
-    font-family: "Bebas Neue", cursive;
-    font-weight: 400;
-    font-size: 5rem;
-  }
-  .hero__boton-1 {
-    font-family: "Bebas Neue", cursive;
-    font-weight: 400;
-    font-size: 9.375rem;
-  }
-  .hero__boton-2 {
-    font-family: "Bebas Neue", cursive;
-    font-weight: 400;
-    font-size: 7.1875rem;
-    margin: 10px 5px;
   }
 }
 @media (min-width: 1199.98px) {
   .hero {
     margin: 0 auto;
-    padding-top: 5%;
   }
   .hero__container {
     max-width: 90%;
@@ -10394,21 +10413,25 @@ html {
     font-family: "Bebas Neue", cursive;
     font-weight: 400;
     font-size: 21rem;
+    font-size: 21.6718266254vh;
   }
   .hero__texto-2 {
     font-family: "Bebas Neue", cursive;
     font-weight: 400;
     font-size: 6rem;
+    font-size: 6.1919504644vh;
   }
   .hero__boton-1 {
     font-family: "Bebas Neue", cursive;
     font-weight: 400;
     font-size: 13rem;
+    font-size: 13.4158926729vh;
   }
   .hero__boton-2 {
     font-family: "Bebas Neue", cursive;
     font-weight: 400;
     font-size: 9.5rem;
+    font-size: 9.8039215686vh;
     margin: 6px 5px;
   }
 }
@@ -10418,7 +10441,7 @@ main {
 
 .trabajos {
   padding-top: 100px;
-  height: 100vh;
+  height: 100%;
   background-color: black;
 }
 .trabajos__container {
@@ -10435,8 +10458,6 @@ main {
 @media (min-width: 768px) {
   .trabajos {
     padding-top: 80px;
-    height: 100vh;
-    background-color: black;
   }
   .trabajos__boton {
     font-family: "Bebas Neue", cursive;
@@ -10447,15 +10468,27 @@ main {
 }
 @media (min-width: 1199.98px) {
   .trabajos {
-    padding-top: 80px;
-    height: 100vh;
-    background-color: black;
+    padding-top: 130px;
   }
   .trabajos__boton {
     font-family: "Bebas Neue", cursive;
     font-weight: 400;
     font-size: 13rem;
     margin-bottom: 40px;
+  }
+}
+.boton__custom {
+  mix-blend-mode: difference;
+  background-color: white;
+  text-align: center;
+  padding: 10px 8px 2px 8px;
+  color: black;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .boton__custom {
+    padding: 15px 8px 5px 8px;
   }
 }
 .navbar-toggler {
