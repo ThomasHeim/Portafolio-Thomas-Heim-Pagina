@@ -1,0 +1,60 @@
+//Animacion hover botones
+@keyframes hover__botones-nav{
+    0%{
+        background-color: white;
+        mix-blend-mode: difference;
+        width: 0%;
+    }
+
+    40%{
+        background-color: white;
+        mix-blend-mode: difference;
+        width: 95%;
+    }
+
+    100%{
+        background-color: white;
+        mix-blend-mode: difference;
+        width: 100%;
+    }
+}
+
+
+@keyframes hover__botones-dark{
+    0%{
+        box-shadow: inset 0px 0.01px 0.01px 0.01px black;
+        mix-blend-mode: difference;
+        filter: invert(100%);
+    }
+    1%{
+        box-shadow: inset 1px 0.01px 0.01px 0.01px white;
+        color: black;
+        mix-blend-mode: exclusion;
+        filter: invert(100%);
+        opacity: 1;
+    }
+    100%{
+        box-shadow: inset 750px 0.01px 0.01px 0.01px white;
+        color: black;
+        mix-blend-mode: exclusion;
+        filter: invert(100%);
+    }
+}
+
+@keyframes hover__botones-light{
+    0%{
+        box-shadow: inset 0px 0.01px 0.01px 0.01px black;
+        mix-blend-mode: difference;
+    }
+    1%{
+        box-shadow: inset 1px 0.01px 0.01px 0.01px white;
+        color: black;
+        mix-blend-mode: exclusion;
+        opacity: 1;
+    }
+    100%{
+        box-shadow: inset 750px 0.01px 0.01px 0.01px white;
+        color: black;
+        mix-blend-mode: exclusion;
+    }
+}

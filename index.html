@@ -7,12 +7,16 @@
     <!--Fuentes-->
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap&subset=latin-ext" rel="stylesheet"> 
     <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/41b8753ddc.js" crossorigin="anonymous"></script>
-    <!--Bootstrap-->
-    <!--<script src="https://kit.fontawesome.com/41b8753ddc.js" crossorigin="anonymous"></script>  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <script src="https://kit.fontawesome.com/41b8753ddc.js" crossorigin="anonymous"></script>  
     <!--Mi estilo-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--js js js js js js js-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
+    <script src="assets/js/button-hover.js"></script>
+    <!--js js js js js js js--> 
     <title>Thomas Heim | Diseño</title>
 </head>
 <body>
@@ -49,41 +53,40 @@
         </div>
     </nav>
 
-    <div class="navegacion__contacto">
-        <a class="navegacion__contacto-link" href="">LinkedIn</a>
+    <ul class="navegacion__contacto">
+      <li class="navegacion__contacto-elemento">
         <a class="navegacion__contacto-link" href="">Mail</a>
-    </div>
+      </li>
+      <li class="navegacion__contacto-elemento">
+        <a class="navegacion__contacto-link" href="">LinkedIn</a>
+      </li>
+    </ul>
 
     <header class="hero">
       <div class="container-fluid hero__container">
         <div class="row">
-          <h1 class="col-12 col-md-9 hero__texto"><span class="hero__texto-1">¡Hola! </span><br><span class="hero__texto-2">Soy Thomas Heim,</span> <br><button class="hero__boton-1 boton__custom">diseñador UX/UI</button></h1>
+          <h1 class="col-12 col-md-9 hero__texto"><span class="hero__texto-1">¡Hola! </span><br><span class="hero__texto-2">Soy Thomas Heim,</span> <br><button class="hero__boton-1 boton__custom-hero1"><a href="https://www.google.cl">diseñador UX/UI</a></button></h1>
         </div>
         <div class="row hero__parrafo-2__container">
-          <h1 class="col-12 col-md-9 offset-md-3 hero__texto hero___parrafo-2"><span class="hero__texto-2">Tambien soy</span><button class="hero__boton-2 boton__custom">Ilustrador</button><span class="hero__texto-2">y</span><br><button class="hero__boton-2 boton__custom">diseñador gráfico</button></h1>
+          <h1 class="col-12 col-md-9 offset-md-3 hero__texto hero___parrafo-2"><span class="hero__texto-2">Tambien soy</span><button class="hero__boton-2 boton__custom-hero2"><a href="">Ilustrador</a></button><span class="hero__texto-2">y</span><br><button class="hero__boton-2 boton__custom-hero2"><a href="">diseñador gráfico</a></button></h1>
         </div>
       </div>
     </header>
     <main class="trabajos">
       <div class="container-fluid trabajos__container">
         <div class="row">
-          <button class="trabajos__boton">Proyecto 1</button> 
+          <button class="trabajos__boton boton__custom-trabajos"><a href="">Proyecto 1</a></button> 
         </div>
         <div class="row">
-          <button class="trabajos__boton">Proyecto 2</button> 
+          <button class="trabajos__boton boton__custom-trabajos"><a href="">Proyecto 2</a></button> 
         </div>
         <div class="row">
-          <button class="trabajos__boton">Proyecto 3</button> 
+          <button class="trabajos__boton boton__custom-trabajos"><a href="">Proyecto 3</a></button> 
         </div>
         <div class="row">
-          <button class="trabajos__boton">Proyecto 4</button> 
+          <button class="trabajos__boton boton__custom-trabajos"><a href="">Proyecto 4</a></button> 
         </div>
       </div>
-    </main>
-<!--js js js js js js js-->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<!--js js js js js js js-->    
+    </main>   
 </body>
 </html>

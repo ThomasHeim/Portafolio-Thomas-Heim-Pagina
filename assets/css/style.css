@@ -12,6 +12,60 @@
 /*bebas-MOVIL*/
 /*montserrat*/
 /*MontSerrat Movil*/
+@keyframes hover__botones-nav {
+  0% {
+    background-color: white;
+    mix-blend-mode: difference;
+    width: 0%;
+  }
+  40% {
+    background-color: white;
+    mix-blend-mode: difference;
+    width: 95%;
+  }
+  100% {
+    background-color: white;
+    mix-blend-mode: difference;
+    width: 100%;
+  }
+}
+@keyframes hover__botones-dark {
+  0% {
+    box-shadow: inset 0px 0.01px 0.01px 0.01px black;
+    mix-blend-mode: difference;
+    filter: invert(100%);
+  }
+  1% {
+    box-shadow: inset 1px 0.01px 0.01px 0.01px white;
+    color: black;
+    mix-blend-mode: exclusion;
+    filter: invert(100%);
+    opacity: 1;
+  }
+  100% {
+    box-shadow: inset 750px 0.01px 0.01px 0.01px white;
+    color: black;
+    mix-blend-mode: exclusion;
+    filter: invert(100%);
+  }
+}
+@keyframes hover__botones-light {
+  0% {
+    box-shadow: inset 0px 0.01px 0.01px 0.01px black;
+    mix-blend-mode: difference;
+  }
+  1% {
+    box-shadow: inset 1px 0.01px 0.01px 0.01px white;
+    color: black;
+    mix-blend-mode: exclusion;
+    opacity: 1;
+  }
+  100% {
+    box-shadow: inset 750px 0.01px 0.01px 0.01px white;
+    color: black;
+    mix-blend-mode: exclusion;
+  }
+}
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -10291,16 +10345,24 @@ html {
 }
 
 .navegacion__contenido a {
-  mix-blend-mode: difference;
-  color: white !important;
+  color: black !important;
 }
 .navegacion__contenido a:hover {
-  text-decoration: underline;
+  animation: hover__botones-nav;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+.navegacion__contenido a:hover:after {
+  color: white;
+  mix-blend-mode: difference;
 }
 
 .navegacion__contacto {
   z-index: 9998;
   mix-blend-mode: difference;
+  will-change: opacity;
+  background-color: white;
+  filter: invert(100%);
   width: 100%;
   padding-right: 1%;
   position: fixed;
@@ -10311,8 +10373,23 @@ html {
   font-family: "Bebas Neue", cursive;
   font-size: 20px;
 }
+.navegacion__contacto-elemento {
+  margin-bottom: 0.5rem;
+  padding-top: 2px;
+}
 .navegacion__contacto a {
-  color: white;
+  color: black;
+  padding: 0.2rem 0.5rem;
+  line-height: 0.1;
+}
+.navegacion__contacto a:hover {
+  text-decoration: none;
+  animation: hover__botones-light;
+  -moz-animation: hover__botones-light;
+  -webkit-animation: hover__botones-light;
+  -o-animation: hover__botones-light;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .hero {
@@ -10458,6 +10535,7 @@ main {
 @media (min-width: 768px) {
   .trabajos {
     padding-top: 80px;
+    padding-bottom: 40px;
   }
   .trabajos__boton {
     font-family: "Bebas Neue", cursive;
@@ -10468,7 +10546,8 @@ main {
 }
 @media (min-width: 1199.98px) {
   .trabajos {
-    padding-top: 130px;
+    padding-top: 120px;
+    padding-bottom: 100px;
   }
   .trabajos__boton {
     font-family: "Bebas Neue", cursive;
@@ -10477,18 +10556,154 @@ main {
     margin-bottom: 40px;
   }
 }
-.boton__custom {
+/*Botones recurrentes*/
+/*Botones del home*/
+.boton__custom-hero1 {
+  mix-blend-mode: normal;
+  background-color: black;
+  text-align: center;
+  padding: 10px 8px 2px 8px;
+  color: white;
+  line-height: 1;
+  white-space: nowrap;
+  /*&:not(:hover){
+      animation: hover__botones;
+      -moz-animation: hover__botones;
+      -webkit-animation: hover__botones;
+      -o-animation: hover__botones;
+
+      animation-duration:  0.5s;
+      animation-direction: reverse;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+  }*/
+}
+.boton__custom-hero1 a {
+  color: white;
+  text-decoration: none;
+}
+.boton__custom-hero1 a:hover {
+  color: white;
   mix-blend-mode: difference;
+}
+.boton__custom-hero1:hover {
+  animation: hover__botones-dark;
+  -moz-animation: hover__botones-dark;
+  -webkit-animation: hover__botones-dark;
+  -o-animation: hover__botones-dark;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  /*box-shadow: inset 548px 0.01px 0.01px 0.01px white;
+  color: black;
+  mix-blend-mode: difference;
+  transition: box-shadow ease 0.5s;*/
+}
+
+.boton__custom-hero2 {
+  mix-blend-mode: normal;
+  background-color: black;
+  text-align: center;
+  padding: 10px 8px 2px 8px;
+  color: white;
+  line-height: 1;
+  white-space: nowrap;
+  /*&:not(:hover){
+      animation: hover__botones;
+      -moz-animation: hover__botones;
+      -webkit-animation: hover__botones;
+      -o-animation: hover__botones;
+
+      animation-duration:  0.5s;
+      animation-direction: reverse;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+  }*/
+}
+.boton__custom-hero2 a {
+  color: white;
+  text-decoration: none;
+}
+.boton__custom-hero2 a:hover {
+  color: white;
+  mix-blend-mode: difference;
+}
+.boton__custom-hero2:hover {
+  animation: hover__botones-dark;
+  -moz-animation: hover__botones-dark;
+  -webkit-animation: hover__botones-dark;
+  -o-animation: hover__botones-dark;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  /*box-shadow: inset 548px 0.01px 0.01px 0.01px white;
+  color: black;
+  mix-blend-mode: difference;
+  transition: box-shadow ease 0.5s;*/
+}
+
+.boton__custom-trabajos {
+  mix-blend-mode: normal;
   background-color: white;
   text-align: center;
   padding: 10px 8px 2px 8px;
   color: black;
   line-height: 1;
+  white-space: nowrap;
+  /*&:not(:hover){
+      animation: hover__botones;
+      -moz-animation: hover__botones;
+      -webkit-animation: hover__botones;
+      -o-animation: hover__botones;
+
+      animation-duration:  0.5s;
+      animation-direction: reverse;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+  }*/
+}
+.boton__custom-trabajos a {
+  color: black;
+  text-decoration: none;
+}
+.boton__custom-trabajos a:hover {
+  color: white;
+  mix-blend-mode: difference;
+}
+.boton__custom-trabajos:hover {
+  animation: hover__botones-dark;
+  -moz-animation: hover__botones-dark;
+  -webkit-animation: hover__botones-dark;
+  -o-animation: hover__botones-dark;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  /*box-shadow: inset 548px 0.01px 0.01px 0.01px white;
+  color: black;
+  mix-blend-mode: difference;
+  transition: box-shadow ease 0.5s;*/
 }
 
 @media (min-width: 768px) {
-  .boton__custom {
+  .boton__custom-hero1 {
     padding: 15px 8px 5px 8px;
+  }
+  .boton__custom-hero1:hover {
+    animation-duration: 0.8s;
+  }
+}
+@media (min-width: 992px) {
+  .boton__custom-hero1:hover {
+    animation-duration: 0.4s;
+  }
+}
+@media (min-width: 1200px) {
+  .boton__custom-hero1:hover {
+    animation-duration: 0.2s;
+  }
+
+  .boton__custom-hero2:hover {
+    animation-duration: 0.4s;
   }
 }
 .navbar-toggler {
@@ -10496,7 +10711,6 @@ main {
 }
 
 .dropdown-menu {
-  left: -60px;
   font-size: 2rem;
 }
 

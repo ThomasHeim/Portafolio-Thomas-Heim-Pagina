@@ -31,17 +31,27 @@
 }
 .navegacion__contenido{
     a{
-        mix-blend-mode: difference;
-        color: white !important;
+        color: black !important;
         &:hover{
-            text-decoration: underline;
+            animation: hover__botones-nav;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+        }
+
+        &:hover:after{
+            color: white;
+            mix-blend-mode: difference;
         }
     }
 }
 
+
 .navegacion__contacto{
     z-index: 9998;
     mix-blend-mode: difference;
+    will-change: opacity;
+    background-color: white;
+    filter: invert(100%);
     width: 100%;
     padding-right: 1%;
     position: fixed;
@@ -52,8 +62,26 @@
     font-family: $bebas;
     font-size: 20px;
 
+    &-elemento{
+        margin-bottom: 0.5rem;
+        padding-top: 2px;
+    }
+
     a{
-        color: white;
+        color: black;
+        padding: 0.2rem 0.5rem;
+        line-height: 0.1;
+        
+        &:hover{
+            text-decoration: none;
+            animation: hover__botones-light;
+            -moz-animation: hover__botones-light;
+            -webkit-animation: hover__botones-light;
+            -o-animation: hover__botones-light;
+
+            animation-duration:  1s;
+            animation-fill-mode: forwards;
+        }
     }
 }
 

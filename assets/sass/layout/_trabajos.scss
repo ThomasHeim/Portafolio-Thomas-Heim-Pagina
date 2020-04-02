@@ -21,6 +21,7 @@ main{
 @media (min-width: 768px) {
     .trabajos{
         padding-top: 80px;
+        padding-bottom: 40px;
     
         &__boton{
             @include bebas-l;
@@ -32,7 +33,8 @@ main{
 // Large devices (desktops, less than 1200px)
 @media (min-width: 1199.98px) {
     .trabajos{
-        padding-top: 130px;
+        padding-top: 120px;
+        padding-bottom: 100px;
         &__boton{
             @include bebas-lg-l;
             margin-bottom:  40px;

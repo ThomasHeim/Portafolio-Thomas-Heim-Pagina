@@ -1,15 +1,180 @@
-.boton__custom{
-    mix-blend-mode: difference;
+/*Botones recurrentes*/
+
+
+/*Botones del home*/
+
+.boton__custom-hero1{
+    mix-blend-mode: normal;
+    background-color: black;
+    text-align: center;
+    padding: 10px 8px 2px 8px;
+    color: white;
+    line-height: 1;
+    white-space: nowrap;
+    
+    & a{
+        color: white;
+        text-decoration: none;
+    }
+
+    & a:hover{
+        color: white;
+        mix-blend-mode: difference;
+    }
+    /*&:not(:hover){
+        animation: hover__botones;
+        -moz-animation: hover__botones;
+        -webkit-animation: hover__botones;
+        -o-animation: hover__botones;
+
+        animation-duration:  0.5s;
+        animation-direction: reverse;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }*/
+    &:hover{
+
+        animation: hover__botones-dark;
+        -moz-animation: hover__botones-dark;
+        -webkit-animation: hover__botones-dark;
+        -o-animation: hover__botones-dark;
+
+        animation-duration:  0.6s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        /*box-shadow: inset 548px 0.01px 0.01px 0.01px white;
+        color: black;
+        mix-blend-mode: difference;
+        transition: box-shadow ease 0.5s;*/
+    }
+}
+
+.boton__custom-hero2{
+    mix-blend-mode: normal;
+    background-color: black;
+    text-align: center;
+    padding: 10px 8px 2px 8px;
+    color: white;
+    line-height: 1;
+    white-space: nowrap;
+    
+    & a{
+        color: white;
+        text-decoration: none;
+    }
+
+    & a:hover{
+        color: white;
+        mix-blend-mode: difference;
+    }
+    /*&:not(:hover){
+        animation: hover__botones;
+        -moz-animation: hover__botones;
+        -webkit-animation: hover__botones;
+        -o-animation: hover__botones;
+
+        animation-duration:  0.5s;
+        animation-direction: reverse;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }*/
+    &:hover{
+
+        animation: hover__botones-dark;
+        -moz-animation: hover__botones-dark;
+        -webkit-animation: hover__botones-dark;
+        -o-animation: hover__botones-dark;
+
+        animation-duration:  1s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        /*box-shadow: inset 548px 0.01px 0.01px 0.01px white;
+        color: black;
+        mix-blend-mode: difference;
+        transition: box-shadow ease 0.5s;*/
+    }
+}
+
+.boton__custom-trabajos{
+    mix-blend-mode: normal;
     background-color: white;
     text-align: center;
     padding: 10px 8px 2px 8px;
     color: black;
     line-height: 1;
+    white-space: nowrap;
+    
+    & a{
+        color: black;
+        text-decoration: none;
+    }
+
+    & a:hover{
+        color: white;
+        mix-blend-mode: difference;
+    }
+    /*&:not(:hover){
+        animation: hover__botones;
+        -moz-animation: hover__botones;
+        -webkit-animation: hover__botones;
+        -o-animation: hover__botones;
+
+        animation-duration:  0.5s;
+        animation-direction: reverse;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }*/
+    &:hover{
+
+        animation: hover__botones-dark;
+        -moz-animation: hover__botones-dark;
+        -webkit-animation: hover__botones-dark;
+        -o-animation: hover__botones-dark;
+
+        animation-duration:  10s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        /*box-shadow: inset 548px 0.01px 0.01px 0.01px white;
+        color: black;
+        mix-blend-mode: difference;
+        transition: box-shadow ease 0.5s;*/
+    }
 }
+
+
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    .boton__custom{
+    .boton__custom-hero1{
         padding: 15px 8px 5px 8px;
+        &:hover{
+            animation-duration: 0.8s;
+        }
+    }
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .boton__custom-hero1{
+        &:hover{
+            animation-duration: 0.4s;
+        }
+    }
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .boton__custom-hero1{
+        &:hover{
+            animation-duration: 0.2s;
+        }
+    }
+
+    .boton__custom-hero2{
+        &:hover{
+            animation-duration: 0.4s;
+        }
     }
 }
