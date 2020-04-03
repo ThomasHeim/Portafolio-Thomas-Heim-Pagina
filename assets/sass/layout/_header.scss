@@ -8,50 +8,6 @@
         margin-top: 20px;
         text-align: right;
     }
-
-    &__texto{
-        white-space: nowrap;
-    }
-    &__texto-1{
-        @include bebas-2xl;
-        color: black;
-        font-size: 14.757481940144478vh;
-    }
-    &__texto-2{
-        @include bebas-s;
-        color: black;
-        font-size: 5.159958720330238vh;
-    }
-    &__boton-1{
-        @include bebas-l;
-        font-size: 9vh;
-    }
-    &__boton-2{
-        @include bebas-m;
-        font-size: 7vh;
-        margin: 5px; 
-    }
-    /*&__texto-1{
-        @include bebas-sm-2xl;
-        font-size: 6.191950464396285vh;
-        color: black;
-    }
-    &__texto-2{
-        @include bebas-sm-s;
-        color: black;
-        font-size: 2.063983488132095vh;
-    }
-    &__boton-1{
-        @include bebas-sm-l;
-        white-space: nowrap;
-        color: black;
-         font-size: 4.12796697626419vh;
-    }
-    &__boton-2{
-        @include bebas-sm-m;
-        color: black;
-        font-size: 3.0959752321981426vh;
-    }*/
 }
 
 
@@ -63,24 +19,6 @@
         &__container{
             max-width: 90%;
         }
-
-        /*&__texto-1{
-            @include bebas-2xl;
-            font-size: 14.757481940144478vh;
-        }
-        &__texto-2{
-            @include bebas-s;
-            font-size: 5.159958720330238vh;
-        }
-        &__boton-1{
-            @include bebas-l;
-            font-size: 9.597523219814242vh;
-        }
-        &__boton-2{
-            @include bebas-m;
-            font-size: 7.430340557275541vh;
-            margin: 10px 5px; 
-        }*/
     }
 }
 
@@ -92,24 +30,6 @@
 
         &__container{
             max-width: 90%;
-        }
-
-        &__texto-1{
-            @include bebas-lg-2xl;
-            font-size: 21.671826625387vh;
-        }
-        &__texto-2{
-            @include bebas-lg-s;
-            font-size: 6.191950464396285vh;
-        }
-        &__boton-1{
-            @include bebas-lg-l;
-            font-size: 13.415892672858616vh;
-        }
-        &__boton-2{
-            @include bebas-lg-m;
-            font-size: 9.803921568627452vh;
-            margin: 6px 5px; 
         }
     }
 }

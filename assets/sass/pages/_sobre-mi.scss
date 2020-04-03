@@ -1,10 +1,113 @@
 
-
+//hero 
 .sobremi__hero{
-    background: url(../../../assets/img/Graduadisimo-campeon-color.png) white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color: black;
     height: 100vh;
     width: 100%;
+}
+
+.hero__container{
+    padding-top: 50%;
+}
+
+.hero__texto-1{
+    font-size: 14.757481940144478vh;
+}
+
+//experiencia
+.experiencia{
+    background-color: white;
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+    &__contenido{
+        padding-top: 20px;
+    }
+}
+
+.experiencia__trabajo{
+    margin-bottom: 10%;
+    &-duracion{
+        color: darkgray;
+    }
+}
+
+
+//valores
+.valores{
+    background-color: black;
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+    &__contenido{
+        padding-top: 20px;
+    }
+}
+
+.valores__elemento{
+    margin-bottom: 10%;
+}
+
+//testimonio
+.testimonio{
+    background-color: white;
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .sobremi__hero{
+        background: url(../../../assets/img/fotoportada.jpg) black;
+        background-position: 80% 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+
+    .hero__parrafo-1{
+        &:hover{
+        animation: hover__textosobreimagen;
+        -moz-animation: hover__textosobreimagen;
+        -webkit-animation: hover__textosobreimagen;
+        -o-animation: hover__textosobreimagen;
+
+        animation-duration:  0.5s;
+        animation-fill-mode: forwards;
+        }
+    }
+        
+    .hero__container{
+        padding-top: 0%;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .sobremi__hero{
+    background-position: 80% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+    .hero__parrafo-1{
+        &:hover{
+        animation: none;
+        -moz-animation: none;
+        -webkit-animation: none;
+        -o-animation: none;
+
+        animation-duration:  0.2s;
+        animation-fill-mode: forwards;
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .hero__texto-1{
+        font-size: 20vh;
+    }
 }

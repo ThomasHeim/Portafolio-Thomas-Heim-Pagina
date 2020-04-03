@@ -58,3 +58,20 @@
         mix-blend-mode: exclusion;
     }
 }
+
+@keyframes hover__textosobreimagen{
+    0%{
+        box-shadow: inset 0px 0.01px 0.01px 0.01px black;
+    }
+    1%{
+        box-shadow: inset 1px 0.01px 0.01px 0.01px white;
+        color: black;
+        opacity: 1;
+        font-weight: 600;
+    }
+    100%{
+        box-shadow: inset 750px 0.01px 0.01px 0.01px white;
+        color: black;
+        font-weight: 600;
+    }
+}

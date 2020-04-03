@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Fuentes-->
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap&subset=latin-ext" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/41b8753ddc.js" crossorigin="anonymous"></script>  
     <!--Mi estilo-->
@@ -24,7 +24,7 @@
 <body>
     <!--Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light navegacion" id="navegacion">
-        <a class="navbar-brand navegacion__logo" href="#"><svg class="navegacion__logo-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296.8 129.2"><polygon points="260.8 0 198.6 71.9 176.1 53.3 222.2 0 186.3 0 155.2 36 132.4 17.2 111.7 0 70.1 0 94.4 20.1 0 129.2 36 129.2 115.4 37.5 137.8 56 74.4 129.2 110.3 129.2 158.7 73.3 181.2 92 148.9 129.2 184.9 129.2 201.8 109.6 219.6 89.1 296.8 0 "/></svg></a>
+        <a class="navbar-brand navegacion__logo" href="index.html"><svg class="navegacion__logo-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296.8 129.2"><polygon points="260.8 0 198.6 71.9 176.1 53.3 222.2 0 186.3 0 155.2 36 132.4 17.2 111.7 0 70.1 0 94.4 20.1 0 129.2 36 129.2 115.4 37.5 137.8 56 74.4 129.2 110.3 129.2 158.7 73.3 181.2 92 148.9 129.2 184.9 129.2 201.8 109.6 219.6 89.1 296.8 0 "/></svg></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -67,9 +67,64 @@
 
     <!--Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero -->
     <header class="hero sobremi__hero">
-        <h1>Un poco sobre mi</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magni est doloremque sequi dolores nam neque qui! Eum obcaecati corrupti nam, delectus facilis ab rem nostrum reprehenderit temporibus fugiat hic?</p>
+      <div class="container-fluid hero__container"> 
+        <div class="row">
+          <h1 class="col-md-4 col-lg-12 hero__texto-1 texto__dark">Un poco sobre mi</h1>
+        </div>
+        <div class="row">
+          <p class="col-md-5 hero__parrafo-1 texto__dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magni est doloremque sequi dolores nam neque qui! Eum obcaecati corrupti nam, delectus facilis ab rem nostrum reprehenderit temporibus fugiat hic?</p>
+        </div>
+      </div>
     </header>
+
+    <!--Experiencia Experiencia Experiencia Experiencia Experiencia Experiencia Experiencia -->
+    <section class="experiencia">
+      <div class="container">
+        <div class="row">
+          <h1 class="col-md-4 col-lg-3 articulo__titulo sobremi__titulo-experiencia">¿En donde he metido mano antes?</h1>
+          <div class="col-md-7 offset-md-1 experiencia__contenido">
+            <h3 class="experiencia__trabajo articulo__subtitulo-1"><span class="experiencia__trabajo-titulo">Nombre Trabajo</span> // <span class="experiencia__trabajo-rol">diseñador xx</span> <br>// <span class="experiencia__trabajo-duracion">2015-2016</span></h3>
+            <h3 class="experiencia__trabajo articulo__subtitulo-1"><span class="experiencia__trabajo-titulo">Nombre Trabajo</span> // <span class="experiencia__trabajo-rol">diseñador xx</span> <br>// <span class="experiencia__trabajo-duracion">2015-2016</span></h3>
+            <h3 class="experiencia__trabajo articulo__subtitulo-1"><span class="experiencia__trabajo-titulo">Nombre Trabajo</span> // <span class="experiencia__trabajo-rol">diseñador xx</span> <br>// <span class="experiencia__trabajo-duracion">2015-2016</span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--valores valores valores valores valores valores valores valores valores valores valores -->
+    <section class="valores">
+      <div class="container">
+        <div class="row">
+          <h1 class="col-md-4 col-lg-3 articulo__titulo sobremi__titulo-experiencia texto__dark">¿Y cuales son mis valores?</h1>
+          <div class="col-md-7 offset-md-1 valores__contenido">
+            <div class="valores__elemento">
+              <h3 class="articulo__subtitulo-1 texto__dark">// Nombre valor</h3>
+              <p class="articulo__parrafo-1 texto__dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquam fugiat, quam et atque ea suscipit, eaque distinctio eveniet ab aut pariatur sit tenetur quidem consectetur beatae. Porro, beatae nam?</p>
+            </div>
+            <div class="valores__elemento">
+              <h3 class="articulo__subtitulo-1 texto__dark">// Nombre valor</h3>
+              <p class="articulo__parrafo-1 texto__dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquam fugiat, quam et atque ea suscipit, eaque distinctio eveniet ab aut pariatur sit tenetur quidem consectetur beatae. Porro, beatae nam?</p>
+            </div>
+            <div class="valores__elemento">
+              <h3 class="articulo__subtitulo-1 texto__dark">// Nombre valor</h3>
+              <p class="articulo__parrafo-1 texto__dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquam fugiat, quam et atque ea suscipit, eaque distinctio eveniet ab aut pariatur sit tenetur quidem consectetur beatae. Porro, beatae nam?</p>
+            </div>s
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Testimonio Testimonio Testimonio Testimonio Testimonio Testimonio Testimonio Testimonio -->
+    <section class="testimonio">
+      <div class="container">
+        <div class="row">
+          <h1 class="articulo__titulo testimonio__titulo">Testimonio</h1>
+        </div>
+        <div class="row">
+          <p class="articulo__parrafo-1">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae veniam reprehenderit temporibus commodi dicta a praesentium accusamus atque illo sapiente cupiditate expedita consectetur non, porro asperiores tenetur laboriosam repellat voluptate!"</p>
+        </div>
+      </div>
+    </section>
 
 </body>
 </html>

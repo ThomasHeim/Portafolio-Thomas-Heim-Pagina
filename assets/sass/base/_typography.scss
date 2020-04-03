@@ -5,3 +5,99 @@ html{
     -moz-text-stroke-color: same color as text;
 
 }
+.hero{
+    &__texto{
+        white-space: nowrap;
+    }
+    &__texto-1{
+        @include bebas-2xl;
+        color: black;
+        font-size: 14.757481940144478vh;
+    }
+    &__texto-2{
+        @include bebas-s;
+        color: black;
+        font-size: 5.159958720330238vh;
+    }
+    &__boton-1{
+        @include bebas-l;
+        font-size: 9vh;
+    }
+    &__boton-2{
+        @include bebas-m;
+        font-size: 7vh;
+        margin: 5px; 
+    }
+    &__parrafo-1{
+        @include montserrat-mv-texto;
+    }
+}
+
+.articulo{
+    &__titulo{
+        @include bebas-m;
+        color: black;
+    }
+    &__subtitulo-1{
+        @include bebas-s;
+        color: black;
+    }
+    &__parrafo-1{
+        @include montserrat-mv-texto;
+    }
+}
+
+
+
+.texto__dark{
+    color: white !important;
+    font-weight: 400 !important;
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .hero{
+        margin: 0 auto;
+
+        &__parrafo-1{
+            @include montserrat-texto;
+        }
+    }
+    
+    .articulo{
+        &__titulo{
+            @include bebas-l;
+            color: black;
+        }
+        &__parrafo-1{
+            @include montserrat-texto;
+        }
+    }
+}
+
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 1199.98px) {
+    .hero{
+        margin: 0 auto;
+
+        &__texto-1{
+            @include bebas-lg-2xl;
+            font-size: 21.671826625387vh;
+        }
+        &__texto-2{
+            @include bebas-lg-s;
+            font-size: 6.191950464396285vh;
+        }
+        &__boton-1{
+            @include bebas-lg-l;
+            font-size: 13.415892672858616vh;
+        }
+        &__boton-2{
+            @include bebas-lg-m;
+            font-size: 9.803921568627452vh;
+            margin: 6px 5px; 
+        }
+    }
+}

@@ -66,6 +66,22 @@
     mix-blend-mode: exclusion;
   }
 }
+@keyframes hover__textosobreimagen {
+  0% {
+    box-shadow: inset 0px 0.01px 0.01px 0.01px black;
+  }
+  1% {
+    box-shadow: inset 1px 0.01px 0.01px 0.01px white;
+    color: black;
+    opacity: 1;
+    font-weight: 600;
+  }
+  100% {
+    box-shadow: inset 750px 0.01px 0.01px 0.01px white;
+    color: black;
+    font-weight: 600;
+  }
+}
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -10316,6 +10332,117 @@ html {
   -moz-text-stroke-color: same color as text;
 }
 
+.hero__texto {
+  white-space: nowrap;
+}
+.hero__texto-1 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 14.7574819401vh;
+  color: black;
+  font-size: 14.7574819401vh;
+}
+.hero__texto-2 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 5rem;
+  color: black;
+  font-size: 5.1599587203vh;
+}
+.hero__boton-1 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 9.375rem;
+  font-size: 9vh;
+}
+.hero__boton-2 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 7.1875rem;
+  font-size: 7vh;
+  margin: 5px;
+}
+.hero__parrafo-1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.articulo__titulo {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 7.1875rem;
+  color: black;
+}
+.articulo__subtitulo-1 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 5rem;
+  color: black;
+}
+.articulo__parrafo-1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.texto__dark {
+  color: white !important;
+  font-weight: 400 !important;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    margin: 0 auto;
+  }
+  .hero__parrafo-1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  .articulo__titulo {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 9.375rem;
+    color: black;
+  }
+  .articulo__parrafo-1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .hero {
+    margin: 0 auto;
+  }
+  .hero__texto-1 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 21rem;
+    font-size: 21.6718266254vh;
+  }
+  .hero__texto-2 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 6rem;
+    font-size: 6.1919504644vh;
+  }
+  .hero__boton-1 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 13rem;
+    font-size: 13.4158926729vh;
+  }
+  .hero__boton-2 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 9.5rem;
+    font-size: 9.8039215686vh;
+    margin: 6px 5px;
+  }
+}
 #navegacion {
   z-index: 9999;
 }
@@ -10399,83 +10526,15 @@ html {
   background-color: #ffffff;
   padding-top: 80px;
   margin: 0 0%;
-  /*&__texto-1{
-      @include bebas-sm-2xl;
-      font-size: 6.191950464396285vh;
-      color: black;
-  }
-  &__texto-2{
-      @include bebas-sm-s;
-      color: black;
-      font-size: 2.063983488132095vh;
-  }
-  &__boton-1{
-      @include bebas-sm-l;
-      white-space: nowrap;
-      color: black;
-       font-size: 4.12796697626419vh;
-  }
-  &__boton-2{
-      @include bebas-sm-m;
-      color: black;
-      font-size: 3.0959752321981426vh;
-  }*/
 }
 .hero__parrafo-2__container {
   margin-top: 20px;
   text-align: right;
 }
-.hero__texto {
-  white-space: nowrap;
-}
-.hero__texto-1 {
-  font-family: "Bebas Neue", cursive;
-  font-weight: 400;
-  font-size: 14.375rem;
-  color: black;
-  font-size: 14.7574819401vh;
-}
-.hero__texto-2 {
-  font-family: "Bebas Neue", cursive;
-  font-weight: 400;
-  font-size: 5rem;
-  color: black;
-  font-size: 5.1599587203vh;
-}
-.hero__boton-1 {
-  font-family: "Bebas Neue", cursive;
-  font-weight: 400;
-  font-size: 9.375rem;
-  font-size: 9vh;
-}
-.hero__boton-2 {
-  font-family: "Bebas Neue", cursive;
-  font-weight: 400;
-  font-size: 7.1875rem;
-  font-size: 7vh;
-  margin: 5px;
-}
 
 @media (min-width: 768px) {
   .hero {
     margin: 0 auto;
-    /*&__texto-1{
-        @include bebas-2xl;
-        font-size: 14.757481940144478vh;
-    }
-    &__texto-2{
-        @include bebas-s;
-        font-size: 5.159958720330238vh;
-    }
-    &__boton-1{
-        @include bebas-l;
-        font-size: 9.597523219814242vh;
-    }
-    &__boton-2{
-        @include bebas-m;
-        font-size: 7.430340557275541vh;
-        margin: 10px 5px; 
-    }*/
   }
   .hero__container {
     max-width: 90%;
@@ -10487,31 +10546,6 @@ html {
   }
   .hero__container {
     max-width: 90%;
-  }
-  .hero__texto-1 {
-    font-family: "Bebas Neue", cursive;
-    font-weight: 400;
-    font-size: 21rem;
-    font-size: 21.6718266254vh;
-  }
-  .hero__texto-2 {
-    font-family: "Bebas Neue", cursive;
-    font-weight: 400;
-    font-size: 6rem;
-    font-size: 6.1919504644vh;
-  }
-  .hero__boton-1 {
-    font-family: "Bebas Neue", cursive;
-    font-weight: 400;
-    font-size: 13rem;
-    font-size: 13.4158926729vh;
-  }
-  .hero__boton-2 {
-    font-family: "Bebas Neue", cursive;
-    font-weight: 400;
-    font-size: 9.5rem;
-    font-size: 9.8039215686vh;
-    margin: 6px 5px;
   }
 }
 main {
@@ -10709,14 +10743,99 @@ main {
   }
 }
 .sobremi__hero {
-  background: url(../../../assets/img/Graduadisimo-campeon-color.png) white;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-color: black;
   height: 100vh;
   width: 100%;
 }
 
+.hero__container {
+  padding-top: 50%;
+}
+
+.hero__texto-1 {
+  font-size: 14.7574819401vh;
+}
+
+.experiencia {
+  background-color: white;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.experiencia__contenido {
+  padding-top: 20px;
+}
+
+.experiencia__trabajo {
+  margin-bottom: 10%;
+}
+.experiencia__trabajo-duracion {
+  color: darkgray;
+}
+
+.valores {
+  background-color: black;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.valores__contenido {
+  padding-top: 20px;
+}
+
+.valores__elemento {
+  margin-bottom: 10%;
+}
+
+.testimonio {
+  background-color: white;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .sobremi__hero {
+    background: url(../../../assets/img/fotoportada.jpg) black;
+    background-position: 80% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .hero__parrafo-1:hover {
+    animation: hover__textosobreimagen;
+    -moz-animation: hover__textosobreimagen;
+    -webkit-animation: hover__textosobreimagen;
+    -o-animation: hover__textosobreimagen;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .hero__container {
+    padding-top: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .sobremi__hero {
+    background-position: 80% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .hero__parrafo-1:hover {
+    animation: none;
+    -moz-animation: none;
+    -webkit-animation: none;
+    -o-animation: none;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__texto-1 {
+    font-size: 20vh;
+  }
+}
 .navbar-toggler {
   border: none !important;
 }
