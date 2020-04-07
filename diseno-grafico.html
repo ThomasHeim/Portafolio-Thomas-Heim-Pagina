@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/41b8753ddc.js" crossorigin="anonymous"></script>  
+    <!--Mi estilo-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Favicon-->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
+
+    <!--js js js js js js js-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
+    <script src="assets/js/button-hover.js"></script>
+    <!--js js js js js js js--> 
+    <title>Thomas Heim | Diseño gráfico</title>
+</head>
+<body>
+  <!--Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navegacion" id="navegacion">
+      <a class="navbar-brand navegacion__logo" href="index.html"><svg class="navegacion__logo-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296.8 129.2"><polygon points="260.8 0 198.6 71.9 176.1 53.3 222.2 0 186.3 0 155.2 36 132.4 17.2 111.7 0 70.1 0 94.4 20.1 0 129.2 36 129.2 115.4 37.5 137.8 56 74.4 129.2 110.3 129.2 158.7 73.3 181.2 92 148.9 129.2 184.9 129.2 201.8 109.6 219.6 89.1 296.8 0 "/></svg></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navegacion__contenido" id="navbarNav">
+        <ul class="navbar-nav navegacion__contenido-lista">
+          <li class="nav-item navegacion__quiensoy">
+            <a class="nav-link navegacion__contenido-link" href="sobre-mi.html">Quien soy <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item d-md-none">
+            <a class="nav-link navegacion__contenido-link" href="#">Diseño UX<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item d-md-none">
+            <a class="nav-link navegacion__contenido-link" href="#">Diseño gráfico<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item d-md-none">
+            <a class="nav-link navegacion__contenido-link" href="ilustracion.html">Ilustración<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown d-none d-md-block">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Mis trabajos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Diseño UX</a>
+              <a class="dropdown-item" href="#">Diseño UI</a>
+              <a class="dropdown-item" href="ilustracion.html">Ilustración</a>
+            </div>
+          </li>
+        </ul> 
+      </div>
+  </nav>
+
+  <ul class="navegacion__contacto">
+    <li class="navegacion__contacto-elemento">
+      <a class="navegacion__contacto-link" href="">Mail</a>
+    </li>
+    <li class="navegacion__contacto-elemento">
+      <a class="navegacion__contacto-link" href="">LinkedIn</a>
+    </li>
+  </ul>
+
+
+  <div class="wrapper">
+    <header id="panel__fijo-disenografico" class="panel__fijo panel  galeria__header">
+      <div class="container galeria__header-contenedor">
+        <img id="galeria__header-imagen__diseno" class="galeria__header-imagen" src="assets/img/Logo-Portafolio-01.svg" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <h1 id="galeria__header-titulo__diseno" class="col-12 offset-md-2 galeria__header-titulo">//Algunos de mis <br>diseños</h1>
+        </div>
+    </div>
+    </header>
+
+    <!--ilustracion-->
+    <section id="galeria" class="panel panel__galeria">
+      <button class="btn__invisible"><img src="assets/img/ilustracion1.png" alt="" class="img__btn" data-toggle="modal" data-target="#elemento1"></button>
+      <button class="btn__invisible"><img src="assets/img/ilustracion2.png" alt="" class="img__btn" data-toggle="modal" data-target="#elemento2"></button>
+      <button class="btn__invisible"><img src="assets/img/ilustracion3.png" alt="" class="img__btn" data-toggle="modal" data-target="#elemento3"></button>
+      <button class="btn__invisible"><img src="assets/img/ilustracion4.png" alt="" class="img__btn" data-toggle="modal" data-target="#elemento4"></button>
+      <button class="btn__invisible"><img src="assets/img/ilustracion5.png" alt="" class="img__btn" data-toggle="modal" data-target="#elemento5"></button>
+      <button class="btn__invisible"><img src="assets/img/ilustracion6.png" alt="" class="img__btn" data-toggle="modal" data-target="#elemento6"></button>
+      <button class="btn__invisible"><img src="assets/img/ilustracion7.png" alt="" class="img__btn" data-toggle="modal" data-target="#elemento7"></button>
+      <button class="btn__invisible"><img src="assets/img/ilustracion8.png" alt="" class="img__btn" data-toggle="modal" data-target="#elemento8"></button>
+      <button class="btn__invisible"><img src="assets/img/ilustracion9.png" alt="" class="img__btn" data-toggle="modal" data-target="#elemento9"></button>
+      <button class="btn__invisible"><img src="assets/img/ilustracion10.png" alt="" class="img__btn" data-toggle="modal" data-target="#elemento10"></button>
+    </section>   
+
+    <!--MODALES-->
+    <div class="galeria__modales">
+
+      <!--elemento 1-->
+      <div class="modal fade" id="elemento1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-body">
+              <img class="modal__imagen" src="assets/img/ilustracion1.png" alt="Cronicas-del-estallido-1">
+            </div>
+        </div>
+      </div>
+
+      <!--elemento 2-->
+      <div class="modal fade" id="elemento2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-body">
+              <img class="modal__imagen" src="assets/img/ilustracion2.png" alt="Cronicas-del-estallido-1">
+            </div>
+        </div>
+      </div>
+
+      <!--elemento3-->
+      <div class="modal fade" id="elemento3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-body">
+              <img class="modal__imagen" src="assets/img/ilustracion3.png" alt="Cronicas-del-estallido-1">
+            </div>
+        </div>
+      </div>
+
+      <!--elemento 4-->
+      <div class="modal fade" id="elemento4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-body">
+              <img class="modal__imagen" src="assets/img/ilustracion4.png" alt="Cronicas-del-estallido-1">
+            </div>
+        </div>
+      </div>
+
+      <!--elemento 5-->
+      <div class="modal fade" id="elemento5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-body">
+              <img class="modal__imagen" src="assets/img/ilustracion5.png" alt="Cronicas-del-estallido-1">
+            </div>
+        </div>
+      </div>
+
+      <!--elemento 6-->
+      <div class="modal fade" id="elemento6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-body">
+              <img class="modal__imagen" src="assets/img/ilustracion6.png" alt="Cronicas-del-estallido-1">
+            </div>
+        </div>
+      </div>
+
+      <!--elemento 7-->
+      <div class="modal fade" id="elemento7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-body">
+              <img class="modal__imagen" src="assets/img/ilustracion7.png" alt="Cronicas-del-estallido-1">
+            </div>
+        </div>
+      </div>
+
+      <!--elemento 8-->
+      <div class="modal fade" id="elemento8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-body">
+              <img class="modal__imagen" src="assets/img/ilustracion8.png" alt="Cronicas-del-estallido-1">
+            </div>
+        </div>
+      </div>
+
+      <!--elemento 9-->
+      <div class="modal fade" id="elemento9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-body">
+              <img class="modal__imagen" src="assets/img/ilustracion9.png" alt="Cronicas-del-estallido-1">
+            </div>
+        </div>
+      </div>
+
+      <!--elemento 10-->
+      <div class="modal fade" id="elemento10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-body">
+              <img class="modal__imagen" src="assets/img/ilustracion10.png" alt="Cronicas-del-estallido-1">
+            </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

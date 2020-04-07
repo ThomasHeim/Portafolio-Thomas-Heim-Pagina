@@ -30,6 +30,7 @@ html{
     }
     &__parrafo-1{
         @include montserrat-mv-texto;
+        line-height: 2rem;
     }
 }
 
@@ -44,6 +45,7 @@ html{
     }
     &__parrafo-1{
         @include montserrat-mv-texto;
+        line-height: 2rem;
     }
 }
 
@@ -62,6 +64,7 @@ html{
 
         &__parrafo-1{
             @include montserrat-texto;
+            line-height: 3rem;
         }
     }
     
@@ -72,13 +75,14 @@ html{
         }
         &__parrafo-1{
             @include montserrat-texto;
+            line-height: 3rem;
         }
     }
 }
 
 
 // Large devices (desktops, less than 1200px)
-@media (min-width: 1199.98px) {
+@media (min-width: 1200px) {
     .hero{
         margin: 0 auto;
 

@@ -7,11 +7,15 @@
 }
 
 .hero__container{
-    padding-top: 50%;
+    padding-top: 20%;
 }
 
 .hero__texto-1{
     font-size: 14.757481940144478vh;
+}
+
+.boton__custom{
+    margin-top: 20px;
 }
 
 //experiencia
@@ -58,6 +62,12 @@
     padding-bottom: 40px;
 }
 
+.articulo__firma{
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .sobremi__hero{
@@ -91,6 +101,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .hero__texto-1{
+        font-size: 20vh;
+    }
 
     .hero__parrafo-1{
         &:hover{
@@ -102,12 +119,5 @@
         animation-duration:  0.2s;
         animation-fill-mode: forwards;
         }
-    }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    .hero__texto-1{
-        font-size: 20vh;
     }
 }

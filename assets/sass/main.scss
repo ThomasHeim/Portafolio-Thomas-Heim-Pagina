@@ -14,12 +14,14 @@
 @import 'layout/navigation';
 @import 'layout/grid';
 @import 'layout/header';
+@import 'layout/gallery';
 @import 'layout/trabajos';
 @import 'layout/footer';
 @import 'layout/sidebar';
 @import 'layout/forms';
 
 @import 'components/buttons';
+@import 'components/wrapper';
 @import 'components/carousel';
 @import 'components/cover';
 @import 'components/dropdown';
@@ -27,6 +29,7 @@
 @import 'pages/home';
 @import 'pages/contact';
 @import 'pages/sobre-mi';
+@import 'pages/diseno-grafico';
 
 @import 'themes/theme';
 @import 'themes/admin';

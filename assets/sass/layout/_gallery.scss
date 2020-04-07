@@ -1,0 +1,169 @@
+
+
+//haz que todos los paneles sean fullpage
+.panel{
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+
+//primer panel fijo
+.panel__fijo{
+    background: black;
+    height: 100%;
+    position: fixed;
+    color: white;
+    top: 0;
+    left: 0;
+    /*evita que el panel se superponga*/
+    z-index: -99;
+}
+
+//segundo panel de galeria
+#galeria{
+    margin-top: 220%; 
+    background: transparent;
+
+    line-height: 0;
+
+    -webkit-column-count: 1;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 1;
+    -moz-column-gap: 0px;
+    column-count: 1;
+    column-gap: 0px;
+
+    & button{
+        width: 100% !important;
+        height:auto !important;
+        transition:filter .2s
+    }
+
+    & img{
+        width: 100% !important;
+        height:auto !important;
+        transition:filter .2s
+    }
+}
+
+
+//header
+.galeria__header{
+
+    &-contenedor{
+        position: relative;
+        text-align: center;
+        padding-top: 20vh;
+    }
+
+    &-imagen{
+        width: 30vh;
+        height: 30vh;
+        object-fit: cover;
+    }
+    
+    &-titulo{
+        @include bebas-xl;
+        font-size: 9vh;
+        color: white;
+        margin-top: 10vh;
+    }
+}
+
+
+.img__btn:hover {
+    filter: brightness(1.5);
+}
+
+.modal-dialog{
+    margin-top: 45%;
+    max-width: 50%;
+}
+
+.modal__imagen{
+    height: 100%;
+    width: 210%;
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #galeria{
+        margin-top: 150%; 
+
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+
+    .modal-dialog{
+        margin-top: 10%;
+        max-width: 80%;
+    }
+    
+    .modal__imagen{
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .galeria__header{
+
+        &-contenedor{
+            padding-top: 15vh;
+        }
+    
+        &-imagen{
+            width: 40vh;
+            height: 40vh;
+            object-fit: cover;
+        }
+        &-titulo{
+            font-size: 10vh;
+            margin-top: 5vh;
+        }
+    }
+
+    #galeria{
+        margin-top: 100%; 
+
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  
+    .galeria__header{
+
+        &-titulo{
+            @include bebas-xl;
+            font-size: 12vh;
+            color: white;
+            margin-top: 8vh;
+        }
+    }
+
+    #galeria{
+        margin-top: 100%; 
+
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+
+    .modal-dialog{
+        margin-top: 0;
+        max-width: 50%;
+    }
+    
+    .modal__imagen{
+        height: 100%;
+        width: 100%;
+    }
+}

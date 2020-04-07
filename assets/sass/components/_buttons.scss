@@ -141,6 +141,54 @@
     }
 }
 
+//boton repetido
+.boton__custom{
+    @include bebas-s;
+    mix-blend-mode: normal;
+    background-color: white;
+    text-align: center;
+    padding: 10px 8px 2px 8px;
+    color: black;
+    line-height: 1;
+    white-space: nowrap;
+    
+    & a{
+        color: black;
+        text-decoration: none;
+    }
+
+    & a:hover{
+        color: white;
+        mix-blend-mode: difference;
+    }
+    /*&:not(:hover){
+        animation: hover__botones;
+        -moz-animation: hover__botones;
+        -webkit-animation: hover__botones;
+        -o-animation: hover__botones;
+
+        animation-duration:  0.5s;
+        animation-direction: reverse;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }*/
+    &:hover{
+
+        animation: hover__botones-dark;
+        -moz-animation: hover__botones-dark;
+        -webkit-animation: hover__botones-dark;
+        -o-animation: hover__botones-dark;
+
+        animation-duration:  10s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        /*box-shadow: inset 548px 0.01px 0.01px 0.01px white;
+        color: black;
+        mix-blend-mode: difference;
+        transition: box-shadow ease 0.5s;*/
+    }
+}
+
 
 
 // Medium devices (tablets, 768px and up)
