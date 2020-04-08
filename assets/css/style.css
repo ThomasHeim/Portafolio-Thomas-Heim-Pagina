@@ -10448,7 +10448,7 @@ html {
   }
 }
 #navegacion {
-  z-index: 9999;
+  z-index: 1040;
 }
 
 .navegacion {
@@ -10491,7 +10491,7 @@ html {
 }
 
 .navegacion__contacto {
-  z-index: 9998;
+  z-index: 1039;
   mix-blend-mode: difference;
   will-change: opacity;
   background-color: white;
@@ -10635,6 +10635,7 @@ html {
   .modal-dialog {
     margin-top: 10%;
     max-width: 80%;
+    pointer-events: auto;
   }
 
   .modal__imagen {
@@ -11049,7 +11050,7 @@ main {
   color: black;
 }
 #galeria__header-imagen__diseno {
-  width: 60vh;
+  width: 40vh;
   height: 40vh;
   object-fit: fill;
 }
