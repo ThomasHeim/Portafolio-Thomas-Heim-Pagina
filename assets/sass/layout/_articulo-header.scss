@@ -1,9 +1,25 @@
+//paneles
+#panel__fijo-info{
+    background: transparent
+}
+
+#panel__contextoMovil{
+    margin-top: 220%;
+    background-color: black;
+}
+
+#primer__panel{
+    margin-top: 0%;
+    background-color: blue;
+}
+
 .body__articulo-dark{
     background-color: black;
 }
 
 .articulo__header{
     border: 45px solid black;
+    border-top: 60px solid black;
     border-right: 80px solid black;
 }
 
@@ -21,39 +37,52 @@
     }
 }
 
-#panel__fijo-info{
-    background: transparent
-}
-
-#articulo__info2{
-    margin-top: 200%;
-    background-color: red;
-}
-
 .articulo__info{
     &-row{
         height: 100vh;
     }
 
-    &-datos{
-        padding-bottom: 3%;
-        padding-left: 3%;
+    &-datosContenedor{
+        margin-bottom: 45px;
+        margin-left: 45px;
+        background-color: black;
+        width: 200%;
     }
 
     &-datosTitulos{
+        background-color: black;
         text-align: right;
+        padding: 10px;
+        padding-right: 0px;
+    }
+
+    &-datosRespuestas{
+        background-color: black;
+        padding: 10px;
     }
     
 
     &-datosContenedor{
-        background-color: black;
-        padding: 10px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
 
     &-contexto{
         background-color: black;
+        margin-bottom: 80px;
+        margin-right: 120px;
+        height: 50vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    &-titulo{
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+    &-parrafo{
+        padding-top: 10px;
+        padding-left: 15px;
     }
 }
 
@@ -61,14 +90,26 @@
 @media (min-width: 768px) {
     .articulo__header{
         border: 80px solid black;
-        border-left: 120px solid black;
+        border-right: 120px solid black;
     }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
-    .articulo__header{
-        border: 80px solid black;
-        border-right: 120px solid black;
+    #primer__panel{
+        margin-top: 140%;
+        background-color: blue;
+    }
+    .articulo__info-datosContenedor{
+        margin-left: 80px;
+        margin-bottom: 80px;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    #primer__panel{
+        margin-top: 80%;
+        background-color: blue;
     }
 }

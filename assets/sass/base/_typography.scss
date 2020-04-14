@@ -11,6 +11,11 @@ html{
     }
 
     &__titulo{
+        @include bebas-m;
+        color: black;
+    }
+
+    &__subtitulo-1{
         @include bebas-s;
         color: black;
     }
@@ -20,6 +25,7 @@ html{
         color: black;
     }
 
+    //HOME
     &__texto-1{
         @include bebas-2xl;
         color: black;
@@ -40,7 +46,7 @@ html{
         margin: 5px; 
     }
     &__parrafo-1{
-        @include montserrat-mv-texto;
+        @include montserrat-sm-texto;
         line-height: 2rem;
     }
 }
@@ -60,7 +66,7 @@ html{
         color: black;
     }
     &__parrafo-1{
-        @include montserrat-mv-texto;
+        @include montserrat-sm-texto;
         line-height: 2rem;
     }
 }
@@ -79,7 +85,10 @@ html{
 
 .texto__fondo-dark{
     background: black;
-    //padding: 0px 20px;
+    padding-left: 0;
+    padding-right: 0;
+    box-shadow: 10px 0 0 #000, -10px 0 0 #000;
+    box-decoration-break: clone;
 }
 
 // Medium devices (tablets, 768px and up)

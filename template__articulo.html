@@ -70,7 +70,7 @@
     <header id="panel__fijo" class="panel__fijo panel articulo__header">
       <div class="articulo__header-fondo">
         <div class="row no-gutters justify-content-end">
-          <div class="col-6">
+          <div class="col-12">
             <div class="d-flex justify-content-end">
               <h1 class="text-right hero__titulo texto__dark"><span class="texto__fondo-dark">Titulo del proyecto</span></h1>
             </div>
@@ -79,9 +79,8 @@
       </div>
     </header>
     <section id="panel__fijo-info" class="panel__fijo panel articulo__info">
-      <div class="container-fluid articulo__info-contenedor">
-        <div class="row align-items-end justify-content-between articulo__info-row">
-          <div class="col-8 col-md-5 col-lg-4 col-xl-2 articulo__info-datos">
+        <div class="row no-gutters align-items-end justify-content-between articulo__info-row">
+          <div class="col-1 articulo__info-datos">
             <div class="articulo__info-datosContenedor">
               <div class="articulo__info-datosTitulos">
                 <h4 class="hero__subtitulo-2 texto__dark">Cliente</h4>
@@ -95,12 +94,23 @@
               </div>
             </div>
           </div>
-          <div class="col-2 articulo__info-contexto"></div>
+          <div class="d-none d-lg-block col-lg-4 articulo__info-contexto">
+            <h3 class="articulo__info-titulo hero__subtitulo-1 texto__dark">Contexto</h3> <!--Se puede cambiar "contexto" por otro titulo que haga mas sentido-->
+            <p class="articulo__info-parrafo articulo__parrafo-1 texto__dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quod nesciunt animi reprehenderit ad officia, sed soluta culpa assumenda doloremque minus in laboriosam quisquam illum quam ratione nobis eveniet? Consequuntur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus recusandae laborum est saepe fuga a harum quo eos laudantium commodi illum distinctio praesentium ipsa, deleniti voluptates incidunt, quasi accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, doloremque. Laboriosam et ea, maxime a natus, amet error placeat quas similique nobis reprehenderit magnam soluta, perferendis obcaecati dolores harum fugit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum aliquid quasi facere aspernatur quas eum, iusto ex natus exercitationem recusandae, laudantium officiis, voluptates inventore illum. Temporibus alias non ad quos.</p>
+          </div>
+        </div>
+    </section>
+    <section id="panel__contextoMovil" class="panel d-block d-lg-none articulo__info2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="articulo__info-titulo hero__subtitulo-1 texto__dark">Contexto</h3> <!--Se puede cambiar "contexto" por otro titulo que haga mas sentido-->
+            <p class="articulo__info-parrafo articulo__parrafo-1 texto__dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quod nesciunt animi reprehenderit ad officia, sed soluta culpa assumenda doloremque minus in laboriosam quisquam illum quam ratione nobis eveniet? Consequuntur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus recusandae laborum est saepe fuga a harum quo eos laudantium commodi illum distinctio praesentium ipsa, deleniti voluptates incidunt, quasi accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, doloremque. Laboriosam et ea, maxime a natus, amet error placeat quas similique nobis reprehenderit magnam soluta, perferendis obcaecati dolores harum fugit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum aliquid quasi facere aspernatur quas eum, iusto ex natus exercitationem recusandae, laudantium officiis, voluptates inventore illum. Temporibus alias non ad quos.</p>
+          </div>
         </div>
       </div>
-
     </section>
-    <section id="articulo__info2" class="panel articulo__info2 panel__sticky">
+    <section id="primer__panel" class="panel articulo__info2">
 
     </section>
 </div>

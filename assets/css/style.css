@@ -10338,6 +10338,12 @@ html {
 .hero__titulo {
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
+  font-size: 7.1875rem;
+  color: black;
+}
+.hero__subtitulo-1 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
   font-size: 5rem;
   color: black;
 }
@@ -10417,6 +10423,10 @@ html {
 
 .texto__fondo-dark {
   background: black;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: 10px 0 0 #000, -10px 0 0 #000;
+  box-decoration-break: clone;
 }
 
 @media (min-width: 768px) {
@@ -10769,12 +10779,27 @@ main {
     margin-bottom: 40px;
   }
 }
+#panel__fijo-info {
+  background: transparent;
+}
+
+#panel__contextoMovil {
+  margin-top: 220%;
+  background-color: black;
+}
+
+#primer__panel {
+  margin-top: 0%;
+  background-color: blue;
+}
+
 .body__articulo-dark {
   background-color: black;
 }
 
 .articulo__header {
   border: 45px solid black;
+  border-top: 60px solid black;
   border-right: 80px solid black;
 }
 
@@ -10790,45 +10815,68 @@ main {
   text-align: right;
 }
 
-#panel__fijo-info {
-  background: transparent;
-}
-
-#articulo__info2 {
-  margin-top: 200%;
-  background-color: red;
-}
-
 .articulo__info-row {
   height: 100vh;
 }
-.articulo__info-datos {
-  padding-bottom: 3%;
-  padding-left: 3%;
+.articulo__info-datosContenedor {
+  margin-bottom: 45px;
+  margin-left: 45px;
+  background-color: black;
+  width: 200%;
 }
 .articulo__info-datosTitulos {
+  background-color: black;
   text-align: right;
+  padding: 10px;
+  padding-right: 0px;
 }
-.articulo__info-datosContenedor {
+.articulo__info-datosRespuestas {
   background-color: black;
   padding: 10px;
+}
+.articulo__info-datosContenedor {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 .articulo__info-contexto {
   background-color: black;
+  margin-bottom: 80px;
+  margin-right: 120px;
+  height: 50vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.articulo__info-titulo {
+  padding-top: 10px;
+  padding-left: 15px;
+}
+.articulo__info-parrafo {
+  padding-top: 10px;
+  padding-left: 15px;
 }
 
 @media (min-width: 768px) {
   .articulo__header {
     border: 80px solid black;
-    border-left: 120px solid black;
+    border-right: 120px solid black;
   }
 }
 @media (min-width: 992px) {
-  .articulo__header {
-    border: 80px solid black;
-    border-right: 120px solid black;
+  #primer__panel {
+    margin-top: 140%;
+    background-color: blue;
+  }
+
+  .articulo__info-datosContenedor {
+    margin-left: 80px;
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  #primer__panel {
+    margin-top: 80%;
+    background-color: blue;
   }
 }
 /*Botones recurrentes*/

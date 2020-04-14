@@ -157,37 +157,37 @@
 
 
 /*MontSerrat Movil*/
-@mixin montserrat-mv-2xl {
+@mixin montserrat-sm-2xl {
     font-family: $montserrat;
     font-weight: $font-regular;
     font-size: $sm-xx-large;
 }
 
-@mixin montserrat-mv-xl {
+@mixin montserrat-sm-xl {
     font-family: $montserrat;
     font-weight: $font-regular;
     font-size: $sm-x-large;
 }
 
-@mixin montserrat-mv-l {
+@mixin montserrat-sm-l {
     font-family: $montserrat;
     font-weight: $font-regular;
     font-size: $sm-large;
 }
 
-@mixin montserrat-mv-m {
+@mixin montserrat-sm-m {
     font-family: $montserrat;
     font-weight: $font-regular;
     font-size: $sm-medium;
 }
 
-@mixin montserrat-mv-s {
+@mixin montserrat-sm-s {
     font-family: $montserrat;
     font-weight: $font-regular;
     font-size: $sm-small;
 }
 
-@mixin montserrat-mv-texto {
+@mixin montserrat-sm-texto {
     font-family: $montserrat;
     font-weight: $font-regular;
     font-size: $sm-texto;
