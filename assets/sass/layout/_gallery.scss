@@ -1,27 +1,11 @@
 
-
-//haz que todos los paneles sean fullpage
-.panel{
-    position: relative;
+//segundo panel de galeria
+.panel__galeria{
     width: 100%;
     z-index: 1000;
 }
-
-//primer panel fijo
-.panel__fijo{
-    background: black;
-    height: 100%;
-    position: fixed;
-    color: white;
-    top: 0;
-    left: 0;
-    /*evita que el panel se superponga*/
-    z-index: -99;
-}
-
-//segundo panel de galeria
 #galeria{
-    margin-top: 220%; 
+    margin-top: 200%; 
     background: transparent;
 
     line-height: 0;
@@ -51,7 +35,6 @@
 .galeria__header{
 
     &-contenedor{
-        position: relative;
         text-align: center;
         padding-top: 20vh;
     }
@@ -89,8 +72,6 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     #galeria{
-        margin-top: 150%; 
-
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
@@ -130,7 +111,7 @@
     }
 
     #galeria{
-        margin-top: 100%; 
+        margin-top: 80%; 
 
         -webkit-column-count: 3;
         -moz-column-count: 3;
@@ -151,8 +132,6 @@
     }
 
     #galeria{
-        margin-top: 100%; 
-
         -webkit-column-count: 4;
         -moz-column-count: 4;
         column-count: 4;
@@ -161,10 +140,5 @@
     .modal-dialog{
         margin-top: 0;
         max-width: 50%;
-    }
-    
-    .modal__imagen{
-        height: 100%;
-        width: 100%;
     }
 }

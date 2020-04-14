@@ -19,9 +19,11 @@
 @import 'layout/footer';
 @import 'layout/sidebar';
 @import 'layout/forms';
+@import 'layout/articulo-header';
 
 @import 'components/buttons';
 @import 'components/wrapper';
+@import 'components/panel';
 @import 'components/carousel';
 @import 'components/cover';
 @import 'components/dropdown';
@@ -30,6 +32,7 @@
 @import 'pages/contact';
 @import 'pages/sobre-mi';
 @import 'pages/diseno-grafico';
+@import 'pages/ilustracion';
 
 @import 'themes/theme';
 @import 'themes/admin';

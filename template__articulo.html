@@ -19,9 +19,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
     <script src="assets/js/button-hover.js" defer></script>
     <!--js js js js js js js--> 
-    <title>Thomas Heim | Diseño</title>
+    <title>Thomas Heim | NOMBRE ARTICULO</title>
 </head>
-<body>
+<body class="body__articulo-dark">
   <!--Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light navegacion" id="navegacion">
       <a class="navbar-brand navegacion__logo" href="index.html"><svg class="navegacion__logo-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296.8 129.2"><polygon points="260.8 0 198.6 71.9 176.1 53.3 222.2 0 186.3 0 155.2 36 132.4 17.2 111.7 0 70.1 0 94.4 20.1 0 129.2 36 129.2 115.4 37.5 137.8 56 74.4 129.2 110.3 129.2 158.7 73.3 181.2 92 148.9 129.2 184.9 129.2 201.8 109.6 219.6 89.1 296.8 0 "/></svg></a>
@@ -67,34 +67,43 @@
   </ul>
 <div class="wrapper">
   <!--hero hero hero hero hero hero hero hero hero hero-->
-  <header class="panel__fijo panel hero">
-    <div class="container-fluid hero__container">
-      <div class="row">
-        <h1 class="col-12 col-md-9 hero__texto"><span class="hero__texto-1">¡Hola! </span><br><span class="hero__texto-2">Soy Thomas Heim,</span> <br><button class="hero__boton-1 boton__custom-hero1"><a href="https://www.google.cl">diseñador UX/UI</a></button></h1>
+    <header id="panel__fijo" class="panel__fijo panel articulo__header">
+      <div class="articulo__header-fondo">
+        <div class="row no-gutters justify-content-end">
+          <div class="col-6">
+            <div class="d-flex justify-content-end">
+              <h1 class="text-right hero__titulo texto__dark"><span class="texto__fondo-dark">Titulo del proyecto</span></h1>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row hero__parrafo-2__container">
-        <h1 class="col-12 col-md-9 offset-md-3 hero__texto hero___parrafo-2"><span class="hero__texto-2">Tambien soy</span><button class="hero__boton-2 boton__custom-hero2"><a href="ilustracion.html">Ilustrador</a></button><span class="hero__texto-2">y</span><br><button class="hero__boton-2 boton__custom-hero2"><a href="diseno-grafico.html">diseñador gráfico</a></button></h1>
+    </header>
+    <section id="panel__fijo-info" class="panel__fijo panel articulo__info">
+      <div class="container-fluid articulo__info-contenedor">
+        <div class="row align-items-end justify-content-between articulo__info-row">
+          <div class="col-8 col-md-5 col-lg-4 col-xl-2 articulo__info-datos">
+            <div class="articulo__info-datosContenedor">
+              <div class="articulo__info-datosTitulos">
+                <h4 class="hero__subtitulo-2 texto__dark">Cliente</h4>
+                <h4 class="hero__subtitulo-2 texto__dark">Rol</h4>
+                <h4 class="hero__subtitulo-2 texto__dark">Duración</h4>
+              </div>
+              <div class="articulo__info-datosRespuestas">
+                <h4 class="hero__subtitulo-2 texto__dark">Cliente</h4>
+                <h4 class="hero__subtitulo-2 texto__dark">Rol</h4>
+                <h4 class="hero__subtitulo-2 texto__dark">Duración</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 articulo__info-contexto"></div>
+        </div>
       </div>
-    </div>
-  </header>
 
-  <!--Main Main Main Main Main Main Main Main Main Main Main  -->
-  <main id="trabajos" class="trabajos">
-    <div class="container-fluid trabajos__container panel">
-      <div class="row">
-        <button id="first" class="trabajos__boton boton__custom-trabajos" onmouseover="changeFirst(true)" onmouseout="changeFirst(false)"><a href="">Proyecto 1</a></button> 
-      </div>
-      <div class="row">
-        <button id="second" class="trabajos__boton boton__custom-trabajos" onmouseover="changeFirst(true)" onmouseout="changeFirst(false)"><a href="">Proyecto 2</a></button> 
-      </div>
-      <div class="row">
-        <button id="third" class="trabajos__boton boton__custom-trabajos"><a href="">Proyecto 3</a></button> 
-      </div>
-      <div class="row">
-        <button id="fourth" class="trabajos__boton boton__custom-trabajos"><a href="">Proyecto 4</a></button> 
-      </div>
-    </div>
-  </main>   
+    </section>
+    <section id="articulo__info2" class="panel articulo__info2 panel__sticky">
+
+    </section>
 </div>
+
 </body>
 </html>

@@ -10335,6 +10335,18 @@ html {
 .hero__texto {
   white-space: nowrap;
 }
+.hero__titulo {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 5rem;
+  color: black;
+}
+.hero__subtitulo-2 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 2rem;
+  color: black;
+}
 .hero__texto-1 {
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
@@ -10381,6 +10393,12 @@ html {
   font-size: 5rem;
   color: black;
 }
+.articulo__subtitulo-2 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 3.2rem;
+  color: black;
+}
 .articulo__parrafo-1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -10393,6 +10411,14 @@ html {
   font-weight: 400 !important;
 }
 
+.texto__fondo {
+  background: white;
+}
+
+.texto__fondo-dark {
+  background: black;
+}
+
 @media (min-width: 768px) {
   .hero {
     margin: 0 auto;
@@ -10402,6 +10428,18 @@ html {
     font-weight: 400;
     font-size: 2rem;
     line-height: 3rem;
+  }
+  .hero__titulo {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 9.375rem;
+    color: black;
+  }
+  .hero__subtitulo-2 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 3.2rem;
+    color: black;
   }
 
   .articulo__titulo {
@@ -10480,15 +10518,6 @@ html {
 .navegacion__contenido a {
   color: black !important;
 }
-.navegacion__contenido a:hover {
-  animation: hover__botones-nav;
-  animation-duration: 0.2s;
-  animation-fill-mode: forwards;
-}
-.navegacion__contenido a:hover:after {
-  color: white;
-  mix-blend-mode: difference;
-}
 
 .navegacion__contacto {
   z-index: 1039;
@@ -10525,6 +10554,17 @@ html {
   animation-fill-mode: forwards;
 }
 
+@media (min-width: 992px) {
+  .navegacion__contenido a:hover {
+    animation: hover__botones-nav;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+  }
+  .navegacion__contenido a:hover:after {
+    color: white;
+    mix-blend-mode: difference;
+  }
+}
 .hero {
   height: 100vh;
   background-color: #ffffff;
@@ -10552,25 +10592,13 @@ html {
     max-width: 90%;
   }
 }
-.panel {
-  position: relative;
+.panel__galeria {
   width: 100%;
   z-index: 1000;
 }
 
-.panel__fijo {
-  background: black;
-  height: 100%;
-  position: fixed;
-  color: white;
-  top: 0;
-  left: 0;
-  /*evita que el panel se superponga*/
-  z-index: -99;
-}
-
 #galeria {
-  margin-top: 220%;
+  margin-top: 200%;
   background: transparent;
   line-height: 0;
   -webkit-column-count: 1;
@@ -10592,7 +10620,6 @@ html {
 }
 
 .galeria__header-contenedor {
-  position: relative;
   text-align: center;
   padding-top: 20vh;
 }
@@ -10626,7 +10653,6 @@ html {
 
 @media (min-width: 768px) {
   #galeria {
-    margin-top: 150%;
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
@@ -10658,7 +10684,7 @@ html {
   }
 
   #galeria {
-    margin-top: 100%;
+    margin-top: 80%;
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
@@ -10675,7 +10701,6 @@ html {
   }
 
   #galeria {
-    margin-top: 100%;
     -webkit-column-count: 4;
     -moz-column-count: 4;
     column-count: 4;
@@ -10685,23 +10710,22 @@ html {
     margin-top: 0;
     max-width: 50%;
   }
-
-  .modal__imagen {
-    height: 100%;
-    width: 100%;
-  }
 }
 main {
   background-color: white;
 }
 
+#trabajos {
+  margin-top: 200%;
+}
+
 .trabajos {
-  padding-top: 100px;
-  height: 100%;
   background-color: black;
 }
 .trabajos__container {
+  padding-top: 20%;
   max-width: 100%;
+  margin-bottom: 20;
 }
 .trabajos__boton {
   font-family: "Bebas Neue", cursive;
@@ -10712,9 +10736,20 @@ main {
 }
 
 @media (min-width: 768px) {
-  .trabajos {
-    padding-top: 80px;
-    padding-bottom: 40px;
+  .trabajos__boton {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 9.375rem;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 992px) {
+  #trabajos {
+    margin-top: 80%;
+  }
+
+  .trabajos__container {
+    padding-top: 10%;
   }
   .trabajos__boton {
     font-family: "Bebas Neue", cursive;
@@ -10723,16 +10758,77 @@ main {
     margin-bottom: 40px;
   }
 }
-@media (min-width: 1199.98px) {
-  .trabajos {
-    padding-top: 120px;
-    padding-bottom: 100px;
+@media (min-width: 1200px) {
+  .trabajos__container {
+    padding-top: 10%;
   }
   .trabajos__boton {
     font-family: "Bebas Neue", cursive;
     font-weight: 400;
     font-size: 13rem;
     margin-bottom: 40px;
+  }
+}
+.body__articulo-dark {
+  background-color: black;
+}
+
+.articulo__header {
+  border: 45px solid black;
+  border-right: 80px solid black;
+}
+
+.articulo__header-fondo {
+  background: url(../../../assets/img/Graduadisimo-campeon-color.png) black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.articulo__header-col {
+  text-align: right;
+}
+
+#panel__fijo-info {
+  background: transparent;
+}
+
+#articulo__info2 {
+  margin-top: 200%;
+  background-color: red;
+}
+
+.articulo__info-row {
+  height: 100vh;
+}
+.articulo__info-datos {
+  padding-bottom: 3%;
+  padding-left: 3%;
+}
+.articulo__info-datosTitulos {
+  text-align: right;
+}
+.articulo__info-datosContenedor {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.articulo__info-contexto {
+  background-color: black;
+}
+
+@media (min-width: 768px) {
+  .articulo__header {
+    border: 80px solid black;
+    border-left: 120px solid black;
+  }
+}
+@media (min-width: 992px) {
+  .articulo__header {
+    border: 80px solid black;
+    border-right: 120px solid black;
   }
 }
 /*Botones recurrentes*/
@@ -10745,6 +10841,7 @@ main {
   color: white;
   line-height: 1;
   white-space: nowrap;
+  z-index: 9999 !important;
   /*&:not(:hover){
       animation: hover__botones;
       -moz-animation: hover__botones;
@@ -10934,6 +11031,31 @@ main {
   position: absolute;
   height: 100%;
   width: 100%;
+  z-index: -100;
+}
+
+.panel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  z-index: 1000;
+}
+
+.panel__fijo {
+  height: 100%;
+  position: fixed;
+  color: white;
+  top: 0;
+  left: 0;
+  /*evita que el panel se superponga*/
+  z-index: -99;
+}
+
+.panel__sticky {
+  /*HAY QUE CAMBIAR EL Z-INDEX DE ESTOS PANELES EN CADA ID PARA EVITAR EL OVERLAP*/
+  height: 100%;
+  color: white;
 }
 
 .sobremi__hero {
@@ -11053,6 +11175,10 @@ main {
   width: 40vh;
   height: 40vh;
   object-fit: fill;
+}
+
+#panel__fijo-ilustracion {
+  background: black;
 }
 
 .navbar-toggler {

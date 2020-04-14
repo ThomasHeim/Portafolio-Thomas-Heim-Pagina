@@ -32,16 +32,6 @@
 .navegacion__contenido{
     a{
         color: black !important;
-        &:hover{
-            animation: hover__botones-nav;
-            animation-duration: 0.2s;
-            animation-fill-mode: forwards;
-        }
-
-        &:hover:after{
-            color: white;
-            mix-blend-mode: difference;
-        }
     }
 }
 
@@ -85,3 +75,20 @@
     }
 }
 
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .navegacion__contenido{
+        a{
+            &:hover{
+                animation: hover__botones-nav;
+                animation-duration: 0.2s;
+                animation-fill-mode: forwards;
+            }
+
+            &:hover:after{
+                color: white;
+                mix-blend-mode: difference;
+            }
+        }
+    }    
+}
