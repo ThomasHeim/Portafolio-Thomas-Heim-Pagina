@@ -53,6 +53,7 @@
     }
 }
 
+//Elementos galeria 
 
 .img__btn:hover {
     filter: brightness(1.5);
@@ -66,6 +67,33 @@
 .modal__imagen{
     height: 100%;
     width: 210%;
+}
+
+.gallery__container{
+    position: relative;
+}
+
+
+//descripcioon
+.descripcion__wrapper{
+    position: absolute;
+    bottom: 8%;
+    left: 4%;
+    opacity: 1;
+}
+
+.descripcion__bg{
+    background-color: black;
+    display: inline-block;
+    white-space: nowrap;
+    opacity: 0;
+    //animation: descripcion__hover 0.5s ease forwards;
+}
+
+.descripcion__texto{
+    padding: 30px 10px;
+    opacity: 0;
+    //animation: descripcion__hoverTexto 0.5s ease forwards;
 }
 
 

@@ -87,6 +87,27 @@
     font-weight: 600;
   }
 }
+@keyframes descripcion__hover {
+  0% {
+    width: 0%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+@keyframes descripcion__hoverTexto {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -10417,6 +10438,13 @@ html {
   line-height: 2rem;
 }
 
+.descripcion__titulo {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 5rem;
+  color: black;
+}
+
 .texto__dark {
   color: white !important;
   font-weight: 400 !important;
@@ -10664,6 +10692,29 @@ html {
 .modal__imagen {
   height: 100%;
   width: 210%;
+}
+
+.gallery__container {
+  position: relative;
+}
+
+.descripcion__wrapper {
+  position: absolute;
+  bottom: 8%;
+  left: 4%;
+  opacity: 1;
+}
+
+.descripcion__bg {
+  background-color: black;
+  display: inline-block;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.descripcion__texto {
+  padding: 30px 10px;
+  opacity: 0;
 }
 
 @media (min-width: 768px) {

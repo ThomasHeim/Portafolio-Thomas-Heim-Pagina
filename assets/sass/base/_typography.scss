@@ -71,7 +71,10 @@ html{
     }
 }
 
-
+.descripcion__titulo{
+    @include bebas-s;
+    color: black;
+}
 
 .texto__dark{
     color: white !important;
