@@ -127,12 +127,12 @@
     }*/
     &:hover{
 
-        animation: hover__botones-dark;
-        -moz-animation: hover__botones-dark;
-        -webkit-animation: hover__botones-dark;
-        -o-animation: hover__botones-dark;
+        -moz-animation: hover__botones-light;
+        -webkit-animation: hover__botones-light;
+        -o-animation: hover__botones-light;
+        animation: hover__botones-light;
 
-        animation-duration:  10s;
+        animation-duration:  0.5s;
         animation-timing-function: ease;
         animation-fill-mode: forwards;
         /*box-shadow: inset 548px 0.01px 0.01px 0.01px white;

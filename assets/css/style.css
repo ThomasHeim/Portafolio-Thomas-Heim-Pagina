@@ -53,17 +53,22 @@
   0% {
     box-shadow: inset 0px 0.01px 0.01px 0.01px black;
     mix-blend-mode: difference;
+    filter: invert(100%);
+    opacity: 1;
   }
   1% {
     box-shadow: inset 1px 0.01px 0.01px 0.01px white;
     color: black;
     mix-blend-mode: exclusion;
+    filter: invert(100%);
     opacity: 1;
   }
   100% {
     box-shadow: inset 750px 0.01px 0.01px 0.01px white;
     color: black;
     mix-blend-mode: exclusion;
+    filter: invert(100%);
+    opacity: 1;
   }
 }
 @keyframes hover__textosobreimagen {
@@ -10790,7 +10795,6 @@ main {
 
 #primer__panel {
   margin-top: 0%;
-  background-color: blue;
 }
 
 .body__articulo-dark {
@@ -10815,6 +10819,13 @@ main {
   text-align: right;
 }
 
+.articulo__info-barraMenu {
+  z-index: 1030;
+  height: 50px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
 .articulo__info-row {
   height: 100vh;
 }
@@ -10865,7 +10876,6 @@ main {
 @media (min-width: 992px) {
   #primer__panel {
     margin-top: 140%;
-    background-color: blue;
   }
 
   .articulo__info-datosContenedor {
@@ -10876,7 +10886,43 @@ main {
 @media (min-width: 1200px) {
   #primer__panel {
     margin-top: 80%;
-    background-color: blue;
+  }
+}
+.fondo__light {
+  background-color: white;
+}
+
+.fondo__dark {
+  background-color: black;
+}
+
+.articulo__corteParrafo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.composicion1 {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.composicion1__barraMenu {
+  z-index: 1030;
+  height: 50px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+@media (min-width: 992px) {
+  .composicion1-cuerpoArticulo {
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    column-count: 2;
+    column-gap: 10px;
+    column-fill: auto;
   }
 }
 /*Botones recurrentes*/
@@ -10995,11 +11041,11 @@ main {
   mix-blend-mode: difference;
 }
 .boton__custom-trabajos:hover {
-  animation: hover__botones-dark;
-  -moz-animation: hover__botones-dark;
-  -webkit-animation: hover__botones-dark;
-  -o-animation: hover__botones-dark;
-  animation-duration: 10s;
+  -moz-animation: hover__botones-light;
+  -webkit-animation: hover__botones-light;
+  -o-animation: hover__botones-light;
+  animation: hover__botones-light;
+  animation-duration: 0.5s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
   /*box-shadow: inset 548px 0.01px 0.01px 0.01px white;
@@ -11239,6 +11285,10 @@ main {
 
 .dropdown-item:hover, .dropdown-item:focus {
   background-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,7 +10,6 @@
 
 #primer__panel{
     margin-top: 0%;
-    background-color: blue;
 }
 
 .body__articulo-dark{
@@ -38,6 +37,15 @@
 }
 
 .articulo__info{
+    
+    &-barraMenu{
+        z-index: 1030;
+        height: 50px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+    }
+    
     &-row{
         height: 100vh;
     }
@@ -98,7 +106,6 @@
 @media (min-width: 992px) { 
     #primer__panel{
         margin-top: 140%;
-        background-color: blue;
     }
     .articulo__info-datosContenedor{
         margin-left: 80px;
@@ -110,6 +117,5 @@
 @media (min-width: 1200px) {
     #primer__panel{
         margin-top: 80%;
-        background-color: blue;
     }
 }
