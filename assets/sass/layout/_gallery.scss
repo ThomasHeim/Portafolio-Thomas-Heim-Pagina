@@ -54,27 +54,16 @@
 }
 
 //Elementos galeria 
-
 .img__btn:hover {
     filter: brightness(1.5);
 }
 
-.modal-dialog{
-    margin-top: 45%;
-    max-width: 50%;
-}
 
-.modal__imagen{
-    height: 100%;
-    width: 210%;
-}
-
+//descripcion
 .gallery__container{
     position: relative;
 }
 
-
-//descripcion
 .descripcion__wrapper{
     position: absolute;
     bottom: 8%;
@@ -105,15 +94,10 @@
         column-count: 2;
     }
 
-    .modal-dialog{
-        margin-top: 10%;
-        max-width: 80%;
-        pointer-events: auto;
-    }
-    
-    .modal__imagen{
-        height: 100%;
-        width: 100%;
+
+    .modal-header{
+        top: 1%;
+        right: 2%;
     }
 
 }
@@ -165,8 +149,4 @@
         column-count: 4;
     }
 
-    .modal-dialog{
-        margin-top: 0;
-        max-width: 50%;
-    }
 }

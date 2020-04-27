@@ -1,0 +1,70 @@
+.modal {
+    padding: 0 !important; // override inline padding-right added from js
+  }
+  .modal .modal-dialog {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+  }
+  .modal .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  .modal .modal-body {
+    overflow-y: auto;
+  }
+
+
+  @mixin modal-fullscreen() {
+    padding: 0 !important; // override inline padding-right added from js
+  
+    .modal-dialog {
+      width: 100%;
+      max-width: none;
+      height: 100%;
+      margin: 0;
+    }
+  
+    .modal-content {
+      height: 100%;
+      border: 0;
+      border-radius: 0;
+      background-color: transparent;
+      position: relative;
+    }
+
+    .modal-header{
+        position: absolute;
+        border-bottom: 1px solid transparent !important;
+        z-index: 9999;
+        top: 3%;
+        right: 5%;
+    }
+
+    .boton__header{
+        background-color: black;
+        padding: 2px 15px 0px 15px;
+
+        @include bebas-s;
+        opacity: 1;
+        color: white;
+        text-shadow: none;
+    }
+    
+  
+    .modal-body {
+      overflow-y: auto;
+    }
+  }
+  
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-down($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  
+      .modal-fullscreen#{$infix} {
+        @include modal-fullscreen();
+      }
+    }
+  }

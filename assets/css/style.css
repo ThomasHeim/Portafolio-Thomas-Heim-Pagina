@@ -10684,16 +10684,6 @@ html {
   filter: brightness(1.5);
 }
 
-.modal-dialog {
-  margin-top: 45%;
-  max-width: 50%;
-}
-
-.modal__imagen {
-  height: 100%;
-  width: 210%;
-}
-
 .gallery__container {
   position: relative;
 }
@@ -10724,15 +10714,9 @@ html {
     column-count: 2;
   }
 
-  .modal-dialog {
-    margin-top: 10%;
-    max-width: 80%;
-    pointer-events: auto;
-  }
-
-  .modal__imagen {
-    height: 100%;
-    width: 100%;
+  .modal-header {
+    top: 1%;
+    right: 2%;
   }
 }
 @media (min-width: 992px) {
@@ -10770,11 +10754,6 @@ html {
     -webkit-column-count: 4;
     -moz-column-count: 4;
     column-count: 4;
-  }
-
-  .modal-dialog {
-    margin-top: 0;
-    max-width: 50%;
   }
 }
 main {
@@ -11201,6 +11180,216 @@ main {
   /*HAY QUE CAMBIAR EL Z-INDEX DE ESTOS PANELES EN CADA ID PARA EVITAR EL OVERLAP*/
   height: 100%;
   color: white;
+}
+
+.modal {
+  padding: 0 !important;
+}
+
+.modal .modal-dialog {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+}
+
+.modal .modal-content {
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+}
+
+.modal .modal-body {
+  overflow-y: auto;
+}
+
+@media (max-width: 575.98px) {
+  .modal-fullscreen {
+    padding: 0 !important;
+  }
+  .modal-fullscreen .modal-dialog {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+  }
+  .modal-fullscreen .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    position: relative;
+  }
+  .modal-fullscreen .modal-header {
+    position: absolute;
+    border-bottom: 1px solid transparent !important;
+    z-index: 9999;
+    top: 3%;
+    right: 5%;
+  }
+  .modal-fullscreen .boton__header {
+    background-color: black;
+    padding: 2px 15px 0px 15px;
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 5rem;
+    opacity: 1;
+    color: white;
+    text-shadow: none;
+  }
+  .modal-fullscreen .modal-body {
+    overflow-y: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .modal-fullscreen-sm {
+    padding: 0 !important;
+  }
+  .modal-fullscreen-sm .modal-dialog {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+  }
+  .modal-fullscreen-sm .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    position: relative;
+  }
+  .modal-fullscreen-sm .modal-header {
+    position: absolute;
+    border-bottom: 1px solid transparent !important;
+    z-index: 9999;
+    top: 3%;
+    right: 5%;
+  }
+  .modal-fullscreen-sm .boton__header {
+    background-color: black;
+    padding: 2px 15px 0px 15px;
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 5rem;
+    opacity: 1;
+    color: white;
+    text-shadow: none;
+  }
+  .modal-fullscreen-sm .modal-body {
+    overflow-y: auto;
+  }
+}
+@media (max-width: 991.98px) {
+  .modal-fullscreen-md {
+    padding: 0 !important;
+  }
+  .modal-fullscreen-md .modal-dialog {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+  }
+  .modal-fullscreen-md .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    position: relative;
+  }
+  .modal-fullscreen-md .modal-header {
+    position: absolute;
+    border-bottom: 1px solid transparent !important;
+    z-index: 9999;
+    top: 3%;
+    right: 5%;
+  }
+  .modal-fullscreen-md .boton__header {
+    background-color: black;
+    padding: 2px 15px 0px 15px;
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 5rem;
+    opacity: 1;
+    color: white;
+    text-shadow: none;
+  }
+  .modal-fullscreen-md .modal-body {
+    overflow-y: auto;
+  }
+}
+@media (max-width: 1199.98px) {
+  .modal-fullscreen-lg {
+    padding: 0 !important;
+  }
+  .modal-fullscreen-lg .modal-dialog {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+  }
+  .modal-fullscreen-lg .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    position: relative;
+  }
+  .modal-fullscreen-lg .modal-header {
+    position: absolute;
+    border-bottom: 1px solid transparent !important;
+    z-index: 9999;
+    top: 3%;
+    right: 5%;
+  }
+  .modal-fullscreen-lg .boton__header {
+    background-color: black;
+    padding: 2px 15px 0px 15px;
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 5rem;
+    opacity: 1;
+    color: white;
+    text-shadow: none;
+  }
+  .modal-fullscreen-lg .modal-body {
+    overflow-y: auto;
+  }
+}
+.modal-fullscreen-xl {
+  padding: 0 !important;
+}
+.modal-fullscreen-xl .modal-dialog {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+}
+.modal-fullscreen-xl .modal-content {
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  position: relative;
+}
+.modal-fullscreen-xl .modal-header {
+  position: absolute;
+  border-bottom: 1px solid transparent !important;
+  z-index: 9999;
+  top: 3%;
+  right: 5%;
+}
+.modal-fullscreen-xl .boton__header {
+  background-color: black;
+  padding: 2px 15px 0px 15px;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 5rem;
+  opacity: 1;
+  color: white;
+  text-shadow: none;
+}
+.modal-fullscreen-xl .modal-body {
+  overflow-y: auto;
 }
 
 .sobremi__hero {
