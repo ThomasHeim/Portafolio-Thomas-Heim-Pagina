@@ -52,10 +52,21 @@
         color: white;
         text-shadow: none;
     }
-    
-  
+
     .modal-body {
+      position: relative;
       overflow-y: auto;
+    }
+
+    .modal__body-ilustracion{
+      display: flex;
+      justify-content: center;
+    }
+
+    .modal__imagen-informacion{
+      background-color: black;
+      padding: 20px;
+     align-self: flex-end;
     }
   }
   

@@ -149,6 +149,12 @@
     font-size: $small;
 }
 
+@mixin montserrat-xs {
+    font-family: $montserrat;
+    font-weight: $font-regular;
+    font-size: $x-small;
+}
+
 @mixin montserrat-texto {
     font-family: $montserrat;
     font-weight: $font-regular;

@@ -94,6 +94,7 @@ html{
     box-decoration-break: clone;
 }
 
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .hero{
@@ -122,6 +123,17 @@ html{
         &__parrafo-1{
             @include montserrat-texto;
             line-height: 3rem;
+        }
+    }
+
+    .modales{
+        &__titulo{
+            @include bebas-s;
+            line-height: 3rem;
+            margin-bottom: 15px;
+        }
+        &__subtitulo{
+            @include montserrat-xs;
         }
     }
 }

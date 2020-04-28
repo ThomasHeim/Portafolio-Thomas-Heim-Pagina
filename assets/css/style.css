@@ -10497,6 +10497,19 @@ html {
     font-size: 2rem;
     line-height: 3rem;
   }
+
+  .modales__titulo {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 3rem;
+    margin-bottom: 15px;
+  }
+  .modales__subtitulo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+  }
 }
 @media (min-width: 1200px) {
   .hero {
@@ -10838,7 +10851,7 @@ main {
 }
 
 .articulo__header-fondo {
-  background: url(assets/img/Graduadisimo-campeon-color.png) black;
+  background: url("../../../assets/img/Graduadisimo-campeon-color.png") black;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11238,7 +11251,17 @@ main {
     text-shadow: none;
   }
   .modal-fullscreen .modal-body {
+    position: relative;
     overflow-y: auto;
+  }
+  .modal-fullscreen .modal__body-ilustracion {
+    display: flex;
+    justify-content: center;
+  }
+  .modal-fullscreen .modal__imagen-informacion {
+    background-color: black;
+    padding: 20px;
+    align-self: flex-end;
   }
 }
 @media (max-width: 767.98px) {
@@ -11276,7 +11299,17 @@ main {
     text-shadow: none;
   }
   .modal-fullscreen-sm .modal-body {
+    position: relative;
     overflow-y: auto;
+  }
+  .modal-fullscreen-sm .modal__body-ilustracion {
+    display: flex;
+    justify-content: center;
+  }
+  .modal-fullscreen-sm .modal__imagen-informacion {
+    background-color: black;
+    padding: 20px;
+    align-self: flex-end;
   }
 }
 @media (max-width: 991.98px) {
@@ -11314,7 +11347,17 @@ main {
     text-shadow: none;
   }
   .modal-fullscreen-md .modal-body {
+    position: relative;
     overflow-y: auto;
+  }
+  .modal-fullscreen-md .modal__body-ilustracion {
+    display: flex;
+    justify-content: center;
+  }
+  .modal-fullscreen-md .modal__imagen-informacion {
+    background-color: black;
+    padding: 20px;
+    align-self: flex-end;
   }
 }
 @media (max-width: 1199.98px) {
@@ -11352,7 +11395,17 @@ main {
     text-shadow: none;
   }
   .modal-fullscreen-lg .modal-body {
+    position: relative;
     overflow-y: auto;
+  }
+  .modal-fullscreen-lg .modal__body-ilustracion {
+    display: flex;
+    justify-content: center;
+  }
+  .modal-fullscreen-lg .modal__imagen-informacion {
+    background-color: black;
+    padding: 20px;
+    align-self: flex-end;
   }
 }
 .modal-fullscreen-xl {
@@ -11389,7 +11442,17 @@ main {
   text-shadow: none;
 }
 .modal-fullscreen-xl .modal-body {
+  position: relative;
   overflow-y: auto;
+}
+.modal-fullscreen-xl .modal__body-ilustracion {
+  display: flex;
+  justify-content: center;
+}
+.modal-fullscreen-xl .modal__imagen-informacion {
+  background-color: black;
+  padding: 20px;
+  align-self: flex-end;
 }
 
 .sobremi__hero {
