@@ -129,11 +129,15 @@ html{
     .modales{
         &__titulo{
             @include bebas-s;
-            line-height: 4rem;
             margin-bottom: 15px;
         }
         &__subtitulo{
             @include montserrat-xs;
+            margin-bottom: 15px;
+        }
+        &__texto{
+            @include montserrat-texto;
+            line-height: 3rem;
         }
     }
 }

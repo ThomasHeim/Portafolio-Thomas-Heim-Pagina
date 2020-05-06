@@ -39,8 +39,8 @@
         position: absolute;
         border-bottom: 1px solid transparent !important;
         z-index: 9999;
-        top: 3%;
-        right: 5%;
+        top: 4%;
+        right: 4%;
     }
 
     .boton__header{
@@ -63,7 +63,9 @@
       justify-content: center;
     }
 
-    .modal__imagen-informacion{
+
+
+    .modal__imagen-info{
       background-color: black;
       padding: 20px;
       align-self: flex-end;
