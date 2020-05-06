@@ -53,6 +53,25 @@
   0% {
     box-shadow: inset 0px 0.01px 0.01px 0.01px black;
     mix-blend-mode: difference;
+    opacity: 1;
+  }
+  1% {
+    box-shadow: inset 1px 0.01px 0.01px 0.01px white;
+    color: black;
+    mix-blend-mode: exclusion;
+    opacity: 1;
+  }
+  100% {
+    box-shadow: inset 750px 0.01px 0.01px 0.01px white;
+    color: black;
+    mix-blend-mode: exclusion;
+    opacity: 1;
+  }
+}
+@keyframes hover__botones-trabajos {
+  0% {
+    box-shadow: inset 0px 0.01px 0.01px 0.01px black;
+    mix-blend-mode: difference;
     filter: invert(100%);
     opacity: 1;
   }
@@ -11086,10 +11105,10 @@ main {
   mix-blend-mode: difference;
 }
 .boton__custom-trabajos:hover {
-  -moz-animation: hover__botones-light;
-  -webkit-animation: hover__botones-light;
-  -o-animation: hover__botones-light;
-  animation: hover__botones-light;
+  -moz-animation: hover__botones-trabajos;
+  -webkit-animation: hover__botones-trabajos;
+  -o-animation: hover__botones-trabajos;
+  animation: hover__botones-trabajos;
   animation-duration: 0.5s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
@@ -11495,8 +11514,8 @@ main {
 .valores {
   background-color: black;
   height: 100%;
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 90px;
+  padding-bottom: 50px;
 }
 .valores__contenido {
   padding-top: 20px;
