@@ -137,7 +137,7 @@ document.getElementById('disenoGraficoGaleria9').onmouseout = function()
 document.getElementById('disenoGraficoGaleria10').onmouseover = function()        
 {        
     document.getElementById('descripcionBg10').style.animation = "descripcion__hover 0.2s ease forwards";
-    document.getElementById('descripcionTexto10').style.animation = "descripcion__hoverTexto 0.2s ease forwards";
+    document.getElementById('descripcionTexto10').style.animation = "descripcion__hoverTexto 0.3s ease forwards";
 };
 
 document.getElementById('disenoGraficoGaleria10').onmouseout = function()        
