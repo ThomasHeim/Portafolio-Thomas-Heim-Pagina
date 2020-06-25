@@ -10441,7 +10441,7 @@ html {
 .articulo__subtitulo-1 {
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
-  font-size: 5rem;
+  font-size: 4rem;
   color: black;
 }
 .articulo__subtitulo-2 {
@@ -10526,7 +10526,7 @@ html {
   .modales__subtitulo {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 15px;
   }
   .modales__texto {
@@ -10810,7 +10810,7 @@ main {
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
   font-size: 5rem;
-  margin-left: 12%;
+  margin-left: 5%;
   margin-bottom: 40px;
 }
 
@@ -10883,13 +10883,6 @@ main {
   text-align: right;
 }
 
-.articulo__info-barraMenu {
-  z-index: 1030;
-  height: 50px;
-  width: 100%;
-  position: sticky;
-  top: 0;
-}
 .articulo__info-row {
   height: 100vh;
 }
@@ -10897,17 +10890,10 @@ main {
   margin-bottom: 45px;
   margin-left: 45px;
   background-color: black;
-  width: 200%;
 }
-.articulo__info-datosTitulos {
+.articulo__info-datosTabla {
   background-color: black;
-  text-align: right;
-  padding: 10px;
-  padding-right: 0px;
-}
-.articulo__info-datosRespuestas {
-  background-color: black;
-  padding: 10px;
+  border-top: 10px solid black;
 }
 .articulo__info-datosContenedor {
   width: 100%;
@@ -10969,26 +10955,16 @@ main {
 .composicion1 {
   padding-top: 2%;
   padding-bottom: 2%;
+  position: relative;
 }
 .composicion1__barraMenu {
   z-index: 1030;
   height: 50px;
-  width: 100%;
+  width: 100vw;
   position: sticky;
   top: 0;
 }
 
-@media (min-width: 992px) {
-  .composicion1-cuerpoArticulo {
-    -moz-column-count: 2;
-    -moz-column-gap: 10px;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 10px;
-    column-count: 2;
-    column-gap: 10px;
-    column-fill: auto;
-  }
-}
 /*Botones recurrentes*/
 /*Botones del home*/
 .boton__custom-hero1 {
@@ -11670,6 +11646,21 @@ main {
     column-count: 4;
   }
 }
+#alvea-contexto {
+  height: 40vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.composicion__desafio {
+  padding: 40px 50px 40px 50px;
+  margin-top: 20%;
+  background-color: black;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+
 .navbar-toggler {
   border: none !important;
 }

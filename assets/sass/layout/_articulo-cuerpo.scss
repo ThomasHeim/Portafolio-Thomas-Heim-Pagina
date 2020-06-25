@@ -19,30 +19,14 @@
 .composicion1{
     padding-top: 2%;
     padding-bottom: 2%;
+    position: relative;
 
     &__barraMenu{
         z-index: 1030;
         height: 50px;
-        width: 100%;
+        width: 100vw;
         position: sticky;
         top: 0;
     }
 
-}
-
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-    //composicion1
-    .composicion1{
-        &-cuerpoArticulo{
-            -moz-column-count: 2;
-            -moz-column-gap: 10px;
-            -webkit-column-count: 2;
-            -webkit-column-gap: 10px;
-            column-count: 2;
-            column-gap: 10px;
-            column-fill: auto;
-        }
-    }
 }

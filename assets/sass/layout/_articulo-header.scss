@@ -38,14 +38,6 @@
 
 .articulo__info{
     
-    &-barraMenu{
-        z-index: 1030;
-        height: 50px;
-        width: 100%;
-        position: sticky;
-        top: 0;
-    }
-    
     &-row{
         height: 100vh;
     }
@@ -54,21 +46,12 @@
         margin-bottom: 45px;
         margin-left: 45px;
         background-color: black;
-        width: 200%;
     }
 
-    &-datosTitulos{
+    &-datosTabla{
         background-color: black;
-        text-align: right;
-        padding: 10px;
-        padding-right: 0px;
+        border-top: 10px solid black;
     }
-
-    &-datosRespuestas{
-        background-color: black;
-        padding: 10px;
-    }
-    
 
     &-datosContenedor{
         width: 100%;

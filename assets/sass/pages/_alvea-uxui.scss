@@ -1,0 +1,16 @@
+#alvea-contexto{
+    height: 40vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.composicion{
+    &__desafio{
+        padding: 40px 50px 40px 50px;
+        margin-top: 20%;
+        background-color: black;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+    }
+}

@@ -33,6 +33,12 @@
     font-weight: $font-regular;
     font-size: $small;
 }
+@mixin bebas-xs {
+    font-family: $bebas;
+    font-weight: $font-regular;
+    font-size: $x-small;
+}
+
 
 @mixin bebas-texto {
     font-family: $bebas;
