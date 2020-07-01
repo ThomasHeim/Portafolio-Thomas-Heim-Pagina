@@ -1,16 +1,185 @@
+
 #alvea-contexto{
     height: 40vh;
     overflow-y: hidden;
     overflow-x: hidden;
 }
 
+#panel{
+    &__desafioMovil{
+        background-color: black;
+    }
+}
+
+#panelObjetivos{
+    position: relative;
+}
+
+.fondo__alvea{
+    background: url('../../../assets/img/alveaArticulo/portadamobile.png') black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
 .composicion{
     &__desafio{
-        padding: 40px 50px 40px 50px;
+        padding: 40px 20px 80px 20px;
         margin-top: 20%;
         background-color: black;
         position: absolute;
         bottom: 0%;
         right: 0%;
+    }
+}
+
+.panelProceso1{
+    &__tituloContainer{
+        text-align: center;
+    }
+
+    &__objetivos{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        padding: 0;
+    }
+
+    &__objetivosContenido{
+        padding: 40px 50px 40px 50px;
+    }
+
+    &__contenedorForma{
+        position: relative;
+    }
+
+    &__formaCirculo{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: black;
+        position: absolute;
+        left: 35%;
+        top: 8%;
+        z-index: 1040;
+    }
+    &__formaCirculoGamedesign{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: black;
+        position: absolute;
+        left: 35%;
+        top: 2%;
+        z-index: 1040;
+    }
+
+    &__formaCirculoInterfaz{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: black;
+        position: absolute;
+        left: 35%;
+        top: 0.5%;
+        z-index: 1040;
+    }
+    
+    &__formaLinea{
+        width: 30px;
+        height: 1500px;
+        background-color: black;
+        position: absolute;
+        top: 15%;
+        left: 45%;
+        z-index: 1040;
+    }
+
+    &__formaLineaGameDesign{
+        width: 30px;
+        height: 3000px;
+        background-color: black;
+        position: absolute;
+        top: -25%;
+        left: 45%;
+        z-index: 1040;
+    }
+    &__formaLineaInterfaz{
+        width: 30px;
+        height: 7500px;
+        background-color: black;
+        position: absolute;
+        top: -25%;
+        left: 45%;
+        z-index: 1050;
+    }
+    &__formaLineaArte{
+        width: 30px;
+        height: 3500px;
+        background-color: black;
+        position: absolute;
+        top: -25%;
+        left: 45%;
+        z-index: 1040;
+    }
+    &__formaLineaPrototipo{
+        width: 30px;
+        height: 1200px;
+        background-color: black;
+        position: absolute;
+        top: -5%;
+        left: 45%;
+        z-index: 1050;
+    }
+    
+}
+
+.panelProceso2{
+    &__formaLineaFull{
+        width: 30px;
+        height: 2500px;
+        background-color: black;
+        position: absolute;
+        top: -20%;
+        left: 45%;
+        z-index: 1040;
+    }
+
+    &__contenido{
+        width: 100%;
+    }
+
+    &__img{
+        max-width: 95%;
+    }
+}
+
+.imageSplit{
+    max-width: 45%;
+    display: inline;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .fondo__alvea{
+        background: url('../../../assets/img/alveaArticulo/wireframe5.png') black;
+        background-size: cover;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+    .composicion{
+        &__desafio{
+            padding: 40px 50px 80px 50px;
+            margin-top: 20%;
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+        }
     }
 }

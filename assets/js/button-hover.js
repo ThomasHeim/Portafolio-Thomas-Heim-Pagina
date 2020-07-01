@@ -14,7 +14,7 @@ document.getElementById('ux__first').onmouseout = function()
 
 document.getElementById('ux__second').onmouseover = function()        
 {        
-    document.getElementById('trabajos').style.backgroundImage = "url('assets/img/trabajoEnProgreso.png')";
+    document.getElementById('trabajos').style.backgroundImage = "url('assets/img/alveaArticulo/wireframe5.png')";
     document.getElementById('trabajos').style.backgroundRepeat = "no-repeat";
     document.getElementById('trabajos').style.backgroundPosition = "center";
     document.getElementById('trabajos').style.backgroundSize = "cover";
@@ -27,7 +27,7 @@ document.getElementById('ux__second-desktop').onmouseout = function()
 
 document.getElementById('ux__second-desktop').onmouseover = function()        
 {        
-    document.getElementById('trabajos').style.backgroundImage = "url('assets/img/trabajoEnProgreso.png')";
+    document.getElementById('trabajos').style.backgroundImage = "url('assets/img/alveaArticulo/wireframe5.png')";
     document.getElementById('trabajos').style.backgroundRepeat = "no-repeat";
     document.getElementById('trabajos').style.backgroundPosition = "center";
     document.getElementById('trabajos').style.backgroundSize = "cover";

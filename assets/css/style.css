@@ -10003,6 +10003,10 @@ h3 {
     border-color: #dee2e6;
   }
 }
+html, body {
+  max-width: 100%;
+}
+
 body * {
   margin: 0;
   border: 0;
@@ -10377,6 +10381,10 @@ html {
   -moz-text-stroke-color: same color as text;
 }
 
+.justify {
+  text-align: justify;
+}
+
 .hero__texto {
   white-space: nowrap;
 }
@@ -10607,9 +10615,10 @@ html {
   background-color: white;
   filter: invert(100%);
   width: 100%;
+  max-width: 100%;
   padding-right: 1%;
   position: fixed;
-  bottom: 0.5vh;
+  bottom: 0.5%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -10958,11 +10967,12 @@ main {
   position: relative;
 }
 .composicion1__barraMenu {
-  z-index: 1030;
+  z-index: 1000;
   height: 50px;
-  width: 100vw;
+  width: 100%;
   position: sticky;
-  top: 0;
+  position: -webkit-sticky;
+  top: 0px;
 }
 
 /*Botones recurrentes*/
@@ -11164,14 +11174,15 @@ main {
 .wrapper {
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   z-index: -100;
 }
 
 .panel {
   position: relative;
   width: 100%;
-  height: 100%;
+  max-width: 100%;
   min-height: 100vh;
   z-index: 1000;
 }
@@ -11652,8 +11663,25 @@ main {
   overflow-x: hidden;
 }
 
+#panel__desafioMovil {
+  background-color: black;
+}
+
+#panelObjetivos {
+  position: relative;
+}
+
+.fondo__alvea {
+  background: url("../../../assets/img/alveaArticulo/portadamobile.png") black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .composicion__desafio {
-  padding: 40px 50px 40px 50px;
+  padding: 40px 20px 80px 20px;
   margin-top: 20%;
   background-color: black;
   position: absolute;
@@ -11661,6 +11689,133 @@ main {
   right: 0%;
 }
 
+.panelProceso1__tituloContainer {
+  text-align: center;
+}
+.panelProceso1__objetivos {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  padding: 0;
+}
+.panelProceso1__objetivosContenido {
+  padding: 40px 50px 40px 50px;
+}
+.panelProceso1__contenedorForma {
+  position: relative;
+}
+.panelProceso1__formaCirculo {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  left: 35%;
+  top: 8%;
+  z-index: 1040;
+}
+.panelProceso1__formaCirculoGamedesign {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  left: 35%;
+  top: 2%;
+  z-index: 1040;
+}
+.panelProceso1__formaCirculoInterfaz {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  left: 35%;
+  top: 0.5%;
+  z-index: 1040;
+}
+.panelProceso1__formaLinea {
+  width: 30px;
+  height: 1500px;
+  background-color: black;
+  position: absolute;
+  top: 15%;
+  left: 45%;
+  z-index: 1040;
+}
+.panelProceso1__formaLineaGameDesign {
+  width: 30px;
+  height: 3000px;
+  background-color: black;
+  position: absolute;
+  top: -25%;
+  left: 45%;
+  z-index: 1040;
+}
+.panelProceso1__formaLineaInterfaz {
+  width: 30px;
+  height: 7500px;
+  background-color: black;
+  position: absolute;
+  top: -25%;
+  left: 45%;
+  z-index: 1050;
+}
+.panelProceso1__formaLineaArte {
+  width: 30px;
+  height: 3500px;
+  background-color: black;
+  position: absolute;
+  top: -25%;
+  left: 45%;
+  z-index: 1040;
+}
+.panelProceso1__formaLineaPrototipo {
+  width: 30px;
+  height: 1200px;
+  background-color: black;
+  position: absolute;
+  top: -5%;
+  left: 45%;
+  z-index: 1050;
+}
+
+.panelProceso2__formaLineaFull {
+  width: 30px;
+  height: 2500px;
+  background-color: black;
+  position: absolute;
+  top: -20%;
+  left: 45%;
+  z-index: 1040;
+}
+.panelProceso2__contenido {
+  width: 100%;
+}
+.panelProceso2__img {
+  max-width: 95%;
+}
+
+.imageSplit {
+  max-width: 45%;
+  display: inline;
+}
+
+@media (min-width: 768px) {
+  .fondo__alvea {
+    background: url("../../../assets/img/alveaArticulo/wireframe5.png") black;
+    background-size: cover;
+  }
+}
+@media (min-width: 1200px) {
+  .composicion__desafio {
+    padding: 40px 50px 80px 50px;
+    margin-top: 20%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+  }
+}
 .navbar-toggler {
   border: none !important;
 }

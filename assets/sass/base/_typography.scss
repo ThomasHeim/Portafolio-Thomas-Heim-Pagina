@@ -5,6 +5,11 @@ html{
     -moz-text-stroke-color: same color as text;
 
 }
+
+.justify{
+    text-align: justify;
+}
+
 .hero{
     &__texto{
         white-space: nowrap;
