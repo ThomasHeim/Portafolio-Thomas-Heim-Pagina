@@ -10464,6 +10464,18 @@ html {
   font-size: 1.4rem;
   line-height: 2rem;
 }
+.articulo__parrafo-bold {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.articulo__parrafo-bold-mv {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1rem;
+}
 
 .descripcion__titulo {
   font-family: "Bebas Neue", cursive;
@@ -10914,7 +10926,7 @@ main {
   margin-bottom: 80px;
   margin-right: 120px;
   height: 50vh;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 .articulo__info-titulo {
@@ -11814,6 +11826,64 @@ main {
     position: absolute;
     bottom: 0%;
     right: 0%;
+  }
+}
+.fondo__vegaChica {
+  background: url("../../../assets/img/laVegaChica/portadaVegaChicaMovil.png") black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.panelProceso1__formaLinea-vegaChica-1 {
+  width: 30px;
+  height: 3500px;
+  background-color: black;
+  position: absolute;
+  top: -15%;
+  left: 45%;
+  z-index: 1040;
+}
+.panelProceso1__formaLinea-vegaChica-2 {
+  width: 30px;
+  height: 1500px;
+  background-color: black;
+  position: absolute;
+  top: -15%;
+  left: 45%;
+  z-index: 1040;
+}
+.panelProceso1__formaCirculo-vegaChica-1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  left: 35%;
+  top: 1%;
+  z-index: 1040;
+}
+.panelProceso1__formaCirculo-vegaChica-2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  left: 35%;
+  top: 1%;
+  z-index: 1040;
+}
+
+.vegaChica__lista {
+  list-style-type: square;
+}
+
+@media (min-width: 768px) {
+  .fondo__vegaChica {
+    background: url("../../../assets/img/laVegaChica/portadaVegaChica.png") black;
+    background-size: cover;
   }
 }
 .navbar-toggler {

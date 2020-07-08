@@ -1,0 +1,63 @@
+.fondo__vegaChica{
+    background: url('../../../assets/img/laVegaChica/portadaVegaChicaMovil.png') black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.panelProceso1{
+    &__formaLinea-vegaChica-1{
+        width: 30px;
+        height: 3500px;
+        background-color: black;
+        position: absolute;
+        top: -15%;
+        left: 45%;
+        z-index: 1040;
+    }
+
+    &__formaLinea-vegaChica-2{
+        width: 30px;
+        height: 1500px;
+        background-color: black;
+        position: absolute;
+        top: -15%;
+        left: 45%;
+        z-index: 1040;
+    }
+
+    &__formaCirculo-vegaChica-1{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: black;
+        position: absolute;
+        left: 35%;
+        top: 1%;
+        z-index: 1040;
+    }
+    &__formaCirculo-vegaChica-2{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: black;
+        position: absolute;
+        left: 35%;
+        top: 1%;
+        z-index: 1040;
+    }
+}
+
+.vegaChica__lista{
+    list-style-type: square;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .fondo__vegaChica{
+        background: url('../../../assets/img/laVegaChica/portadaVegaChica.png') black;
+        background-size: cover;
+    }
+}

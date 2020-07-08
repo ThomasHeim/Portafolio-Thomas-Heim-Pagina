@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Fuentes-->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet">
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/41b8753ddc.js" crossorigin="anonymous"></script>
+  <!--Mi estilo-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!--Favicon-->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <!--js js js js js js js-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"
+    defer></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"
+    defer></script>
+  <!--js js js js js js js-->
+  <title>Thomas Heim | Diseño UX | La Vega Chica</title>
+</head>
+
+<body class="body__articulo-dark">
+  <!--Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navegacion" id="navegacion">
+    <a class="navbar-brand navegacion__logo" href="index.html"><svg class="navegacion__logo-icono"
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296.8 129.2">
+        <polygon
+          points="260.8 0 198.6 71.9 176.1 53.3 222.2 0 186.3 0 155.2 36 132.4 17.2 111.7 0 70.1 0 94.4 20.1 0 129.2 36 129.2 115.4 37.5 137.8 56 74.4 129.2 110.3 129.2 158.7 73.3 181.2 92 148.9 129.2 184.9 129.2 201.8 109.6 219.6 89.1 296.8 0 " />
+      </svg></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-right navegacion__contenido" id="navbarNav">
+      <ul class="navbar-nav navegacion__contenido-lista">
+        <li class="nav-item navegacion__quiensoy">
+          <a class="nav-link navegacion__contenido-link" href="sobre-mi.html">Quien soy <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item d-lg-none">
+          <a class="nav-link navegacion__contenido-link" href="index.html#trabajos">Diseño UX/UI<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item d-lg-none">
+          <a class="nav-link navegacion__contenido-link" href="diseno-grafico.html">Diseño gráfico<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item d-lg-none">
+          <a class="nav-link navegacion__contenido-link" href="ilustracion.html">Ilustración<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown d-none d-lg-block">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Mis trabajos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="index.html#trabajos">Diseño UX/UI</a>
+            <a class="dropdown-item" href="diseno-grafico.html">Diseño gráfico</a>
+            <a class="dropdown-item" href="ilustracion.html">Ilustración</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav -->
+
+  <ul class="navegacion__contacto">
+    <li class="navegacion__contacto-elemento">
+      <a class="navegacion__contacto-link" href="">Mail</a>
+    </li>
+    <li class="navegacion__contacto-elemento">
+      <a class="navegacion__contacto-link" href="">LinkedIn</a>
+    </li>
+  </ul>
+
+  <!--INICIO WRAPPER-->
+  <div class="wrapper">
+    <!--hero hero hero hero hero hero hero hero hero hero-->
+    <header id="panel__fijo" class="panel__fijo panel articulo__header">
+      <div class="articulo__header-fondo fondo__vegaChica">
+        <div class="row no-gutters justify-content-end">
+          <div class="col-12">
+            <div class="d-flex justify-content-end">
+              <h1 class="text-right d-none d-md-block hero__titulo texto__dark"><span class="texto__fondo-dark">La Vega
+                  Chica</span></h1>
+              <h1 class="text-right d-md-none hero__titulo texto__dark"><span class="texto__fondo-dark">La Vega
+                  Chica</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="panel__fijo-info" class="panel__fijo panel articulo__info">
+      <div class="row no-gutters align-items-end justify-content-between articulo__info-row">
+        <div class="articulo__info-datos">
+          <div class="articulo__info-datosContenedor">
+            <table class="table table-borderless articulo__info-datosTabla">
+              <tbody class="hero__subtitulo-2 texto__dark">
+                <tr>
+                  <th scope="row">Cliente</th>
+                  <td>La Vega Chica</td>
+                </tr>
+                <tr>
+                  <th scope="row">Rol</th>
+                  <td>Diseño UX<br>Arquitectura de información<br>Diseño UI<br>Diseño de interaccion</td>
+                </tr>
+                <tr>
+                  <th scope="row">Año</th>
+                  <td>2020</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="vegaChica-contexto" class="d-none d-lg-block col-lg-4 articulo__info-contexto">
+          <h3 class="articulo__info-titulo hero__subtitulo-1 texto__dark">Contexto</h3>
+          <!--Se puede cambiar "contexto" por otro titulo que haga mas sentido-->
+          <p class="articulo__info-parrafo articulo__parrafo-1 texto__dark">La Vega Chica es una plataforma de delivery
+            para productos de feria, capaz de permitirle a sus usuarios guardar y programar el envío de sus listas de
+            compra, desarrollada pensando en los mercados que aún no se han digitalizado en el contexto de la pandemia
+            de COVID-19 por la que pasa nuestro país, por falta de recursos o capital para crear estas plataformas. <br> <br>
+            Este fue un proyecto realizado como final del bootcamp realizado para el programa talento digital, en el
+            cual se me pidió a mi y a otros 4 compañeros trabajar con un cliente, en este caso feriantes de La Vega, sin capacidad de llevar a cabo
+            su labor de forma presencial, en el desarrollo de un proyecto desde UX hasta prototipo en un periodo de 2
+            semanas.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="panel__contextoMovil" class="panel d-block d-lg-none articulo__info2">
+      <div class="container-fluid">
+        <div class="composicion1__barraMenu fondo__dark"></div>
+        <div class="row">
+          <div class="col-12">
+            <h3 class="articulo__info-titulo hero__subtitulo-1 texto__dark">Contexto</h3>
+            <!--Se puede cambiar "contexto" por otro titulo que haga mas sentido-->
+            <p class="articulo__info-parrafo articulo__parrafo-1 texto__dark">La Vega Chica es una plataforma de
+              delivery para productos de feria, capaz de permitirle a sus usuarios guardar y programar el envío de sus
+              listas de compra, desarrollada pensando en los mercados que aún no se han digitalizado en el contexto de
+              la pandemia de COVID-19 por la que pasa nuestro país, por falta de recursos o capital para crear estas
+              plataformas. <br>
+              Este fue un proyecto realizado como final del bootcamp realizado para el programa talento digital, en el
+              cual se nos pidió trabajar con un cliente, en este caso feriantes de La Vega, sin capacidad de llevar a
+              cabo su labor de forma presencial, en el desarrollo de un proyecto desde UX hasta prototipo en un periodo
+              de 2 semanas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--hero hero hero hero hero hero hero hero hero hero-->
+
+    <!--Seccion roles/Desafio-->
+    <section id="primer__panel" class="panel fondo__light">
+      <div class="composicion1__barraMenu fondo__light"></div>
+      <div class="container-fluid composicion1 fondo__light">
+        <div class="row">
+          <div class=" col-md-4 col-xl-6 offset-md-1">
+            <h2 class="articulo__titulo">Los desafíos</h2>
+            <p class="articulo__parrafo-1 mb-5">Producto de la pandemia ocurriendo en nuestro país debido al covid-19,
+              varios mercados se vieron con la imposibilidad de vender sus productos debido a su carácter de venta
+              presencial, siendo la feria libre una de las áreas mas afectadas. Es por esto que varios trabajadores del
+              rubro han decidido hacer una transición hacia la digitalización de sus servicios para poder mantenerse a
+              flote y superar la baja drástica de ventas producto de la situación. Sin embargo, la gran mayoría de los
+              feriantes no tiene gran conocimiento en servicios digitales, por lo que tienden a recurrir a medios
+              comunes, principalmente redes sociales, para llevar a cabo sus servicios.
+              <br> <br>La meta principal de este proyecto en particular fue determinar las preferencias de los usuarios
+              de las ferias libres, tanto estéticas como de usabilidad, y traducirlas a características criticas que
+              puedan ser priorizadas en la siguiente iteración del proyecto.
+              <br> <br>Por otro lado, uno de los principales desafíos a los que nos enfrentamos como grupo de trabajo,
+              fue la imposibilidad de salir a terreno y la necesidad de llevar a cabo todo el proceso de manera remota,
+              debido a la cuarentena en la que nos encontrábamos en ese momento.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 composicion__desafio d-none d-lg-block">
+        <h2 class="articulo__titulo texto__dark mb-5">Objetivos</h2>
+        <p class="articulo__info-parrafo articulo__parrafo-1 texto__dark mb-5"> <span
+            class="articulo__titulo texto__dark">1</span> Mantener abastecida a la clientela regular actual del cliente, para evitar la pérdida.</p>
+        <p class="articulo__info-parrafo articulo__parrafo-1 texto__dark mb-5"> <span
+            class="articulo__titulo texto__dark">2</span> Digitalizar el servicio y experiencia de venta de la feria libre.</p>
+        <p class="articulo__info-parrafo articulo__parrafo-1 texto__dark"> <span
+            class="articulo__titulo texto__dark">3</span> Atraer nuevos clientes al servicio aprovechando el cambio de mercado.</p>
+      </div>
+    </section>
+    <!--Seccion roles/Desafio-->
+
+    <!--Panel desafio/objetivos movil-->
+    <section id="panel__desafioMovil" class="d-block d-lg-none">
+      <div class="container-fluid">
+        <div class="composicion1__barraMenu fondo__dark"></div>
+        <div class="row">
+          <div class="col-12">
+            <h3 class="articulo__info-titulo hero__subtitulo-1 texto__dark mt-5">Los objetivos</h3>
+            <!--Se puede cambiar "contexto" por otro titulo que haga mas sentido-->
+            <h2 class="mt-3 articulo__info-titulo hero__subtitulo-1 texto__dark">1.</h2>
+            <p class="articulo__info-parrafo articulo__parrafo-1 texto__dark"> Mantener abastecida a la clientela regular actual del cliente, para evitar la pérdida.</p>
+            <h2 class="articulo__info-titulo hero__subtitulo-1 texto__dark">2.</h2>
+            <p class="articulo__info-parrafo articulo__parrafo-1 texto__dark">Digitalizar el servicio y experiencia de venta de la feria libre.</p>
+            <h2 class="articulo__info-titulo hero__subtitulo-1 texto__dark">3.</h2>
+            <p class="pb-5 articulo__info-parrafo articulo__parrafo-1 texto__dark">Atraer nuevos clientes al servicio aprovechando el cambio de mercado.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="panelProceso1__tituloContainer fondo__light">
+              <h2 class="articulo__info-titulo hero__subtitulo-1 texto__light pt-3">El Proceso</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Panel desafio/objetivos movil-->
+
+    <!--Panel Proceso-->
+    <section id="panelProceso" class="fondo__dark d-none d-lg-block">
+      <div class="composicion1__barraMenu fondo__dark"></div>
+      <div class="container-fluid px-5">
+        <div class="row">
+          <div class="col-md-4 col-xl-6 offset-md-1">
+            <h2 class="articulo__titulo texto__dark">El proceso</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10 offset-lg-1">
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaProcesoWhite.png" alt="">
+            </div>
+            <p class="articulo__parrafo-1 texto__dark mb-5">A petición de la entidad evaluadora, el proceso de
+              desarrollo se llevo a cabo en 4 etapas en modo de cascada; investigación, arquitectura de la información,
+              diseño de UI e interacción, y pruebas de usuario. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Panel Proceso-->
+
+    <!--PAnelInvestigacion-->
+    <section id="panelInvestigacion" class="d-none d-lg-block panel fondo__light">
+      <div class="composicion1__barraMenu fondo__light"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2 panelProceso1__contenedorForma">
+            <div class="panelProceso1__formaCirculo-vegaChica-1"></div>
+            <div class="panelProceso1__formaLinea-vegaChica-1"></div>
+          </div>
+          <div class="col-lg-10">
+            <h2 class="articulo__titulo my-5">Investigación</h2>
+            <p class="articulo__parrafo-1">El primer paso en el proceso de investigación fue una entrevista con el
+              cliente, donde se determinaron cuáles eran las problemáticas a las que se enfrenta y los objetivos para su
+              negocio, los cuales luego fueron traducidos en KPI’s. </p>
+            <p class="articulo__parrafo-1 mt-5">Una vez determinadas las necesidades del cliente, se realizo un proceso
+              de acercamiento al usuario dividido en 2 fases; en primer lugar, se realizó un proceso de encuestas al
+              publico general, con el fin de obtener una vista general del publico objetivo, seguido de un proceso de
+              entrevistas con usuarios específicos, elegidos según sus respuestas en la encuesta, para obtener insights
+              y una vista más detallada de su punto de vista.</p>
+            <p class="articulo__parrafo-1 mt-5">Dentro de las observaciones que pudimos obtener al analizar los datos,
+              descubrimos que casi un 90% de los entrevistados ha dejado de ir, o va con menos frecuencia a la feria,
+              mientras que un 86% realizaria estas compraas de manera digital si se les diera la oportunidad. Por otro
+              lado, los insights de las entrevistas nos permitieron descubrir que el tono y el lenguaje usado dentro de
+              la feria es un elemento valorado por los usuarios, quienes prefieren la "calidez" del trato por sobre la
+              "frialdad" y "esterilidad" del supermercado.</p>
+            <p class="articulo__parrafo-1 mt-5">Uno de los problemas que tuvimos que enfrentar en este proceso, fue al
+              descubrir un error de cálculo al momento de determinar los rangos etarios, haciendo un grupo etario más
+              grande que los demás, lo que genero un desbalance en los resultados.
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaInvestigacion1.png" alt="">
+            </div>
+            <p class="articulo__parrafo-1 mt-5">Esto se solucionó contactando a los usuarios de ese grupo que dejaron su
+              numero o mail de contacto, y preguntándoles nuevamente su rango etario, esta vez con los rangos
+              corregidos, con el fin de rectificar el error. Afortunadamente todos los usuarios respondieron, y pudimos
+              sortear el problema, re analizar los datos, y seguir adelante.</p>
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaInvestigacion2.png" alt="">
+            </div>
+            <p class="articulo__parrafo-1 mt-5">Con los datos obtenidos se procedió a hacer mapas de empatía de cada uno
+              de los rangos etarios, con el fin de poder determinar nuestro usuario objetivo y los usuarios secundarios.
+              Para esto determinamos high, médium, y low user usando como criterio su frecuencia de ida a ferias libres.
+            </p>
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaInvestigacion3.png" alt="">
+            </div>
+            <p class="articulo__parrafo-1 mt-5">Finalmente, de entre todos los mapas elegimos 2, basándonos basándonos
+              en su probabilidad de retención a largo plazo, su capacidad de gasto, y el porcentaje del universo total
+              que abarca, y los traspasamos a user persona.</p>
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img imageSplit pr-5"
+                src="assets/img/laVegaChica/vegaChicaInvestigacion4a.png" alt="">
+              <img class="image panelProceso2__img imageSplit" src="assets/img/laVegaChica/vegaChicaInvestigacion4b.png"
+                alt="">
+            </div>
+            <p class="articulo__parrafo-1 mt-5">Posteriormente realizamos un proceso de benchmarking, en el cual
+              comparamos a 3 competencias directas dentro del mercado de delivery de feria, y 4 competencias indirectas
+              dentro del mercado de delivery en general, analizando tanto el diseño de la plataforma como el diseño del
+              servicio. Esto se tradujo en recomendaciones sobre qué elementos replicar y que elementos evitar,
+              principalmente el contar contar con la opcion de poder comprar sin registrarse e incluir la opción de
+              cobro contra entrega </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--PAnel Investigacion-->
+
+    <!--PAnelArquitectura-->
+    <section id="panelArquitectura" class="d-none d-lg-block panel fondo__light">
+      <div class="composicion1__barraMenu fondo__light"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2 panelProceso1__contenedorForma">
+            <div class="panelProceso1__formaCirculo-vegaChica-2"></div>
+            <div class="panelProceso1__formaLinea-vegaChica-1"></div>
+          </div>
+          <div class="col-lg-10">
+            <h2 class="articulo__titulo my-5">Arquitectura de la información</h2>
+            <p class="articulo__parrafo-1">El proceso de arquitectura de información inicio con un proceso de card
+              sorting, inicialmente se realizo de manera interna, con el fin de pulir la herramienta y comprobar
+              discrepancias dentro del equipo, para finalmente aplicarla de manera externa con 15 personas.</p>
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaArquitectura1.png" alt="">
+            </div>
+            <p class="articulo__parrafo-1">Con los resultados obtenidos, realizamos un mapa de navegación el que nos
+              permitió posteriormente realizar los mapas de flujo principales de la plataforma. En este caso, y debido a
+              las limitantes de tiempo, nos enfocamos en el flujo de compra, ya que es el flujo principal de la
+              aplicación, y el flujo de inscripción y guardado de listas, ya que compone nuestra propuesta de valor para
+              la plataforma, en ambos casos determinamos criterios para definir que era lo que buscábamos en cada flujo,
+              y así poder guiar de mejor manera el proceso. </p>
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaArquitectura2.jpg" alt="">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaArquitectura3.jpg" alt="">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaArquitectura4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--PAnel Arquitectura-->
+    <!--PAnel Interfaz-->
+    <section id="panelInterfaz" class="d-none d-lg-block panel fondo__light">
+      <div class="composicion1__barraMenu fondo__light"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2 panelProceso1__contenedorForma">
+            <div class="panelProceso1__formaCirculo-vegaChica-2"></div>
+            <div class="panelProceso1__formaLinea-vegaChica-1"></div>
+          </div>
+          <div class="col-lg-10">
+            <h2 class="articulo__titulo my-5">Diseño de interfaz</h2>
+            <p class="articulo__parrafo-1">Basándonos en los flujos e insights identificados durante nuestro proceso de
+              investigación y arquitectura, trabajamos en el proceso de wireframing enfocándonos en los siguientes
+              criterios: </p>
+            <ul class="vegaChica__lista mt-5">
+              <li class="articulo__parrafo-1">Jerarquizar la información crucial para el uso y la captación de usuarios,
+                de manera que esta quede disponible en la primera pantalla.</li>
+              <li class="articulo__parrafo-1 mt-3">Facilitar el manejo para usuarios con un menor grado de experiencia
+                con plataformas móviles</li>
+              <li class="articulo__parrafo-1 mt-3">Reducir lo mas posible la cantidad de acciones requeridas para
+                minimizar el tiempo de finalización del flujo</li>
+            </ul>
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaInterfaz1.png" alt="">
+            </div>
+            <p class="articulo__parrafo-1">Posteriormente, realizamos un moodboard para definir la estética de la
+              interfaz, basándonos en conceptos obtenidos a través de los insights de las entrevistas a usuarios.</p>
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaInterfaz2.png" alt="">
+            </div>
+            <p class="articulo__parrafo-1">Este proceso luego se tradujo en el diseño de un ui kit, el cual usamos para
+              crear el prototipo de la plataforma y las interacciones dentro de la misma. Uno de los aspectos que
+              tratamos en los que tratamos de enfocarnos fue en el wording dentro de la aplicación, ya que dentro de los
+              insights obtenidos se nos recalco el estilo de habla mas informal y cálido como uno de los factores de
+              preferencia por sobre la frialdad y esterilidad del supermercado, algo que también buscamos reflejar en el
+              diseño de la misma interfaz.</p>
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaInterfaz3.png" alt="">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaInterfaz4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--PAnel Interfaz-->
+    <!--PAnel UserTesting-->
+    <section id="panelUserTesting" class="d-none d-lg-block panel fondo__light">
+      <div class="composicion1__barraMenu fondo__light"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2 panelProceso1__contenedorForma">
+            <div class="panelProceso1__formaCirculo-vegaChica-2"></div>
+            <div class="panelProceso1__formaLinea-vegaChica-2"></div>
+          </div>
+          <div class="col-lg-10">
+            <h2 class="articulo__titulo my-5">User Testing</h2>
+            <p class="articulo__parrafo-1">Finalmente, estos prototipos fueron probados con distintos usuarios que se asemejaban a nuestros user persona. Se me encargó escribir un guion detallando 3 escenarios de uso. Durante las sesiones, las cuales tuvieron que ser realizadas a distancia mediante videollamada, pude identificar problemas principalmente en el proceso de compra, debido a una preconcepción errónea con respecto al wording de un elemento, y a la falta de claridad con el botón de compra.</p>
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaUserTesting1.png" alt="">
+            </div>
+            <p class="articulo__parrafo-1 mb-5 pb-5">Pese a esto, los usuarios consideraron el sitio como “fácil de usar” e “intuitivo”, reaccionaron de manera positiva a la línea grafica y al wording, y apreciaron gratamente nuestra propuesta de valor, y nos entregaron varias recomendaciones para añadir a la experiencia. </p>
+        </div>
+      </div>
+    </section>
+    <!--PAnel UserTesting-->
+
+    <!--PanelProceso1 MOVIL-->
+    <section id="panelProceso1-mv" class="panel d-block d-lg-none fondo__light">
+      <div class="container-fluid">
+        <div class="composicion1__barraMenu fondo__light"></div>
+        <div class="row">
+          <div class="col-12">
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaProceso.png" alt="">
+            </div>
+            <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light">A petición de la entidad evaluadora, el proceso de
+              desarrollo se llevo a cabo en 4 etapas en modo de cascada; investigación, arquitectura de la información,
+              diseño de UI e interacción, y pruebas de usuario.</p>
+            <h3 class="articulo__info-titulo hero__subtitulo-1 texto__light">Investigación</h3>
+            <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light">El primer paso en el proceso de investigación fue una entrevista con el
+              cliente, donde se determinaron cuáles eran las problemáticas a las que se enfrenta y los objetivos para su
+              negocio, los cuales luego fueron traducidos en KPI’s.</p>
+              <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light">Una vez determinadas las necesidades del cliente, se realizo un proceso de acercamiento al usuario dividido en 2 fases; en primer lugar, se realizó un proceso de encuestas al publico general, con el fin de obtener una vista general del publico objetivo, seguido de un proceso de entrevistas con usuarios específicos, elegidos según sus respuestas en la encuesta, para obtener insights y una vista más detallada de su punto de vista.</p>
+              <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light">Dentro de las observaciones que pudimos obtener al analizar los datos, descubrimos que casi un 90% de los entrevistados ha dejado de ir, o va con menos frecuencia a la feria, mientras que un 86% realizaria estas compraas de manera digital si se les diera la oportunidad. Por otro lado, los insights de las entrevistas nos permitieron descubrir que el tono y el lenguaje usado dentro de la feria es un elemento valorado por los usuarios, quienes prefieren la "calidez" del trato por sobre la "frialdad" y "esterilidad" del supermercado.</p>
+              <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light">Uno de los problemas que tuvimos que enfrentar en este proceso, fue al descubrir un error de cálculo al momento de determinar los rangos etarios, haciendo un grupo etario más grande que los demás, lo que genero un desbalance en los resultados.</p>
+              <div class="panelProceso2__contenido my-5">
+                <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaInvestigacion1.png" alt="">
+              </div>
+              <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light">Esto se solucionó contactando a los usuarios de ese grupo que dejaron su numero o mail de contacto, y preguntándoles nuevamente su rango etario, esta vez con los rangos corregidos, con el fin de rectificar el error. Afortunadamente todos los usuarios respondieron, y pudimos sortear el problema, re analizar los datos, y seguir adelante.</p>
+              <div class="panelProceso2__contenido my-5">
+                <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaInvestigacion2.png" alt="">
+              </div>
+              <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light">Con los datos obtenidos se procedió a hacer mapas de empatía de cada uno de los rangos etarios, con el fin de poder determinar nuestro usuario objetivo y los usuarios secundarios. Para esto determinamos high, médium, y low user usando como criterio su frecuencia de ida a ferias libres.</p>
+              <div class="panelProceso2__contenido my-5">
+                <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaInvestigacion3.png" alt="">
+              </div>
+              <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light">Finalmente, de entre todos los mapas elegimos 2, basándonos basándonos en su probabilidad de retención a largo plazo, su capacidad de gasto, y el porcentaje del universo total que abarca, y los traspasamos a user persona.</p>
+              <div class="panelProceso2__contenido my-5">
+                <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaInvestigacion4a.png" alt="">
+                <img class="image panelProceso2__img mt-4" src="assets/img/laVegaChica/vegaChicaInvestigacion4b.png" alt="">
+              </div>
+              <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light">Posteriormente realizamos un proceso de benchmarking, en el cual comparamos a 3 competencias directas dentro del mercado de delivery de feria, y 4 competencias indirectas dentro del mercado de delivery en general, analizando tanto el diseño de la plataforma como el diseño del servicio. Esto se tradujo en recomendaciones sobre qué elementos replicar y que elementos evitar, principalmente el contar contar con la opcion de poder comprar sin registrarse e incluir la opción de cobro contra entrega</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h3 class="articulo__info-titulo hero__subtitulo-1 texto__light">Arquitectura de la información</h3>
+            <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light ">El proceso de arquitectura de información inicio con un proceso de card sorting, inicialmente se realizo de manera interna, con el fin de pulir la herramienta y comprobar discrepancias dentro del equipo, para finalmente aplicarla de manera externa con 15 personas.</p>
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaArquitectura1.png" alt="">
+            </div>
+            <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light">Con los resultados obtenidos, realizamos un mapa de navegación el que nos permitió posteriormente realizar los mapas de flujo principales de la plataforma. En este caso, y debido a las limitantes de tiempo, nos enfocamos en el flujo de compra, ya que es el flujo principal de la aplicación, y el flujo de inscripción y guardado de listas, ya que compone nuestra propuesta de valor para la plataforma, en ambos casos determinamos criterios para definir que era lo que buscábamos en cada flujo, y así poder guiar de mejor manera el proceso.</p>
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaArquitectura2.jpg" alt="">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaArquitectura3.jpg" alt="">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaArquitectura4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h3 class="articulo__info-titulo hero__subtitulo-1 texto__light">Diseño de interfaz</h3>
+            <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light">Basándonos en los flujos e insights identificados durante nuestro proceso de investigación y arquitectura, trabajamos en el proceso de wireframing enfocándonos en los siguientes criterios:</p>
+            <ul class="vegaChica__lista mt-5 ml-5">
+              <li class="articulo__info-parrafo articulo__parrafo-1 texto__light">Jerarquizar la información crucial para el uso y la captación de usuarios,
+                de manera que esta quede disponible en la primera pantalla.</li>
+              <li class="articulo__info-parrafo articulo__parrafo-1 texto__light mt-3">Facilitar el manejo para usuarios con un menor grado de experiencia
+                con plataformas móviles</li>
+              <li class="articulo__info-parrafo articulo__parrafo-1 texto__light mt-3">Reducir lo mas posible la cantidad de acciones requeridas para
+                minimizar el tiempo de finalización del flujo</li>
+            </ul>
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaInterfaz1.png" alt="">
+            </div>
+            <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light">Posteriormente, realizamos un moodboard para definir la estética de la interfaz, basándonos en conceptos obtenidos a través de los insights de las entrevistas a usuarios.</p>
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaInterfaz2.png" alt="">
+            </div>
+            <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light">Este proceso luego se tradujo en el diseño de un ui kit, el cual usamos para crear el prototipo de la plataforma y las interacciones dentro de la misma. Uno de los aspectos que tratamos en los que tratamos de enfocarnos fue en el wording dentro de la aplicación, ya que dentro de los insights obtenidos se nos recalco el estilo de habla mas informal y cálido como uno de los factores de preferencia por sobre la frialdad y esterilidad del supermercado, algo que también buscamos reflejar en el diseño de la misma interfaz.</p>
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaInterfaz3.png" alt="">
+              <img class="image panelProceso2__img mt-5" src="assets/img/laVegaChica/vegaChicaInterfaz4.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h3 class="articulo__info-titulo hero__subtitulo-1 texto__light">User Testing</h3>
+            <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light">Finalmente, estos prototipos fueron probados con distintos usuarios que se asemejaban a nuestros user persona. Se me encargó escribir un guion detallando 3 escenarios de uso. Durante las sesiones, las cuales tuvieron que ser realizadas a distancia mediante videollamada, pude identificar problemas principalmente en el proceso de compra, debido a una preconcepción errónea con respecto al wording de un elemento, y a la falta de claridad con el botón de compra..</p>
+            <div class="panelProceso2__contenido my-5">
+              <img class="image panelProceso2__img" src="assets/img/laVegaChica/vegaChicaUserTesting1.png" alt="">
+            </div>
+            <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__light mb-5">Pese a esto, los usuarios consideraron el sitio como “fácil de usar” e “intuitivo”, reaccionaron de manera positiva a la línea grafica y al wording, y apreciaron gratamente nuestra propuesta de valor, y nos entregaron varias recomendaciones para añadir a la experiencia.
+            </p>
+        </div>
+        <div class="row">
+          <div class="col-12 fondo__dark pb-5">
+            <div class="composicion1__barraMenu fondo__dark"></div>
+            <h3 class="articulo__info-titulo hero__subtitulo-1 texto__dark">Conclusión</h3>
+            <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__dark">En conjunto con mi equipo, fuimos capaces de levantar un proceso de diseño completo, desde la fase de investigación, hasta el prototipado y user testing, en un periodo de 10 días, luego de lo cual presentamos nuestro trabajo a un jurado de profesionales dentro del rubro, quienes validaron nuestro desarrollo.</p>
+            <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__dark mb-5">Este último proyecto me permitió poner en practica todo lo aprendido durante mi enseñanza en el programa Talento Digital, y fue un proceso que disfrute bastante.</p>
+            <p class="pr-4 articulo__info-parrafo articulo__parrafo-1 texto__dark mb-5">Algunas de las conclusiones a las que pude llegar luego de esta experiencia fueron:</p>
+            <ul class="vegaChica__lista mt-5 ml-5">
+              <li class="articulo__info-parrafo articulo__parrafo-1 texto__dark"><span class="articulo__parrafo-bold-mv">Es necesario organizarse como equipo y distribuir de forma apropiada las tareas:</span><br>En un principio, varios de los estudiantes sugirieron realizar el desarrollo de manera individual. Yo me opuse a esa decisión, y mas adelante pude darme cuenta de que tomé la postura correcta. Fue gracias a mis compañeros y nuestra organización como equipo que logramos completar todas las actividades dentro de los plazos estimados, y llegar con un producto final con el cual estuviéramos conformes</li>
+              <li class="articulo__info-parrafo articulo__parrafo-1 texto__dark mt-3"><span class="articulo__parrafo-bold-mv">Todos los problemas tienen solución:</span><br>Facilitar el manejo para usuarios con un menor grado de experiencia
+                con plataformas móviles</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--PanelProceso1 MOVIL-->
+    <!--PAnelConclusion-->
+    <section id="panelConclusion" class="fondo__dark d-none d-lg-block mb-5">
+      <div class="container-fluid px-5">
+        <div class="row">
+          <div class="col-md-4 col-xl-6 offset-md-1">
+            <h2 class="articulo__titulo texto__dark mt-5 pt-3">Conclusión</h2>
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col-lg-10 offset-md-1 mb-5">
+            <p class="articulo__parrafo-1 texto__dark">En conjunto con mi equipo, fuimos capaces de levantar un proceso de diseño completo, desde la fase de investigación, hasta el prototipado y user testing, en un periodo de 10 días, luego de lo cual presentamos nuestro trabajo a un jurado de profesionales dentro del rubro, quienes validaron nuestro desarrollo.</p>
+            <p class="articulo__parrafo-1 texto__dark mt-5">Este último proyecto me permitió poner en practica todo lo aprendido durante mi enseñanza en el programa Talento Digital, y fue un proceso que disfrute bastante.
+            </p>
+            <p class="articulo__parrafo-1 texto__dark mt-5">Algunas de las conclusiones a las que pude llegar luego de esta experiencia fueron:
+            </p>
+            <ul class="vegaChica__lista mt-5">
+              <li class="articulo__parrafo-1 texto__dark pt-5"><span class="articulo__parrafo-bold">Es necesario organizarse como equipo y distribuir de forma apropiada las tareas: </span><br>En un principio, varios de los estudiantes sugirieron realizar el desarrollo de manera individual. Yo me opuse a esa decisión, y mas adelante pude darme cuenta de que tomé la postura correcta. Fue gracias a mis compañeros y nuestra organización como equipo que logramos completar todas las actividades dentro de los plazos estimados, y llegar con un producto final con el cual estuviéramos conformes</li>
+              <li class="articulo__parrafo-1 mt-5 texto__dark"><span class="articulo__parrafo-bold">Todos los problemas tienen solución: </span><br>Durante el proceso nos enfrentamos a varios problemas, algunos causados por inexperiencia, otros causados por la presión de las fechas de entrega. Sin embargo estas mismas situaciones nos permitieron llegar a la conclusión de que toda situación, y toda metodología cuenta con formas y medios para solucionar problemas con los cuales podamos enfrentarnos.</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <!--Panelconclusion-->
+  </div>
+  <!--FINAL WRAPPER-->
+</body>
+
+</html>

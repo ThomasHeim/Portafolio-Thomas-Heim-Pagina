@@ -74,6 +74,14 @@ html{
         @include montserrat-sm-texto;
         line-height: 2rem;
     }
+    &__parrafo-bold{
+        @include bebas-xs;
+        line-height: 4rem;
+    }
+    &__parrafo-bold-mv{
+        @include bebas-texto;
+        line-height: 1rem;
+    }
 }
 
 .descripcion__titulo{
