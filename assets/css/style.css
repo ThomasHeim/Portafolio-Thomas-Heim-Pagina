@@ -11161,6 +11161,51 @@ main {
   transition: box-shadow ease 0.5s;*/
 }
 
+.boton__customBlack {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 5rem;
+  mix-blend-mode: normal;
+  background-color: black;
+  text-align: center;
+  padding: 10px 8px 2px 8px;
+  color: white;
+  line-height: 1;
+  white-space: nowrap;
+  /*&:not(:hover){
+      animation: hover__botones;
+      -moz-animation: hover__botones;
+      -webkit-animation: hover__botones;
+      -o-animation: hover__botones;
+
+      animation-duration:  0.5s;
+      animation-direction: reverse;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+  }*/
+}
+.boton__customBlack a {
+  color: black;
+  text-decoration: none;
+}
+.boton__customBlack a:hover {
+  color: white;
+  mix-blend-mode: difference;
+}
+.boton__customBlack:hover {
+  animation: hover__botones-dark;
+  -moz-animation: hover__botones-dark;
+  -webkit-animation: hover__botones-dark;
+  -o-animation: hover__botones-dark;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  /*box-shadow: inset 548px 0.01px 0.01px 0.01px white;
+  color: black;
+  mix-blend-mode: difference;
+  transition: box-shadow ease 0.5s;*/
+}
+
 @media (min-width: 768px) {
   .boton__custom-hero1 {
     padding: 15px 8px 5px 8px;
@@ -11775,7 +11820,7 @@ main {
 }
 .panelProceso1__formaLineaArte {
   width: 30px;
-  height: 3500px;
+  height: 5500px;
   background-color: black;
   position: absolute;
   top: -25%;
@@ -11806,6 +11851,10 @@ main {
 }
 .panelProceso2__img {
   max-width: 95%;
+}
+.panelProceso2__botonContenedor {
+  display: flex;
+  justify-content: center;
 }
 
 .imageSplit {

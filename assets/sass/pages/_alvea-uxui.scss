@@ -118,7 +118,7 @@
     }
     &__formaLineaArte{
         width: 30px;
-        height: 3500px;
+        height: 5500px;
         background-color: black;
         position: absolute;
         top: -25%;
@@ -154,6 +154,10 @@
 
     &__img{
         max-width: 95%;
+    }
+    &__botonContenedor{
+        display: flex;
+        justify-content: center;
     }
 }
 
