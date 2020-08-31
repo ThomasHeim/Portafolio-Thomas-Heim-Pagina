@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/41b8753ddc.js" crossorigin="anonymous"></script>  
+    <!--Mi estilo-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!--Favicon-->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
+
+    <!--js js js js js js js-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
+    <script src="../assets/js/gallery-hover.js" defer></script>
+    <!--js js js js js js js--> 
+    <title>Thomas Heim | Graphic Design</title>
+</head>
+<body>
+  <!--Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navegacion" id="navegacion">
+    <a class="navbar-brand navegacion__logo" href="index.html"><svg class="navegacion__logo-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296.8 129.2"><polygon points="260.8 0 198.6 71.9 176.1 53.3 222.2 0 186.3 0 155.2 36 132.4 17.2 111.7 0 70.1 0 94.4 20.1 0 129.2 36 129.2 115.4 37.5 137.8 56 74.4 129.2 110.3 129.2 158.7 73.3 181.2 92 148.9 129.2 184.9 129.2 201.8 109.6 219.6 89.1 296.8 0 "/></svg></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-right navegacion__contenido" id="navbarNav">
+      <ul class="navbar-nav navegacion__contenido-lista">
+        <li class="nav-item navegacion__idioma">
+          <a class="nav-link navegacion__contenido-link" href="../diseno-grafico.html">Español<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown d-none d-lg-block">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            My work
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="index.html#trabajos">UX/UI Design</a>
+            <a class="dropdown-item" href="graphic-design.html">Graphic Design</a>
+            <a class="dropdown-item" href="illustration.html">Ilustration</a>
+          </div>
+        </li>
+        <li class="nav-item navegacion__quiensoy">
+          <a class="nav-link navegacion__contenido-link" href="about.html">About Me <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item d-lg-none">
+          <a class="nav-link navegacion__contenido-link" href="#trabajos">UX/UI Design<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item d-lg-none">
+          <a class="nav-link navegacion__contenido-link" href="graphic-design.html">Graphic Design<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item d-lg-none">
+          <a class="nav-link navegacion__contenido-link" href="illustration.html">Ilustration<span class="sr-only">(current)</span></a>
+        </li>
+      </ul> 
+    </div>
+</nav>
+
+<ul class="navegacion__contacto">
+  <li class="navegacion__contacto-elemento">
+    <a class="navegacion__contacto-link" href="mailto: info@thomasheimdesign.com">Mail</a>
+  </li>
+  <li class="navegacion__contacto-elemento">
+    <a class="navegacion__contacto-link" href="https://www.linkedin.com/in/thomasheimrojas/" target="_blank">LinkedIn</a>
+  </li>
+</ul>
+
+
+<div class="wrapper">
+  <header id="panel__fijo-disenografico" class="panel__fijo panel  galeria__header">
+    <div class="container galeria__header-contenedor">
+      <img id="galeria__header-imagen__diseno" class="galeria__header-imagen" src="../assets/img/Logo-Portafolio-01.svg" alt="">
+  </div>
+  <div class="container">
+      <div class="row">
+          <h1 id="galeria__header-titulo__diseno" class="col-12 offset-md-2 galeria__header-titulo">//Some of my <br>designs</h1>
+      </div>
+  </div>
+  </header>
+
+
+
+  <!--GALERIA DESKTOP-->
+  <section id="galeria" class="panel__galeria galeria__disenografico">
+
+    <!--ELEMENTO 1-->
+    <div id="disenoGraficoGaleria1" class="gallery__container">
+      <button class="btn__invisible"><img src="../assets/img/disenoGrafico/careta-galeria.png" alt="Careta-galeria" class="img__btn" data-toggle="modal" data-target="#elemento1"></button>
+      <div class="descripcion__wrapper">
+        <div id="descripcionBg1" class="descripcion__bg">
+          <h3 id="descripcionTexto1" class="descripcion__texto descripcion__titulo texto__dark">Careta</h3> 
+        </div>
+      </div>
+    </div>
+
+    <!--ELEMENTO 2-->
+    <div id="disenoGraficoGaleria2" class="gallery__container">
+      <button class="btn__invisible"><img src="../assets/img/disenoGrafico/logos-galeria.png" alt="Logos-galera" class="img__btn" data-toggle="modal" data-target="#elemento2"></button>
+      <div class="descripcion__wrapper">
+        <div id="descripcionBg2" class="descripcion__bg">
+          <h3 id="descripcionTexto2" class="descripcion__texto descripcion__titulo texto__dark">Logo gallery</h3> 
+        </div>
+      </div>
+    </div>
+
+    <!--ELEMENTO 3-->
+    <div id="disenoGraficoGaleria3" class="gallery__container">
+      <button class="btn__invisible"><img src="../assets/img/disenoGrafico/otori-galeria.png" alt="Leyendas de los Otori" class="img__btn" data-toggle="modal" data-target="#elemento3"></button>
+      <div class="descripcion__wrapper">
+        <div id="descripcionBg3" class="descripcion__bg">
+          <h3 id="descripcionTexto3" class="descripcion__texto descripcion__titulo texto__dark">Leyends of the otori</h3> 
+        </div>
+      </div>
+    </div>
+  </section>   
+</div>
+
+<!--MODALES DESKTOP-->
+<div class="galeria__modales">
+
+  <!--elemento 1-->
+  <div class="modal fade modal-fullscreen-xl" id="elemento1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="boton__header close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!--DESKTOP-->
+          <div class="d-none d-md-block w-100 primerslide">
+            <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/careta-desktop-1.png" alt="Careta-portada">
+            <div class="d-none d-lg-block d-xl-none primerslide__info">
+              <h4 class="modales__titulo texto__dark">Careta</h4>
+              <h3 class="modales__subtitulo texto__dark">Design of game components and packaging</h3>
+              <h2 class="modales__subtitulo texto__dark">Client: Niebla Games</h2>
+            </div>
+            <div class="d-none d-xl-block primerslide__info primerslide__info-lg">
+              <h4 class="modales__titulo texto__dark">Careta</h4>
+              <h3 class="modales__subtitulo texto__dark">Design of game components and packaginga</h3>
+              <h2 class="modales__subtitulo texto__dark">Client: Niebla Games</h2>
+              <p class="modales__texto texto__dark">Work made for “Careta”, the first board game published by Niebla Games, based around the universe of their videogame “Causa: Voices of the Dusk”.
+                I was tasked with the design of all of the components of the game, except for the main box illustration and the characters in the cards, which were made by the studio’s visual artist beforehand. </p>
+            </div>
+          </div>
+          <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/careta-desktop-2.png" alt="Careta-dorsos-fichas">
+          <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/careta-desktop-3.png" alt="Careta-cartas-fichas">
+          <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/careta-desktop-4.png" alt="Careta-caja-dorso">
+          <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/careta-desktop-5.png" alt="Careta-caja-frente-reverso"> <!--DESKTOP-->
+
+          <!--MOvIL-->
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/careta-movil-1.png" alt="Careta-portada">
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/careta-movil-2.png" alt="Careta-dorsos-fichas">
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/careta-movil-3.png" alt="Careta-cartas-fichas">
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/careta-movil-4.png" alt="Careta-caja-frente">
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/careta-movil-5.png" alt="Careta-reverso">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--elemento 2-->
+  <div class="modal fade modal-fullscreen-xl" id="elemento2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="boton__header close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!--DESKTOP-->
+          <div class="d-none d-md-block w-100 primerslide">
+            <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/logos-desktop-portda.png" alt="Logos-portada">
+
+            <div class="d-none d-md-block d-lg-none primerslide__info">
+              <h4 class="modales__titulo texto__dark">Logo Collection</h4>
+              <h3 class="modales__subtitulo texto__dark">Logo Design</h3>
+            </div>
+            <div class="d-none d-lg-block primerslide__info primerslide__info-lg">
+              <h4 class="modales__titulo texto__dark">Logo Collection</h4>
+              <h3 class="modales__subtitulo texto__dark">Logo Design</h3>
+              <p class="modales__texto texto__dark">Collection of logos i’ve designed in the last years. Each one of these designs starts as a sketch which is then digitized via vectorization methods. All of these designs were realized together with the clients and their input to satisfy their particular needs.</p>
+            </div>
+          </div>
+          <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/logos-desktop-7.png" alt="Logos-AguaSantaBakery">
+          <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/logos-desktop-6.png" alt="Logos-TankEngine">
+          <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/logos-desktop-5.png" alt="Logos-IDKGames">
+          <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/logos-desktop-4.png" alt="Logos-Arcadia">
+          <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/logos-desktop-3.png" alt="Logos-Careta">
+          <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/logos-desktop-2.png" alt="Logos-PolyBird">
+          <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/logos-desktop-1.png" alt="Logos-IdeaVerde"><!--DESKTOP-->
+
+          <!--MOVIL-->
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/logos-movil-portada.png" alt="Logos-portada">
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/logos-movil-7.png" alt="Logos-AguaSantaBakery">
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/logos-movil-6.png" alt="Logos-TankEngine">
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/logos-movil-5.png" alt="Logos-IDKGames">
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/logos-movil-4.png" alt="Logos-Arcadia">
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/logos-movil-3.png" alt="Logos-Careta">
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/logos-movil-2.png" alt="Logos-Polybird">
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/logos-movil-1.png" alt="Logos-IdeaVerde"><!--MOVIL-->
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--elemento3-->
+  <div class="modal fade modal-fullscreen-xl" id="elemento3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="boton__header close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!--DESKTOP-->
+          <div class="d-none d-md-block w-100 primerslide">
+            <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/otori-desktop-1.png" alt="LeyendasDeLosOtori-Portada">
+            <div class="d-none d-lg-block d-xl-none primerslide__info">
+              <h4 class="modales__titulo texto__dark">Leyendas de los Otori</h4>
+              <h3 class="modales__subtitulo texto__dark">Digital pre-press design for hard cover edition</h3>
+              <h2 class="modales__subtitulo texto__dark">University project</h2>
+            </div>
+            <div class="d-none d-xl-block primerslide__info primerslide__info-lg">
+              <h4 class="modales__titulo texto__dark">Leyendas de los Otori</h4>
+              <h3 class="modales__subtitulo texto__dark">Digital pre-press design for hard cover edition</h3>
+              <h2 class="modales__subtitulo texto__dark">University project</h2>
+              <p class="modales__texto texto__dark">Hard cover edition redesign of the book “Legends of the Otori” as part of my university projects. Except fot the manuscript, all the content was designed from scratch digitally, adding graphic elements alluding to the contents of the story, which then was turned into a mock-up made by hand. </p>
+            </div>
+          </div>
+          <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/otori-desktop-2.png" alt="LeyendasDeLosOtori-DetallesTapayContratapa">
+          <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/otori-desktop-3.png" alt="LeyendasDeLosOtori-DetallesInternos">
+          <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/otori-desktop-4.png" alt="LeyendasDeLosOtori-DetallesInternos2">
+          <img class="d-none d-md-block w-100" src="../assets/img/disenoGrafico/otori-desktop-5.png" alt="LeyendasDeLosOtori-Lomo"><!--DESKTOP-->
+          
+          <!--MOVIL-->
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/otori-movil-1.png" alt="LeyendasDeLosOtori-Portada">
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/otori-movil-2.png" alt="LeyendasDeLosOtori-DetallePortada">
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/otori-movil-3.png" alt="LeyendasDeLosOtori-DetalleContratapa">
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/otori-movil-4.png" alt="LeyendasDeLosOtori-DetallesInternos">
+          <img class="d-block d-md-none w-100" src="../assets/img/disenoGrafico/otori-movil-5.png" alt="LeyendasDeLosOtori-DetallesInternos2"><!--MOVIL-->
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
