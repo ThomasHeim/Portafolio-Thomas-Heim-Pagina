@@ -166,6 +166,11 @@
     font-weight: $font-regular;
     font-size: $texto;
 }
+@mixin montserrat-texto-bold {
+    font-family: $montserrat;
+    font-weight: $font-bold;
+    font-size: $texto;
+}
 
 
 /*MontSerrat Movil*/
@@ -204,3 +209,9 @@
     font-weight: $font-regular;
     font-size: $sm-texto;
 }
+@mixin montserrat-sm-texto-bold {
+    font-family: $montserrat;
+    font-weight: $font-bold;
+    font-size: $sm-texto;
+}
+

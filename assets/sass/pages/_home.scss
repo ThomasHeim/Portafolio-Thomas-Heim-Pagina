@@ -1,3 +1,162 @@
 .home{
     overflow-y: hidden;
+
+    &__titulo{
+        @include bebas-sm-xl;
+        margin-left: 5%;
+        margin-bottom:  40px;
+    }
+    &__tituloAbout{
+        @include bebas-sm-xl;
+        margin-bottom:  20px;
+    }
+    &__tituloName{
+        @include bebas-sm-xl;
+        margin-bottom:  20px;
+    }
+    &__tituloMail{
+        @include montserrat-sm-s;
+        margin-bottom:  20px;
+    }
+    &__img{
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__experience-logo{
+        max-width: 15%;
+    }
+    &__link{
+        color: #b50030;
+        text-decoration: none;
+    }
+    
 }
+
+a:link{
+    color: #b50030;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #d60c42;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #b50030;
+    text-decoration: none;
+}
+
+.aboutIcons{
+    color: black !important;
+}
+
+
+
+.home_portafolio{
+    background-color: black;
+}
+
+.profilePic{
+    border-radius: 50%;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+
+//Title Design
+.titulo__proyectosHome{
+    mix-blend-mode: normal;
+    background-color: white;
+    text-align: center;
+    padding: 10px 8px 2px 8px;
+    color: black;
+    line-height: 1;
+    white-space: nowrap;
+    }
+
+.titulo__about{
+    mix-blend-mode: normal;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 8px 2px 8px;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    white-space: nowrap;
+    }
+
+.trabajos{
+    background-color: black;
+
+
+
+}
+    
+    
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        .home{
+            &__titulo{
+                @include bebas-m;
+                margin-bottom:  40px;
+            }
+            &__tituloAbout{
+                @include bebas-m;
+                margin-bottom:  20px;
+            }
+            &__tituloName{
+                @include bebas-xs;
+                margin-bottom:  20px;
+            }
+            &__tituloMail{
+                @include montserrat-sm-s;
+                margin-bottom:  20px;
+            }
+        }
+    }
+    
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+    
+        .home{
+            &__titulo{
+                @include bebas-m;
+                margin-bottom:  40px;
+            }
+            &__tituloAbout{
+                @include bebas-m;
+                margin-bottom:  20px;
+            }
+            &__tituloName{
+                @include bebas-xs;
+                margin-bottom:  20px;
+            }
+            &__tituloMail{
+                @include montserrat-sm-s;
+                margin-bottom:  20px;
+            }
+        }
+    }
+    
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        .home{
+            &__titulo{
+                @include bebas-m;
+                margin-bottom:  40px;
+            }
+            &__tituloAbout{
+                @include bebas-m;
+                margin-bottom:  20px;
+            }
+            &__tituloName{
+                @include bebas-xs;
+                margin-bottom:  20px;
+            }
+            &__tituloMail{
+                @include montserrat-sm-s;
+                margin-bottom:  20px;
+            }
+        }
+    }

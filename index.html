@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Primary Meta Tags -->
-    <title>Thomas Heim | Portafolio | Diseño UX/UI</title>
+    <title>Thomas Heim | UX/UI Designer</title>
     <meta name="title" content="Thomas Heim | Portafolio | Diseño UX/UI">
     <meta name="description" content="Diseñador intergral ubicado en Viña del Mar, Chile, con conocimiento en diseño UX/UI y metodologías ágiles, ilustración y diseño gráfico, con pasión por entender el vinculo entre las personas y las experiencias">
 
@@ -24,9 +24,9 @@
     <!--Fuentes-->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
     <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/41b8753ddc.js" crossorigin="anonymous"></script>  
+    <script src="https://kit.fontawesome.com/41b8753ddc.js" crossorigin="anonymous"></script>
     <!--Mi estilo-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/sass/main.css">
     <!--Favicon-->
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
 
@@ -38,43 +38,39 @@
     <!--js js js js js js js--> 
     <title>Thomas Heim | Diseño</title>
 </head>
-<body class="home">
+<body>
   <!--Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light navegacion" id="navegacion">
-      <a class="navbar-brand navegacion__logo" href="index.html"><svg class="navegacion__logo-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296.8 129.2"><polygon points="260.8 0 198.6 71.9 176.1 53.3 222.2 0 186.3 0 155.2 36 132.4 17.2 111.7 0 70.1 0 94.4 20.1 0 129.2 36 129.2 115.4 37.5 137.8 56 74.4 129.2 110.3 129.2 158.7 73.3 181.2 92 148.9 129.2 184.9 129.2 201.8 109.6 219.6 89.1 296.8 0 "/></svg></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse text-right navegacion__contenido" id="navbarNav">
-        <ul class="navbar-nav navegacion__contenido-lista">
-          <li class="nav-item navegacion__idioma">
-            <!--<a class="nav-link navegacion__contenido-link" href="en/index.html">English<span class="sr-only">(current)</span></a>-->
-          </li>
-          <li class="nav-item navegacion__quiensoy">
-            <a class="nav-link navegacion__contenido-link" href="sobre-mi.html">Quien soy <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item d-lg-none">
-            <a class="nav-link navegacion__contenido-link" href="#trabajos">Diseño UX<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item d-lg-none">
-            <a class="nav-link navegacion__contenido-link" href="diseno-grafico.html">Diseño gráfico<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item d-lg-none">
-            <a class="nav-link navegacion__contenido-link" href="ilustracion.html">Ilustración<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown d-none d-lg-block">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Mis trabajos
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#trabajos">Diseño UX/UI</a>
-              <a class="dropdown-item" href="diseno-grafico.html">Diseño gráfico</a>
-              <a class="dropdown-item" href="ilustracion.html">Ilustración</a>
-            </div>
-          </li>
-        </ul> 
-      </div>
+    <div class="collapse navbar-collapse text-right navegacion__contenido container justify-content-center flex-column">
+        <ul class="container justify-content-center navegacion__main pt-4 pt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link navegacion__contenido-link" href="#about">About</a>
+            </li>
+                <svg class="navbar-brand navegacion__logo navegacion__logo-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296.8 129.2"><polygon points="260.8 0 198.6 71.9 176.1 53.3 222.2 0 186.3 0 155.2 36 132.4 17.2 111.7 0 70.1 0 94.4 20.1 0 129.2 36 129.2 115.4 37.5 137.8 56 74.4 129.2 110.3 129.2 158.7 73.3 181.2 92 148.9 129.2 184.9 129.2 201.8 109.6 219.6 89.1 296.8 0 "/></svg>
+            <li>
+                <a class="nav-link navegacion__contenido-link" href="#portfolio">Portfolio</a>
+            </li>
+        </ul>
+        <ul class="container d-none d-md-flex pt-2 justify-content-evenly navegacion__sub">
+            <li class="nav-item">
+                <a class="nav-link navegacion__contenido-link" href="#fantasticFoodtruck">Fantastic Foodtruck</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navegacion__contenido-link" href="#tangram">Tangram</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navegacion__contenido-link" href="#squiggle">Squiggle Magic</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navegacion__contenido-link" href="#alvea">Alvea</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navegacion__contenido-link" href="ilustracion.html">Illustration</a>
+            </li>
+        </ul>
+    </div>
   </nav>
+  
 
   <ul class="navegacion__contacto">
     <li class="navegacion__contacto-elemento">
@@ -86,32 +82,584 @@
   </ul>
 <div class="wrapper">
   <!--hero hero hero hero hero hero hero hero hero hero-->
-  <header id="top" class="panel__fijo panel hero">
+  <header id="portfolio" class="panel__hero home_portafolio">
+    <div class="composicion1__barraMenuHome fondo__dark"></div>
     <div class="container-fluid hero__container">
-      <div class="row">
-        <h1 class="col-12 col-md-9 hero__texto"><span class="hero__texto-1">¡Hola! </span><br><span class="hero__texto-2">Soy Thomas Heim,</span> <br><button class="hero__boton-1 boton__custom-hero1"><a href="#trabajos">diseñador UX/UI</a></button></h1>
+      <div class="row justify-content-center">
+        <h1 class="hero__titulo texto__darkTitle">Portfolio</h1>
       </div>
-      <div class="row hero__parrafo-2__container">
-        <p class="col-12 col-md-5 pt-5 mt-3 hero__texto-3 hero___parrafo-2 text-left d-none d-md-block">Soy un diseñador integral ubicado en Viña del Mar, Chile con conocimientos en diseño UX/UI para software con metodologías ágiles y experiencia en el área de los videojuegos y el Game Design.<br> <br> Mi pasión es entender la relación entre las personas y las experiencias, y convertir cada desafío en una chance para adquirir nuevo conocimiento.</p>
-        <h1 class="col-12 col-md-7 hero__texto hero___parrafo-2"><span class="hero__texto-2">Tambien soy</span><button class="hero__boton-2 boton__custom-hero2"><a href="ilustracion.html">Ilustrador</a></button><span class="hero__texto-2">y</span><br><button class="hero__boton-2 boton__custom-hero2"><a href="diseno-grafico.html">diseñador gráfico</a></button></h1>
+      <div class="row justify-content-center">
+        <h2 class="hero__subtitulo-1 texto__dark text-center">Thomas Heim // UX UI Designer</h2>
       </div>
     </div>
   </header>
 
-  <!--Main Main Main Main Main Main Main Main Main Main Main  -->
-  <main id="trabajos" class="trabajos">
-    <div class="container-fluid trabajos__container panel">
+        <!--Foodtruck-->
+  <section id="fantasticFoodtruck" class="panel fondo__dark">
+    <div class="composicion1__barraMenuHome fondo__dark"></div>
+    <div class="container-fluid pb-5">
       <div class="row">
-        <button id="ux__first" class="trabajos__boton boton__custom-trabajos"><a href="LaVegaChica.html">La Vega Chica</a></button> 
+        <h2 class="home__titulo titulo__proyectosHome mx-auto text-wrap">Math Wizard and the Fantastic Foodtruck</h2>
       </div>
-      <div class="row d-xl-none">
-        <button id="ux__second" class="trabajos__boton boton__custom-trabajos"><a href="alveaux.html">Alvea</a></button> 
+      
+        <!--Intro-->
+      <div class="row justify-content-center mb-3">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">For this project, i was brought in to completely redesign the UX and UI of the game after its poor performance in the alpha tests, which meant analyzing and redesigning every feature from the flow, to the creation of the UI elements, to the final implementation into Unity. In every step of the way i worked together with game designers, artists and engineers, to ensure every element of my design was coherent with the overall experience and aesthetics of the game, and that every feature was working as expected. My work is the result of that collaboration.</p>
+        </div>
       </div>
-      <div class="row d-none d-xl-block">
-        <button id="ux__second-desktop" class="trabajos__boton boton__custom-trabajos"><a href="alveaux.html">Alvea: La leyenda de los soplavientos</a></button> 
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/fantasticFoodtruck/kitchenHubMock.png" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/fantasticFoodtruck/PrepareDishMock.png" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/fantasticFoodtruck/BazarPotion.png" alt="">
+        </div>
+      </div>
+
+      <!--MainHub-->
+      <div class="row justify-content-center mb-3">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">The main kitchen hub was one of the main focuses of my work during the project; combining what previously were 3 different scenes into one made for a more fluid and smooth experience, which let kids get right into the gameplay whenever they wanted to, solving the common complaint of the previous version being too slow to navigate and overly redundant. </p>
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-3 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/fantasticFoodtruck/khub anim.gif" alt="">
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/fantasticFoodtruck/KitchenHub4.gif" alt="">
+        </div>
+      </div>
+
+        <!--IngredientSelection-->
+      <div class="row justify-content-center mb-3 mt-2 mt-lg-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">One of the most impactful features i worked on was the redesign of ingredient selection screen, which was one of the most common complaints from the users on testing, mainly because of how confusing and unintuitive it was. Being a screen that always appeared before starting a dish, it created a bottleneck where users would either get frustrated before starting gameplay, or drop the game altogether after a few instances of the screen. The redesign looked to make this screen easier to read and more intuitive to interact with, as well as give better context to the kids in terms of what they are cooking. After launch it became one of the high points of the game, with kids having fun tweaking and trying different kinds of recipes.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 d-flex flex-column justify-content-center">
+          <img class="home__img" src="assets/img/fantasticFoodtruck/OLD-IngredientSelection.png" alt="">
+          <p class="articulo__parrafo-1 texto__dark pt-2 pt-lg-0 pl-3">Old Design</p>
+        </div>
+        <div class="col-lg-3 d-flex flex-column justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/fantasticFoodtruck/IngredientSelectionEntryGif (1).gif" alt="">
+          <p class="articulo__parrafo-1 texto__dark pt-2 pt-lg-0 pl-3">Updated Design</p>
+        </div>
+      </div>
+      <div class="row d-none d-lg-flex justify-content-center pt-5 pb-5">
+        <div class="col-lg-2">
+          <img class="home__img" src="assets/img/fantasticFoodtruck/SwapIngredient.gif" alt="">
+        </div>
+        <div class="col-lg-2">
+          <img class="home__img" src="assets/img/fantasticFoodtruck/SwapRecipeIngredient.gif" alt="">
+        </div>
+        <div class="col-lg-2">
+          <img class="home__img" src="assets/img/fantasticFoodtruck/NewIngredientSelect.png" alt="">
+        </div>
+      </div>
+
+        <!--IconDesign-->
+      <div class="row justify-content-center mb-3 mt-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">All the iconography for the ingredient treatments (minigames to "cook" the ingredients after creating them) were made with the intention of being identifiable at first glance by color, and for ease of legibility with or without an object inside of them</p>
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-4">
+          <img class="home__img" src="assets/img/fantasticFoodtruck/TreatmentIcona.png" alt="">
+        </div>
+      </div>
+
+      <!--Bazar-->
+      <div class="row justify-content-center mb-3 mt-2 mt-lg-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">The bazaar, which was a store for different hats, potions and skins for the game was another feature i was heavily involved with, as it wasn't considered in the alpha version of the game, as such, i worked on the screen and interactions from scratch, starting from the wireframes up until the final product. </p>
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/fantasticFoodtruck/BazarScreen02Wireframe.png" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/fantasticFoodtruck/BazarNewWireframes.png" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/fantasticFoodtruck/BazarPotion.png" alt="">
+        </div>
+      </div>
+
+      <!--FTUE-->
+      <div class="row justify-content-center mb-3 mt-2 mt-lg-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">The amount of information and new features added during the latter stages of production meant a complete overhaul of the FTUE process, which due to it's complexity involved organizing what information we needed to comunicate and its hierarchy; followed by the way it needed to be presented, in order to create a flow that wasn't too taxing on children. All of this process was tested with users via prototypes.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-3 d-flex justify-content-center">
+          <img class="home__img" src="assets/img/fantasticFoodtruck/FtueFlow.png" alt="">
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center">
+          <img class="home__img" src="assets/img/fantasticFoodtruck/FtueFlowExtension.png" alt="">
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-6 d-flex justify-content-center">
+          <img class="home__img" src="assets/img/fantasticFoodtruck/FtueFlowchart.png" alt="">
+        </div>
+      </div>
+
+      
+      <!--Coherence-->
+      <div class="row justify-content-center mt-2 mt-lg-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark ">The style of the UI was made with magical, spellbook like touches to fit with the rest of the line of games, with an added spin of wooden textures to give it it's own identity. </p>
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/fantasticFoodtruck/PopupMock.png" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/fantasticFoodtruck/Potions Mock.png" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/fantasticFoodtruck/summaryMock.png" alt="">
+        </div>
+      </div>
+
+
+        <!--End of Container-->
+    </div>
+  </section>
+
+        <!--Tangram-->
+  <section id="tangram" class="panel fondo__dark">
+    <div class="composicion1__barraMenuHome fondo__dark"></div>
+    <div class="container-fluid pb-5">
+      <div class="row">
+        <h2 class="home__titulo titulo__proyectosHome mx-auto">Tangram redesign</h2>
+      </div>
+      
+        <!--Intro-->
+      <div class="row justify-content-center mb-3 mt-2 mt-lg-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">For this project our team was tasked with redesigning the current product into a more appealing version for children, in my case this meant taking the new flows that were proposed and updating the UI accordingly to the new experience we wanted to deliver to the kids. As this was my first project at Osmo, there was a lot of learning involved, from how they managed their design pipeline, as well as understanding the experience osmo products want to deliver as a whole.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/tangram/MainMock.png" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/tangram/CustomizationMock.png" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/tangram/ActivityScreenMock.jpg" alt="">
+        </div>
+      </div>
+
+      <!--First steps-->
+      <div class="row justify-content-center mt-2 mt-lg-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">First i defined the initial flows based on the gameplay goals proposed by the game designer and initial wireframes were made</p>
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/tangram/MainScreenFlow.png" alt="">
+          <p class="articulo__parrafo-1 texto__dark pt-2 pt-lg-0 pl-3">Main flow</p>
+        </div>
+      </div>
+
+      <!--MainWorld-->
+      <div class="row justify-content-center mt-2 mt-lg-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">After a few iterations, i managed to reach an interface fitting to the style of the game, that adapted to every different world and took advantage of their variety to create a more appealing experience overall.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/tangram/MainMock.png" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/tangram/MainMock2.png" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/tangram/MainHub.gif" alt="">
+        </div>
+      </div>
+
+      <!--Customization-->
+      <div class="row justify-content-center mt-2 mt-lg-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">When designing the customization screen, i tried to maintain the simplicity found in the rest of the game, with a focus on usability and intuitivity, since we couldn't rely on text, with our target users leaning more on the younger side. At the same time, we tried to focus this screen on the main character, and give it a "wardrobe" feel to it that matches it's energy and uses it to our advantage.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/tangram/customization wireframe.png" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/tangram/CustomizationMock.png" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/tangram/Customization.gif" alt="">
+        </div>
+      </div>
+
+      <!--Activity-dificulty-->
+      <div class="row justify-content-center mb-3 mt-2 mt-lg-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">One of the more interesting aspects of the game was the introduction of an "adaptive difficulty" system, that let the game match it's difficulty to the kids ability, creating a smoother experience for kids that weren't really sure of the correct difficulty level for them</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/tangram/Difficulty.png" alt="">
+          <p class="articulo__parrafo-1 texto__dark pt-2 pt-lg-0 pl-3">Initial Mock</p>
+        </div>
+      </div>
+      <div class="row justify-content-center pt-0 pt-lg-5 pb-5">
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/tangram/HintAnim.gif" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/tangram/difficultyProgression.gif" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/tangram/difficultyPopup.gif" alt="">
+        </div>
+      </div>      
+
+              <!--Buttons-->
+      <div class="row justify-content-center d-none d-lg-flex mb-3 mt-2 mt-lg-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">In this case, the focus on the UI was on colorful and easy to recognize shapes, favoring rounder shapes in order to contrast with the more angular shapes of the characters and the tangrams.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center d-none d-lg-flex">
+        <div class="col-lg-1">
+          <img class="home__img" src="assets/img/tangram/ButtonBack.png" alt="">
+        </div>
+        <div class="col-lg-1">
+          <img class="home__img" src="assets/img/tangram/ButtonClue.png" alt="">
+        </div>
+        <div class="col-lg-1">
+          <img class="home__img" src="assets/img/tangram/ButtonCustomization.png" alt="">
+        </div>
+        <div class="col-lg-1">
+          <img class="home__img" src="assets/img/tangram/ButtonNav_Circle.png" alt="">
+        </div>
+        <div class="col-lg-1">
+          <img class="home__img" src="assets/img/tangram/ButtonPopUpGreenIcon.png" alt="">
+        </div>
+        <div class="col-lg-1">
+          <img class="home__img" src="assets/img/tangram/ButtonPopUpRedIcon.png" alt="">
+        </div>
+      </div>
+
+        <!--End of Container-->
+    </div>
+  </section>
+
+  <!--Squiggle-->
+  <section id="squiggle" class="panel fondo__dark">
+    <div class="composicion1__barraMenuHome fondo__dark"></div>
+    <div class="container-fluid pb-5">
+      <div class="row">
+        <h2 class="home__titulo titulo__proyectosHome mx-auto">Squiggle Magic</h2>
+      </div>
+      
+        <!--Intro-->
+      <div class="row justify-content-center mb-3 mt-2 mt-lg-5">
+        <div class="col-lg-6 ">
+          <p class="articulo__parrafo-1 texto__dark px-3">For this project we were tasked to create the special content of the main game, to be delivered monthly. However, aside from the main loop of the game (which is to make the shapes shown in screen using the physical pieces available) we were given full freedom on how we wanted to deliver the experience of the game. </p>
+        </div>
+      </div>
+      
+      <!--Level iteration--> 
+      <div class="row justify-content-center mb-3 mt-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">Initially the game was controlled by buttons on the bottom of the screen for each "room" in the level, however after user testing i realized that kids were intuitively dragging the screen to try and move the characters, so a new iteration was made taking that into account, i however left the buttons for the kids that preferred to do so.</p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/squiggle/Mainhub 1st Iteration.png" alt="">
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/squiggle/LevelMockValentines.png" alt="">
+        </div>
+      </div>
+
+      <!--UIbuttons--> 
+      <div class="row justify-content-center mb-3 mt-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">The design of the ui was made with the main user in mind, as such we tried to give it a more rough, and hand drawn feel, with more literal icons.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 d-flex justify-content-center">
+          <img class="home__img" src="assets/img/squiggle/Buttons Mock.png" alt="">
+        </div>
+      </div>
+      
+      <!--Color change--> 
+      <div class="row justify-content-center mb-3 mt-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">In order to better fit with the game world, we made it so each level has its particular color theme, affecting the ingame UI as well as the activity screen.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/squiggle/LevelSlideshow.gif" alt="">
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/squiggle/ActivitySlideshow.gif" alt="">
+        </div>
+      </div>
+
+        <!--Customization-->
+      <div class="row justify-content-center mb-3 mt-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">Customization was one of the new features considered for this content, as such a new screen, along with new flows had to be designed from the ground up.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 d-flex flex-column justify-content-center">
+          <img class="home__img" src="assets/img/squiggle/CustomizationWireframes-Exploration.png" alt="">
+          <p class="articulo__parrafo-1 texto__dark pt-2 pt-lg-0 pl-3">Wireframe exploration</p>
+        </div>
+        <div class="col-lg-2 d-flex flex-column justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/squiggle/CustomizationScreen.png" alt="">
+          <p class="articulo__parrafo-1 texto__dark pt-2 pt-lg-0 pl-3">Final design</p>
+        </div>
+      </div>
+
+      <!--Flows-->
+      <div class="row justify-content-center mb-3 mt-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">Since the UI had to be on the simpler side on behalf of our target user, most of the work had to be done on designing the flows of the game, main example of this was designing the end of room flow, which had multiple triggers and would usually confuse users. The end product managed to organize all triggers in a narrative fashion in order to properly convey all the information needed.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/squiggle/RoomCompletionGuide.png" alt="">
+        </div>
+      </div>
+        <!--End of Container-->
+    </div>
+  </section>
+
+  
+  <!--Alvea-->
+  <section id="alvea" class="panel fondo__dark">
+    <div class="composicion1__barraMenuHome fondo__dark"></div>
+    <div class="container-fluid pb-5">
+      <div class="row">
+        <h2 class="home__titulo titulo__proyectosHome mx-auto text-wrap">Alvea: legend of the windwhisperers</h2>
+      </div>
+
+      
+        <!--Intro - cambiar idioma imagen y color-->
+        <div class="row justify-content-center mb-3">
+          <div class="col-lg-6">
+            <p class="articulo__parrafo-1 texto__dark px-3">Alvea is a game that focus on using elements often considered "Dark design", like lootboxes or other practices, for a good purpose in helping kids with chronic illnesses to adhere to their daily treatment. As my graduation project, this meant i was involved in every aspect of the production, from the initial investigation, to the creation of the game design document to the final prototype implementation, and became a good foundation of my skills later into my career.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center pb-5">
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img class="home__img pt-4 pt-lg-0" src="assets/img/alveaArticulo/procesoGameDesignWhite.png" alt="">
+          </div>
+        </div>
+        <!--DesignProcess-->
+      <div class="row justify-content-center mb-3">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">The initial stages of design involved analyzing currently available games with similar objectives to mine, in order to determine what elements were missing that these products could be improved upon, followed by a user research process in order to determine the visual and gameplay elements my target user preferred. Once those elements were defined an initial game concept document was defined, and later refined into a game design document. </p>
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/alveaArticulo/benchmark.png" alt="">
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/alveaArticulo/investigacion.png" alt="">
+        </div>
+        <div class="col-lg-4 d-flex d-lg-none justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/alveaArticulo/gamedesign1.png" alt="">
+        </div>
+      </div>
+      <div class="row d-none d-lg-flex justify-content-center pb-5">
+        <div class="col-lg-6 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/alveaArticulo/gamedesign1.png" alt="">
+        </div>
+      </div>
+
+        <!--MainHubWireframes-->
+      <div class="row justify-content-center mb-3 mt-5">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">The wireframing process started with work on paper, with the main focus of defining what information was needed to show on the screen and how to organize it, which was later cleaned up on pc and refined into a final product.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/alveaArticulo/Wireframe.gif" alt="">
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/alveaArticulo/wireframe5.png" alt="">
+        </div>
+      </div>
+
+        <!--IngameWireframes-->
+        <div class="row justify-content-center mb-3 mt-5">
+          <div class="col-lg-6">
+            <p class="articulo__parrafo-1 texto__dark px-3">The same process was used to make the ingame UI, this time using the gameplay flows defined in the game design document in order to determine the necessary information to be displayed.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-3 d-flex justify-content-center">
+            <img class="home__img pt-4 pt-lg-0" src="assets/img/alveaArticulo/uiKit.png" alt="">
+          </div>
+          <div class="col-lg-3 d-flex justify-content-center">
+            <img class="home__img pt-4 pt-lg-0" src="assets/img/alveaArticulo/wireframe7.png" alt="">
+          </div>
+        </div>
+
+      <!--Backgrounds-->
+      <div class="row justify-content-center mt-5 mt-lg-0 mb-3">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">Background design process; 4 different regions were conceptualized, based on different player traits recognized from the user research, from thumbnails to color.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/alveaArticulo/arte1.png" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/alveaArticulo/arte2.png" alt="">
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/alveaArticulo/arte3.png" alt="">
+        </div>
+      </div>
+      <!--Characters-->
+      <div class="row justify-content-center mb-3">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">4 characters were design in order to exemplify the style of each region, as well as a main character and enemy, both with their respective animations to be implemented into the prototype.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-6 d-flex justify-content-center">
+          <img class="home__img" src="assets/img/alveaArticulo/arte4.png" alt="">
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-3 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/alveaArticulo/arte5.png" alt="">
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center">
+          <img class="home__img pt-4 pt-lg-0" src="assets/img/alveaArticulo/arte6.png" alt="">
+        </div>
+      </div>
+      <!--Proto-->
+      <div class="row justify-content-center mb-3">
+        <div class="col-lg-6">
+          <p class="articulo__parrafo-1 texto__dark px-3">Finally everything was implemented into unity, and made into a prototype in order to show the core loop of the game.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5">
+        <div class="col-lg-6 d-flex justify-content-center">
+          <img class="home__img" src="assets/img/alveaArticulo/prototipo1.png" alt="">
+        </div>
+      </div>
+
+        <!--End of Container-->
+    </div>
+  </section>
+
+  <section id="about" class="panel">
+    <div class="composicion1__barraMenuHome fondo__light"></div>
+    <div class="row justify-content-center pt-5 mt-5">
+      <div class="col-lg-2 d-flex flex-column align-items-center">
+        <img class="profilePic" src="assets/img/fotoportadaSQ.jpg" alt="">
+        <h2 class="home__tituloName pt-4 mb-3">Thomas Heim Rojas</h2>
+        <h2 class="home__tituloMail">thomasheimrojas@gmail.com</h2>
+      </div>
+      <div class="info col-lg-4">
+        <h2 class="home__tituloAbout px-4 px-lg-0">About me</h2>
+        <p class="articulo__parrafo-1 px-4 px-lg-0">As a designer, i believe games to be the most pure form of experience design, which is why im passionate about making them. I enjoy the fine tuning that goes in every detail of a game in order to deliver a joyful and entertaining experience.</p>
+          <p class="articulo__parrafo-1 pt-3 px-4 px-lg-0">I graduated with a BA degree in Integral Design at the <a href="https://www.uv.cl" target="_blank">University of Valparaiso</a> in Chile, later specializing in UX/UI Design through the <a href="https://talentodigitalparachile.cl">Talento Digital program</a> sponsored by Sence through <a href="https://desafiolatam.com">Desafio Latam academy</a>. Before starting my professional journey, i already knew i wanted to work on the Videogame industry, as a result i aquired a lot of skills and knowledge as a self-taught professional in game design and ux/ui design, experience that helped me not only get into my current position, but also made me a self sufficient, proactive, organized and thorough professional capable of adapting to different work environments. As such i value places where i can be in a constant state of learning, looking for different challenges and more ways to grow as a professional.</p>
+        <div class="d-flex justify-content-around pt-4">
+          <a class="aboutIcons" href="https://www.linkedin.com/in/thomasheimrojas/"><i class="fa-brands fa-linkedin-in fa-9x"></i></a>
+          <a class="aboutIcons" href="assets/Curriculum Thomas Heim 2020.pdf#page=1" target="_blank"><i class="fa-solid fa-file-pdf fa-9x"></i></a>
+        </div>
+        <div class="home__experience pt-5 mt-3 px-4 px-lg-0">
+          <h2 class="hero__subtitulo-1">Experience</h2>
+          <div class="home__experience-job d-flex align-items-start mb-5">
+            <img class="home__experience-logo" src="assets/img/Icons/osmo-logo.png" alt="">
+            <div class="home__experience-textContainer ml-3 pl-5">
+              <p class="articulo__parrafo-1 pt-4 pt-lg-5"> <b>UX/UI Designer</b> at <b>Osmo Chile</b></p>
+              <p class="articulo__parrafo-1 pt-1">November 2020 - Present</p>
+              <p class="articulo__parrafo-1 pt-4 pt-lg-1">UX/UI Designer and artist for Squiggle Magic special content</p>
+              <p class="articulo__parrafo-1 pt-4 pt-lg-1">UX/UI Designer and artist for Math wizard and the Fantastic Foodtruck</p>
+              <p class="articulo__parrafo-1 pt-4 pt-lg-1">UI artist for Little Genius Kit ABC's special content</p>
+              <p class="articulo__parrafo-1 pt-4 pt-lg-1">UX/UI Designer and artist for Genius Tangram redesign</p>
+              <p class="articulo__parrafo-1 pt-4 pt-lg-1">Osmo is the award-winning STEAM brand and creator of a broad universe of hands-on gamified learning experiences validated by education experts that nourish children's mind. My role in the company meant working on different projects, facing the challenges not only imposed by their young target audience, but also their innovative control systems and technology. My work within those projects lead to making 2 of those games to become some of the games with the best NPS at the company. </p>
+            </div>
+          </div>
+          <div class="home__experience-job d-flex align-items-start mb-5">
+            <img class="home__experience-logo" src="assets/img/Icons/niebla_logo_white.png" alt="">
+            <div class="home__experience-textContainer ml-3 pl-5">
+              <p class="articulo__parrafo-1"> <b>Game designer</b> and <b>Graphic designer</b> at <b>Niebla Games</b></p>
+              <p class="articulo__parrafo-1 pt-1">May 2017 - August 2017</p>
+              <p class="articulo__parrafo-1 pt-4 pt-lg-1">Game designer for Causa: Voices of the dusk initial prototypes </p>
+              <p class="articulo__parrafo-1 pt-4 pt-lg-1">Graphic designer for Careta: un juego de sumas, restas y artimañas board game</p>
+              <p class="articulo__parrafo-1 pt-1 pt-4 pt-lg-1">Niebla games is one of the most prominent Indie game studios outside of the capital in Chile and a licenced partner of Sony Interactive Entertainment and Microsoft Corporation. Initially brought in for an internship, i got hired afterwards to help on the graphic design of their first tabletop game. </p>
+            </div>
+          </div>
+          <div class="home__experience-job d-flex align-items-start mb-5">
+            <img class="home__experience-logo" src="assets/img/Icons/idk_logo_black.png" alt="">
+            <div class="home__experience-textContainer ml-3 pl-5">
+              <p class="articulo__parrafo-1"> <b>Game designer</b> and <b>UI Artist</b> at <b>IDK Games</b></p>
+              <p class="articulo__parrafo-1 pt-1">January 2015 - July 2017</p>
+              <p class="articulo__parrafo-1 pt-4 pt-lg-1">UI Designer and Game Designer for Barbacteria's Oddysey</p>
+              <p class="articulo__parrafo-1 pt-1 pt-4 pt-lg-1">Indie company, i couldn't manage to get a game fully launched, however the knowledge and abilities i acquired through this experience are what later let me continue my career on the Videogame industry.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="home__experience pt-5 mt-5 px-4 px-lg-0">
+          <h2 class="hero__subtitulo-1">Education</h2>
+          <div class="home__experience-job d-flex align-items-start mb-5 mt-3">
+            <img class="home__experience-logo pt-5" src="assets/img/Icons/desafioLatamLogo.png" alt="">
+            <div class="home__experience-textContainer ml-3 pl-5">
+              <p class="articulo__parrafo-1 pt-5"> <b>Desafio latam</b></p>
+              <p class="articulo__parrafo-1 pt-1">February 2020 - June 2020</p>
+              <p class="articulo__parrafo-1 pt-4 pt-lg-1">Talento Digial program sponsored by Sence</p>
+              <p class="articulo__parrafo-1 pt-4 pt-lg-1">Scolarship winner</p>
+            </div>
+          </div>
+
+          <div class="home__experience-job d-flex align-items-start mb-5">
+            <img class="home__experience-logo" src="assets/img/Icons/menu_marca_mono.png" alt="">
+            <div class="home__experience-textContainer ml-3 pl-5">
+              <p class="articulo__parrafo-1"><b>University of Valparaíso</b></p>
+              <p class="articulo__parrafo-1 pt-1">2013 - 2019</p>
+              <p class="articulo__parrafo-1 pt-4 pt-lg-1">BA in Design</p>
+              <p class="articulo__parrafo-1 pt-4 pt-lg-1">Academic Excellence Award</p>
+              <p class="articulo__parrafo-1 pt-4 pt-lg-1">Best of Generation Award</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </main>   
-</div>
+
+  </section>  
+</div><!--WrapperEnd-->
 </body>
 </html>

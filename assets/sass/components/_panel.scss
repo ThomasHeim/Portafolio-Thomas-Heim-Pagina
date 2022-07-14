@@ -24,3 +24,13 @@
     color: white;
 
 }
+
+
+.panel__hero{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    min-height: 30vh;
+    z-index: 1000;
+    padding-top: 100px;
+}

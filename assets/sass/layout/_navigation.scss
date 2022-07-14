@@ -9,7 +9,7 @@
     filter: invert(100%);
     position: fixed;
     font-family: $bebas;
-    font-size: 2rem;
+    font-size: 3rem;
     width: 100%;
 
 
@@ -18,7 +18,8 @@
     }
     &__logo{
         width: 100%;
-        max-width: 76px;
+        max-width: 100px;
+        margin-right: 0rem;
     }
     &__logo-icono{
         mix-blend-mode: difference;
@@ -27,6 +28,11 @@
     }
     &__quiensoy{
         white-space: nowrap;
+    }
+
+    &__sub{
+        font-family: $bebas;
+        font-size: 2.3rem;
     }
 }
 .navegacion__contenido{

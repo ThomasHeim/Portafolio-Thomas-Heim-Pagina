@@ -29,5 +29,13 @@
         position: -webkit-sticky;
         top: 0px;
     }
+    &__barraMenuHome{
+        z-index: 1000;
+        height: 100px;
+        width: 100%;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0px;
+    }
 
 }

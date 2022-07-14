@@ -95,7 +95,12 @@ html{
 }
 
 .texto__dark{
-    color: white !important;
+    color: rgb(168, 168, 168) !important;
+    font-weight: 400 !important;
+}
+
+.texto__darkTitle{
+    color: rgb(255, 255, 255) !important;
     font-weight: 400 !important;
 }
 
@@ -122,6 +127,7 @@ html{
             @include montserrat-texto;
             line-height: 3rem;
         }
+
         &__titulo{
             @include bebas-l;
             color: black;
@@ -139,10 +145,16 @@ html{
             color: black;
         }
         &__parrafo-1{
-            @include montserrat-texto;
+            @include montserrat-sm-texto;
+            line-height: 3rem;
+        }
+        &__parrafo-1-bold{
+            @include montserrat-sm-texto-bold;
             line-height: 3rem;
         }
     }
+
+    
 
     .modales{
         &__titulo{
