@@ -237,6 +237,17 @@
     }
 }
 
+//boton Imagen Fondo
+.ImageBtn {
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+//BotonImagenFondoEspecifico
+#FantasticFoodtruckButton {
+    background-image: url('assets/img/fantasticFoodtruck/BeautyShot3.jpg');
+}
 
 
 // Medium devices (tablets, 768px and up)

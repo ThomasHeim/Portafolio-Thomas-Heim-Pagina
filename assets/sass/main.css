@@ -12154,6 +12154,196 @@ main {
   top: 0px;
 }
 
+/* ! VARIABLES */
+/* ========================================================================*/
+/* ========================================================================*/
+/* ! TYPO */
+/* ========================================================================*/
+/* --------------------------------------------*/
+/* ! COMPOSANTS */
+/*---------------------------------------------*/
+.bloc {
+  color: #FFF;
+}
+
+/* ========================================================================*/
+/* ! MIXINS & HELPER CLASS */
+/* ========================================================================*/
+/* --------------------------------------------*/
+/* ! HELPER CLASSES */
+/*---------------------------------------------*/
+.brick {
+  background-color: #FF8357;
+}
+
+.blue {
+  background-color: #4398b7;
+}
+
+.yellow {
+  background-color: #FFDD57;
+}
+
+.indigo {
+  background-color: #83C7D4;
+}
+
+.anthracite {
+  background-color: #414A53;
+}
+
+.green {
+  background-color: #87C97F;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-padding-horizontal {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* --------------------------------------------*/
+/* ! DECORATION & EFFECTS */
+/*---------------------------------------------*/
+/* ========================================================================*/
+/* ! LAYOUT */
+/* ========================================================================*/
+.section-mosaic {
+  margin-top: 35px;
+}
+
+.section-mosaic + .section-mosaic {
+  margin-top: 0;
+}
+
+/* ========================================================================*/
+/* ! COMPOSANTS */
+/* ========================================================================*/
+/* --------------------------------------------*/
+/* ! MOSAIC */
+/*---------------------------------------------*/
+.col-small-high-bloc .row .bloc-small {
+  bottom: 0;
+}
+
+.col-small-high-bloc .bloc-small-parent + .bloc-small-parent {
+  top: 15px;
+  bottom: 7.5px;
+}
+
+.col-small-high-bloc .row .bloc-small {
+  top: 21.5px;
+  bottom: 0;
+}
+
+/* --------------------------------------------*/
+/* ! BLOCS MOSAIC */
+/*---------------------------------------------*/
+.bloc {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.bloc-big-parent .bloc-big {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+}
+
+.bloc-big-parent::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: 68.8%;
+  /*DEFINI LA HAUTEUR DU BLOC*/
+}
+
+.bloc-high-parent .bloc-high {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+}
+
+.bloc-high-parent::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: 145.5%;
+  /*DEFINI LA HAUTEUR DU BLOC*/
+}
+
+.bloc-small-parent .bloc-small {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 0;
+  left: 15px;
+}
+
+.bloc-small-parent::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: 67%;
+  /*DEFINI LA HAUTEUR DU BLOC*/
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .bloc-big-parent::before {
+    padding-bottom: 69.15%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+  .bloc-high-parent::before {
+    padding-bottom: 148%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+  .bloc-small-parent::before {
+    padding-bottom: 67%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .bloc-big-parent::before {
+    padding-bottom: 66.05%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+  .bloc-high-parent .bloc-high {
+    top: 45px;
+  }
+  .bloc-high-parent::before {
+    padding-bottom: 93.6%;
+  }
+  .bloc-small-parent::before {
+    padding-bottom: 64.92%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+}
+
+@media (max-width: 767px) {
+  .bloc-big-parent::before {
+    padding-bottom: 66.05%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+  .bloc-high-parent .bloc-high {
+    top: 45px;
+  }
+  .bloc-high-parent::before {
+    padding-bottom: 73.796%;
+  }
+  .bloc-small-parent::before {
+    padding-bottom: 64.92%;
+    /*DEFINI LA HAUTEUR DU BLOC*/
+  }
+}
+
 /*Botones recurrentes*/
 /*Botones del home*/
 .boton__custom-hero1 {
@@ -12399,6 +12589,16 @@ main {
         color: black;
         mix-blend-mode: difference;
         transition: box-shadow ease 0.5s;*/
+}
+
+.ImageBtn {
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#FantasticFoodtruckButton {
+  background-image: url("assets/img/fantasticFoodtruck/BeautyShot3.jpg");
 }
 
 @media (min-width: 768px) {
@@ -12778,6 +12978,14 @@ main {
   margin-bottom: 40px;
 }
 
+.home__tituloBanner {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-left: 5%;
+  margin-bottom: 40px;
+}
+
 .home__tituloAbout {
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
@@ -12812,6 +13020,10 @@ main {
 .home__link {
   color: #b50030;
   text-decoration: none;
+}
+
+.homeSelected {
+  pointer-events: none;
 }
 
 a:link {
@@ -12851,6 +13063,19 @@ a:visited {
   color: black;
   line-height: 1;
   white-space: nowrap;
+}
+
+.titulo__banner {
+  mix-blend-mode: normal;
+  background-color: black;
+  text-align: center;
+  padding: 10px 8px 2px 8px;
+  color: white;
+  line-height: 1;
+  white-space: nowrap;
+  position: absolute;
+  bottom: -40px;
+  left: 10px;
 }
 
 .titulo__about {
@@ -12918,6 +13143,25 @@ a:visited {
     font-weight: 400;
     font-size: 2rem;
     margin-bottom: 20px;
+  }
+  .home__tituloBanner {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 5rem;
+    margin-left: 5%;
+    margin-bottom: 40px;
+  }
+  .titulo__banner {
+    mix-blend-mode: normal;
+    background-color: black;
+    text-align: center;
+    padding: 10px 8px 2px 8px;
+    color: white;
+    line-height: 1;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -30px;
+    left: 30px;
   }
 }
 

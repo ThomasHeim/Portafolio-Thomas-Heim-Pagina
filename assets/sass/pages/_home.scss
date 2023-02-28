@@ -6,6 +6,11 @@
         margin-left: 5%;
         margin-bottom:  40px;
     }
+    &__tituloBanner{
+        @include bebas-texto;
+        margin-left: 5%;
+        margin-bottom:  40px;
+    }
     &__tituloAbout{
         @include bebas-sm-xl;
         margin-bottom:  20px;
@@ -31,6 +36,10 @@
         text-decoration: none;
     }
     
+}
+
+.homeSelected{
+pointer-events: none;
 }
 
 a:link{
@@ -74,6 +83,19 @@ a:visited{
     color: black;
     line-height: 1;
     white-space: nowrap;
+    }
+
+.titulo__banner{
+    mix-blend-mode: normal;
+    background-color: black;
+    text-align: center;
+    padding: 10px 8px 2px 8px;
+    color: white;
+    line-height: 1;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -40px;
+    left: 10px;
     }
 
 .titulo__about{
@@ -136,7 +158,24 @@ a:visited{
                 @include montserrat-sm-s;
                 margin-bottom:  20px;
             }
+            &__tituloBanner{
+                @include bebas-s;
+                margin-left: 5%;
+                margin-bottom:  40px;
+            }
         }
+        .titulo__banner{
+            mix-blend-mode: normal;
+            background-color: black;
+            text-align: center;
+            padding: 10px 8px 2px 8px;
+            color: white;
+            line-height: 1;
+            white-space: nowrap;
+            position: absolute;
+            bottom: -30px;
+            left: 30px;
+            }
     }
     
     // Extra large devices (large desktops, 1200px and up)
