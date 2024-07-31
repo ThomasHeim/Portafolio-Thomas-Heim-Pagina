@@ -83,6 +83,10 @@ html{
         @include bebas-xs;
         line-height: 4rem;
     }
+    &__parrafo-bold-2{
+        @include montserrat-texto-bold;
+        line-height: 4rem;
+    }
     &__parrafo-bold-mv{
         @include bebas-texto;
         line-height: 1rem;
