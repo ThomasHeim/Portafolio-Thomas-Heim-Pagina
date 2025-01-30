@@ -75,6 +75,12 @@ html{
         @include bebas-lg-texto;
         color: black;
     }
+
+    &__subtitulo-3{
+        @include bebas-lg-subtitulo;
+        color: black;
+    }
+
     &__parrafo-1{
         @include montserrat-sm-texto;
         line-height: 2rem;

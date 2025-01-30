@@ -84,6 +84,12 @@
     font-size: $lg-texto;
 }
 
+@mixin bebas-lg-subtitulo {
+    font-family: $bebas;
+    font-weight: $font-regular; 
+    font-size: $lg-subtitulo;
+}
+
 /*bebas-MOVIL*/
 
 @mixin bebas-sm-2xl {
